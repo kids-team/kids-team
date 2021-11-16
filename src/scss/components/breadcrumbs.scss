@@ -1,0 +1,27 @@
+.breadcrumbs {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-items: end;
+    top: 0;
+    gap: space(0.5);
+    right: 0;
+    margin-right: $spacer;
+    padding-top: $spacer;
+
+    &__item {
+        @extend .text-xs;
+        background-color: map-deep-get($themecolors, 'primary', 'color');
+        color: map-deep-get($themecolors, 'primary', 'contrast');
+        margin-left: map-get($spacers, 2);
+        padding: 0.125rem map-get($spacers, 2);
+        &:first-child {
+            border-top-left-radius: radius('sm', 'tl');
+            border-bottom-left-radius: radius('sm', 'bl');
+        }
+        &:last-child {
+            border-top-right-radius: radius('sm', 'tr');
+            border-bottom-right-radius: radius('sm', 'br');;
+        }
+    }
+}

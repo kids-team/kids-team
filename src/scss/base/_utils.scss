@@ -1,0 +1,120 @@
+.flex {
+    display: flex;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (screen(md)) {
+    .md\:show {
+        display: inherit;
+    }
+    .md\:hidden {
+        display: none;
+    }
+}
+
+@media (screen(lg)) {
+    .lg\:show {
+        display: inherit;
+    }
+    .lg\:hidden {
+        display: none;
+    }
+}
+
+@media (screen(lg)) {
+    .xl\:show {
+        display: inherit;
+    }
+    .xl\:hidden {
+        display: none;
+    }
+}
+
+
+@each $key, $value in $border-base {
+    rounded-#{$key} {
+        border-top-left-radius: $value * map-get($border-multiplier, 'tl');
+        border-top-right-radius: $value * map-get($border-multiplier, 'tr');
+        border-bottom-left-radius: $value * map-get($border-multiplier, 'bl');
+        border-bottom-right-radius: $value * map-get($border-multiplier, 'br');
+    };
+}
+
+.max-w-screen-xl, .container, 
+.max-w-screen-xl, .content {
+    max-width: map-get($screens, 'xxl');
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+$utilities: () !default;
+
+
+@each $key, $value in $spacers {
+
+        .mx-#{$key} {
+            margin-left: $value;
+            margin-right: $value;
+        };
+        .my-#{$key} {
+            margin-top: $value;
+            margin-bottom: $value;
+        };
+        .mb-#{$key} {
+            margin-bottom: $value;
+        };
+        .mt-#{$key} {
+            margin-top: $value;
+        };
+        .ml-#{$key} {
+            margin-left: $value;
+        };
+        .mr-#{$key} {
+            margin-right: $value;
+        };
+        .px-#{$key} {
+            padding-left: $value;
+            padding-right: $value;
+        };
+        .py-#{$key} {
+            padding-top: $value;
+            padding-bottom: $value;
+        };
+        .p-#{$key} {
+            padding: $value;
+        };
+        .m-#{$key} {
+            margin: $value;
+        };
+        .w-#{$key} {
+            width: $value;
+            height: $value;
+        };
+        .h-#{$key} {
+            height: $value;
+        };    
+}
+
+.nowrap {
+    white-space: nowrap;
+}

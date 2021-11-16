@@ -1,0 +1,13 @@
+.tabs {
+    display: flex;
+    padding-top: space(12);
+
+    &__item {
+        border-top-left-radius: radius(sm);
+        border-top-right-radius: radius(sm);
+        overflow: hidden;
+        padding: 0.25rem 1rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+}

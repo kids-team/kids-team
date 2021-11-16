@@ -1,0 +1,38 @@
+.progress {
+    &__label {
+        font-size: 0.75rem;
+    }
+
+    &__legends {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__track {
+        @include border(sm);
+    }
+
+    &__indicator {
+        display: flex;
+        justify-content: flex-end;
+        padding: space(1);
+        @include border(sm);
+    }
+
+
+    .legend--max {
+        display: inline-block;
+        .legend__value {
+            text-align: right;
+        }
+    }
+
+    .legend__value {
+        font-size: space(6);
+        font-weight: bold;
+    }
+
+    .legend__label {
+        font-size: space(3);
+    }
+}

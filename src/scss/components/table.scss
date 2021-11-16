@@ -1,0 +1,34 @@
+.table {
+    td {
+        padding: .5em;
+        border: 2px dotted #00000022;
+        word-break: normal;
+    }
+}
+
+
+.wp-block-table td, .wp-block-table th {
+    padding: .5em;
+    border: 2px dotted #00000022;
+    word-break: normal;
+}
+
+.wp-block-table thead {
+    border-bottom: 4px dotted #00000055;
+}
+
+.dark .wp-block-table td, .dark .wp-block-table th {
+    padding: .5em;
+    border: 2px dotted #ffffff22;
+    word-break: normal;
+}
+
+.dark {
+    .wp-block-table thead {
+        border-bottom: 4px dotted #ffffff55;
+    }
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+    background-color: transparent !important;
+}

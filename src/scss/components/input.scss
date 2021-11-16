@@ -1,0 +1,325 @@
+.error-message {
+    color: var(--error);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding-left: 18px;
+    display: block;
+}
+
+/*
+*
+*   Legacy Code
+*
+*/
+
+form {
+    .input-group {
+        padding: 1rem 0;
+    }
+
+    .input-group input:not([type='checkbox']):not([type='submit']), select {
+        outline: none !important;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: space(4);
+        font-family: "Exo 2", sans-serif;
+        @include border('sm');
+        background: var(--white);
+        transition: all 300ms ease-in-out;
+        border: 2px solid gray(400);
+        color: var(--darkgray)
+    }
+
+    .input-group label, .label {
+        margin-top: -12px;
+        display: inline-block;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-left: 1rem;
+        height: max-content;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        @include border('sm');
+        font-size: 0.75rem;
+        background: gray(400);
+        transition: all 300ms ease-in-out;
+        whitespace: no-wrap;
+        position: absolute;
+    }
+
+    .input-textarea {
+        flex-flow: column;
+
+        label {
+            width: max-content;
+        }
+
+        textarea {
+            width: 100%;
+            border: 2px solid gray(400);
+            @include border('sm');
+            background: var(--white);
+            padding: 1rem;
+            padding-top: 6px;
+            outline: none !important;
+        }
+    }
+
+    .input-checkbox { 
+        display: flex;
+        align-items: center;
+
+        label {
+            background-color: transparent;
+            font-size: 1rem;
+            margin-left: 0;
+            padding: 0;
+            display: flex;
+
+            span {
+                display: block;
+            }
+        }
+    }
+
+    input[type="checkbox"] {
+        margin-right: 1rem;
+        appearance: none;
+        margin-top: 1px;
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 2px solid gray(400);
+        background: var(--white);
+        border-top-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        transition: all 300ms ease-in-out;
+        flex-shrink: 0;
+        &:focus {
+            outline: none;
+        }
+
+        &:checked {
+            border-color: var(--primary);
+            box-shadow: inset 0px 0px 0px 2px #fff;
+
+            &::after {
+                transform: scale-y(100);
+                color: var(--primary);
+                animation-name: ctx-checkbox-check;
+                -webkit-animation-duration: 300ms;
+                animation-duration: 300ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+                -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+                content: "\2714";
+                font-size: 19px;
+                font-weight: 700;
+                margin-left: 2px;
+                margin-top: -4px;
+                position: absolute;
+                transform: scale-y(0);
+                transition: all .3s ease-in-out;
+            }
+        }
+
+        label {
+            background: transparent;
+        }
+
+    }
+
+    input[type="submit"] {
+        @extend .button;
+        border: none;
+        background: var(--primary);
+        color: var(--primary-contrast);
+        font-family: "Exo 2", sans-serif;
+        font-size: 1rem;
+    }
+
+}
+
+
+/*
+*
+*   New BEM-Style Forms
+*
+*/
+
+.form {
+
+    &:invalid {
+
+    }
+
+    &__group {
+        padding: 1rem 0;
+    }
+
+    &__error {
+        color: var(--error);
+        font-size: 0.75rem;
+        line-height: 1rem;
+        padding-left: 18px;
+        display: block;
+    }
+}
+
+.input {
+    input {
+        outline: none !important;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: space(4);
+        font-family: "Exo 2", sans-serif;
+        @include border('sm');
+        background: var(--white);
+        transition: all 300ms ease-in-out; 
+        border: 2px solid gray(400);
+        color: var(--darkgray)
+    }
+
+    label {
+        margin-top: -12px;
+        display: inline-block;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-left: 1rem;
+        height: max-content;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        @include border('sm');
+        font-size: 0.75rem;
+        background: gray(400);
+        transition: all 300ms ease-in-out;
+        whitespace: no-wrap;
+        position: absolute;
+    }
+}
+
+.textarea {
+    flex-flow: column;
+    label {
+        width: max-content;
+    }
+
+    textarea {
+        width: 100%;
+        border: 2px solid gray(400);
+        @include border('sm');
+        background: var(--white);
+        padding: 1rem;
+        padding-top: 6px;
+        outline: none !important;
+    }
+}
+
+.checkbox { 
+    display: flex;
+    align-items: center;
+
+    label {
+        background-color: transparent;
+        font-size: 1rem;
+        margin-left: 0;
+        padding: 0;
+        display: flex;
+
+        span {
+            display: block;
+        }
+    }
+
+    input {
+        margin-right: 1rem;
+        appearance: none;
+        margin-top: 1px;
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 2px solid gray(400);
+        background: var(--white);
+        border-top-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        transition: all 300ms ease-in-out;
+        flex-shrink: 0;
+        &:focus {
+            outline: none;
+        }
+
+        &:checked {
+            border-color: var(--primary);
+            box-shadow: inset 0px 0px 0px 2px #fff;
+
+            &::after {
+                transform: scale-y(100);
+                color: var(--primary);
+                animation-name: ctx-checkbox-check;
+                -webkit-animation-duration: 300ms;
+                animation-duration: 300ms;
+                -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+                -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+                content: "\2714";
+                font-size: 19px;
+                font-weight: 700;
+                margin-left: 2px;
+                margin-top: -4px;
+                position: absolute;
+                transform: scale-y(0);
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+.submit {
+    @extend .button;
+    border: none;
+    background: var(--primary);
+    color: var(--primary-contrast);
+    font-family: "Exo 2", sans-serif;
+    font-size: 1rem;
+}
+
+
+
+
+@keyframes ctx-checkbox-check {
+  0% { 
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+span.wpcf7-list-item {
+    display: inline-block;
+    margin: 0 0 0 0 !important; 
+}
+
+  
+.error input, .error select {
+    color: var(--error);
+    border-color: var(--error);
+}
+  
+select:invalid {
+    color: var(--mediumgray);
+}
+  
+  
+.error label {
+    background: var(--error);
+    color: var(--error-contrast);
+}
+  
+.input-textarea {
+    flex-flow: column;
+}
+  
