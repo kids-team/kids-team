@@ -97,6 +97,19 @@
         }
     }
 
+    &--start-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+        transition: none;
+
+        .modal__dialog {
+            transform: scale(1);
+            opacity: 1;
+            transition: none;
+        }
+    }
+
     &--animate-open {
         opacity: 1;
         visibility: visible;
@@ -117,8 +130,9 @@
         display: block;
         /* include right-shift class */
         height: 100%;
+
         .modal__dialog { 
-            background: var(--gray-100);
+            background: #ffffff;
             border-top-left-radius: 0rem;
             border-bottom-right-radius: 0rem;
             min-height: 90%; 
@@ -134,12 +148,14 @@
             min-width: 100%;
             width: 100%;
             overflow: auto;
+            padding: 5rem 1rem;
+            background-color: var(--gray-100)
         }
         .modal__header {
             position: relative;
-            margin: 5rem 0;
             background: var(--primary-light);
-            min-height: 150px;
+            margin-top: 5rem;
+            min-height: 250px;
             height: auto;
             padding: 0;
             
@@ -200,7 +216,8 @@
             top: 0;
             bottom: 0;
             display: grid;
-            background: rgba(255,255,255,0.7);
+            background: rgba(255,255,255,0.8);
+            z-index: 999;
             place-items: center;
             aside {
                 display: flex;
@@ -209,15 +226,7 @@
             }
         }
 
-        .modal__success {
-            .modal__header {
-                background: var(--success-light);
-                h2 {
-                    background: var(--success);
-                    color: var(--success-contrast);
-                }
-            }
-        }
+        
 
         .modal__error {
             .modal__header {
@@ -228,6 +237,22 @@
                 }
             }
         }
+    }
+}
+
+
+.modal--success {
+    .modal__header {
+        background: var(--success-light);
+        h2 {
+            background: var(--success);
+            color: var(--success-contrast);
+        }
+    }
+
+    .modal__content {
+        background: var(--success);
+        color: var(--success-contrast);
     }
 }
 
