@@ -1,0 +1,33 @@
+.wizzard {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        clear: both;
+
+    &__step {
+        position: relative;
+        display: none;
+        float: left;
+        width: 100%;
+        margin-right: -100%;
+        backface-visibility: hidden;
+        transition: -webkit-transform .6s ease;
+        transition: all .6s ease;
+        transition: all .6s ease,-webkit-transform .6s ease;
+    }
+    
+    &__step--active {
+        display: block;
+    }
+
+    &__step--next {
+        transform: translateX(100%);
+        display: block;
+    }
+
+    &__step--prev {
+        transform: translateX(-100%);
+        display: block;
+    }
+    
+}
