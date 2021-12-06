@@ -168,7 +168,7 @@ form {
 
 .input {
     padding: 1rem 0;
-    
+    position: relative;
     input {
         outline: none !important;
         width: 100%;
@@ -217,6 +217,51 @@ form {
     }
 }
 
+.radio {
+    border: 0;
+    padding: 1rem 0 1rem 0;
+
+    label {
+        display: flex;
+        align-items: center;
+    }
+
+    input[type="radio"] {
+        appearance: none;
+        margin: 0 space(2) 0 0;
+        background-color: #fff;
+        display: grid;
+        place-content: center;
+        font: inherit;
+        color: currentColor;
+        width: space(5);
+        height: space(5);
+        border: 2px solid gray(400);
+        border-radius: 999px;
+    }
+
+    input[type="radio"]::before {
+        content: "";
+        width: space(3);
+        height: space(3);
+        border-radius: 50%;
+        transform: scale(0);
+        //transition: 300ms transform ease-in-out;
+        box-shadow: inset 1em 1em var(--primary);
+    }
+      
+    input[type="radio"]:checked::before {
+        transform: scale(1);
+        animation-name: ctx-checkbox-check;
+        -webkit-animation-duration: 300ms;
+        animation-duration: 300ms;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+    }
+}
+
 .checkbox { 
     display: flex;
     align-items: center;
@@ -234,7 +279,7 @@ form {
     }
 
     input {
-        margin-right: 1rem;
+        margin-right: space(2);
         appearance: none;
         margin-top: 1px;
         height: 1.5rem;
