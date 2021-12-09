@@ -35,12 +35,15 @@
     &__image img {
         transform: scale(1);
         transition: all 300ms ease-in-out;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
 
     &--image-top {
         flex-direction: column;
-        .card__image, .card__image img {
-            object-fit: cover;
+        .card__image, .card__image {
+            
             aspect-ratio: 16/9;
             width: 100%;
         }
@@ -60,8 +63,8 @@
             right: space(4);
             top: space(4);
         }
-        .card__image, .card__image img {
-            object-fit: cover;
+        .card__image, .card__image {
+            
             align-self: stretch;
             aspect-ratio: 1/1;
             height: 100%;
@@ -75,8 +78,8 @@
 
     &--image-bottom {
         flex-direction: column-reverse;
-        .card__image, .card__image img {
-            object-fit: cover;
+        .card__image, .card__image {
+            
             aspect-ratio: 16/9;
             width: 100%;
         }
@@ -92,8 +95,8 @@
             left: space(4);
             top: space(4);
         }
-        .card__image, .card__image img {
-            object-fit: cover;
+        .card__image, .card__image {
+            
             align-self: stretch;
             aspect-ratio: 1/1;
             height: 100%;
