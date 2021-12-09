@@ -60,7 +60,7 @@
                         <div class="description__title">{{ __("Time", "em-pro")}}</div>
                         <div class="description__data">
                             {% if post._event_start_date == post._event_end_date %}
-                            {{ __("from", "em-pro") }} {{ post._event_start_time|date(site.option("dbem_time_format"), false) }} {{ __("to", "events-manager") }} {{ post._event_end_time|date(site.option("dbem_time_format"), false) }} {{ __("o'clock", "em-pro") }}
+                            {{ __("from", "em-pro") }} {{ start_time }} {{ __("to", "events-manager") }} {{ __("%s o'clock", "em-pro")|format(end_time) }}
                             {% else %}
                                 {{ __("Starts at", "em-pro") }} {{ __("%s o'clock", "em-pro")|format(start_time) }}<br>
                                 {{ __("Ends at", "em-pro") }} {{ __("%s o'clock", "em-pro")|format(end_time) }}
@@ -158,9 +158,8 @@
                   
             </div>
             {% if events %}
-            <div class="mt-20">
-                <h3 class="mb-6 text-bold core-block">{{ __("Similar events", "em-pro")}}</h3>
-                {% include "similar-events.twig" with {'events': events} %}
+            <div class="mt-20">                
+                {% include "templates/similar-events.twig" with {'events': events} %}
             </div>
             {% endif %}
             
