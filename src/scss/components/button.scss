@@ -10,6 +10,9 @@
     box-sizing: border-box;
     cursor: pointer;
     display: inline-flex;
+    
+	transition: all 150ms ease-in-out;
+    transform: scale(1);
     padding: .5rem 1rem;
     position: relative;
     &--small {
@@ -22,6 +25,11 @@
         font-size: 1.25rem;
         line-height: 1.75rem;
         padding: .75rem 1.5rem;
+    }
+
+    &:hover {
+        animation: button-zoom-in 150ms ease-in-out;
+		transform: scale(1.1);
     }
 
     @each $key, $color in $themecolors {
