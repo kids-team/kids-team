@@ -330,6 +330,16 @@ form {
     font-size: 1rem;
 }
 
+.input-row {
+	display: flex;
+	align-items: center;
+	gap: space(4);
+
+	.input-group {
+		flex: 1;
+	}
+}
+
 
 
 
