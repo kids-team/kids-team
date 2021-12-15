@@ -60,12 +60,7 @@
     };
 }
 
-.max-w-screen-xl, .container, 
-.max-w-screen-xl, .content {
-    max-width: map-get($screens, 'xxl');
-    padding: 0 1rem;
-    margin: 0 auto;
-}
+
 
 $utilities: () !default;
 
