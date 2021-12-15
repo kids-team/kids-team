@@ -1,0 +1,28 @@
+# This workflow runs composer and deploys the theme on a server
+
+name: Deploy on Server
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "greet"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: php-actions/composer@v6
+    - run: composer install
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@5.1
+      with:
+        switches: -avzr --delete --exclude .git --exclude .github --exclude assets/src --exclude package.json --exclude package-lock.json --exclude .gitignore --exclude .eslintrc.js --exclude .eslintignore --exclude readme.md --exclude .prettierrc
+        path: /
+        remote_path: ${{ secrets.SERVER_PATH }}
+        remote_host: ${{ secrets.SERVER }}
+        remote_user: ${{ secrets.SERVER_USER }}
+        remote_key: ${{ secrets.ALLINCL }}
