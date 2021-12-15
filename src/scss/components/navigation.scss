@@ -297,6 +297,7 @@
   }
 
   .top-bar .menu {
+	margin-right: 1rem;
     &__menu-item.open {
       transform: rotateX(180deg)
     }
