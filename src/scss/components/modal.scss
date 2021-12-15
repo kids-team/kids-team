@@ -49,6 +49,9 @@
         transition: all 300ms ease-in-out;
         border-top-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
+		a {
+			color: var(--primary);
+		}
     }
     &__header {
         display: flex;
