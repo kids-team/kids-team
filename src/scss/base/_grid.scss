@@ -2,26 +2,46 @@
     .grid--columns-#{$i} {
         grid-template-columns: repeat($i, minmax(0, 1fr));
     }
-    .grid__column--span-#{$i} {
-        grid-column: span $i/span $i;
-    }
+    
     @media (min-width:768px) {
         .md\:grid--columns-#{$i} {
             grid-template-columns: repeat($i, minmax(0, 1fr));
         }
-        .md\:grid__column--span-#{$i} {
-            grid-column: span $i/span $i;
-        }
+        
     }
     @media (min-width:1280px) {
         .xl\:grid--columns-#{$i} {
             grid-template-columns: repeat($i, minmax(0, 1fr));
         }
-        .xl\:grid__column--span-#{$i} {
-            grid-column: span $i/span $i;
-        } 
+        
     }
 }
+
+@for $i from 6 to 1 {
+    .grid__column--span-#{$i} {
+		grid-column: span $i/span $i;
+	}
+    
+    @media (min-width:768px) {
+        .md\:grid__column--span-#{$i} {
+			grid-column: span $i/span $i;
+		}
+        
+    }
+    @media (min-width:1280px) {
+        .xl\:grid__column--span-#{$i} {
+			grid-column: span $i/span $i;
+		} 
+        
+    }
+}
+
+
+
+
+
+
+
 
 @for $i from 1 through 12 {
     .grid--gap-#{$i} {
