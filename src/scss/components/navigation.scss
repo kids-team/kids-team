@@ -81,6 +81,8 @@
 
     &--open {
         visibility: visible;
+		overflow-y: auto;
+		padding-bottom: 2rem;
     }
 
     &__item {
@@ -112,12 +114,11 @@
         }
 
         i.mobile__arrow {
-          padding: 0.25rem;
-          background: rgba(0,0,0,0.3);
-          transform: rotate(-90deg);
-          transition: all 300ms;
-          border-radius: 999px;
-		  width: 2rem;
+			background: rgba(0,0,0,0.3);
+			transform: rotate(-90deg);
+			transition: all 300ms;
+			border-radius: 999px;
+			width: 2rem;
 			height: 2rem;
 			display: flex;
 			align-items: center;
@@ -183,6 +184,7 @@
     flex-direction: row;
     position: static;
     align-items: self-end;
+	margin-right: 2rem;
 
     .dropdown {
       padding-left: 0;
@@ -237,7 +239,8 @@
             transform: rotate(0deg)!important;
             transition: none;
             margin-right: -0.25rem;
-			
+			width: auto;
+			height: auto;
         }
       }
 
@@ -303,7 +306,7 @@
   }
 
   .top-bar .menu {
-	margin-right: 1rem;
+	margin-right: 3rem;
     &__menu-item.open {
       transform: rotateX(180deg)
     }
