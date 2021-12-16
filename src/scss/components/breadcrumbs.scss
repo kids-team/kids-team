@@ -6,7 +6,7 @@
     top: 0;
     gap: space(1);
     right: 0;
-    margin-right: $spacer;
+    margin-right: space(4);
     padding-top: $spacer;
 
     &__item {
@@ -28,4 +28,16 @@
             padding: 0.125rem space(4);
         }
     }
+}
+
+@include media-breakpoint(md) {
+	.breadcrumbs {
+		margin-right: space(8);
+	}
+}
+
+@include media-breakpoint(lg) {
+	.breadcrumbs {
+		margin-right: space(12);
+	}
 }
