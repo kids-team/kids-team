@@ -68,7 +68,6 @@
   // Menu
   .menu {
     width: 100%;
-    height: 100%;
     background: var(--gray-200);
     backdrop-filter: blur(5px) opacity(0.8);
     margin-top: $spacer * 5;
@@ -81,6 +80,7 @@
 
     &--open {
         visibility: visible;
+		height: calc(100vh - 5rem);
 		overflow-y: auto;
 		padding-bottom: 2rem;
     }
