@@ -1,4 +1,4 @@
-<h4 class="mb-6 text-bold core-block">{{ __("Similar events", "em-pro")}}</h4>
+{% if events %}<h4 class="mb-6 text-bold core-block">{{ __("Similar events", "em-pro")}}</h4>{% endif %}
 {% for item in events %}
     <a class="card bg-white card--image-left card--hover card--shadow {{ loop.first ? "card--first" }} {{ loop.last ? "card--last" }}" href="{{item.link}}">
         
