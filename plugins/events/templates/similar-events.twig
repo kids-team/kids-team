@@ -1,7 +1,7 @@
 {% if events %}<h4 class="mb-6 text-bold core-block">{{ __("Similar events", "em-pro")}}</h4>{% endif %}
 {% for item in events %}
     <a class="mt-8 card bg-white card--image-left card--hover card--shadow {{ loop.first ? "card--first" }} {{ loop.last ? "card--last" }}" href="{{item.link}}">
-        <div class="card_image">
+        <div class="card__image">
 		<img src="{{ item.thumbnail.src('thumbnail') }}">
 		</div>
         
