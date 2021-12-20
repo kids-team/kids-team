@@ -31,3 +31,20 @@
 	-webkit-font-feature-settings: 'liga';
 	-webkit-font-smoothing: antialiased;
 }
+
+.material-icons--bubble {
+	border-radius: 999px;
+    background: #eee;
+    display: flex;
+    /* place-content: center; */
+    place-items: center;
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.material-icons--micro-bubble {
+	width: 1rem;
+    height: 1rem;
+}

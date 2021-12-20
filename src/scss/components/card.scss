@@ -170,6 +170,11 @@
         margin: 0;
     }
 
+	&card__title--small {
+		font-size: space(4);
+		font-weight: 600;
+	}
+
     &__subtitle {
         font-size: space(3);
         padding-top: 0;
@@ -192,6 +197,7 @@
         margin-right: -1rem;
         display: flex;
         padding: 0.5rem 1rem 0;
+		align-items: center;
     }
 
     &__actions {
