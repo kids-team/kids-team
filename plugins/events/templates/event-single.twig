@@ -143,7 +143,7 @@
                         <img src="{{speaker.thumbnail.src}}">
                     </div>
                     <div class="description__text">
-                        <div class="description__title">{% if speaker.gender == "male" %}{{ __("Speaker", "events-manager")}}{% else %}{{ __("Female Speaker", "events-manager")}}{% endif %}</div>
+                        <div class="description__title">{% if speaker.role %}{{ speaker.role }}{% elseif speaker.gender == "male" %}{{ __("Speaker", "events-manager")}}{% else %}{{ __("Female Speaker", "events-manager") }}{% endif %}</div>
                         <div class="description__data">{{speaker.post_title}}</div>
                     </div>
 
