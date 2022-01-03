@@ -1,5 +1,18 @@
 const mix = require('laravel-mix');
 const concat = require('concat-files');
+const fs = require('fs');
+
+const createVersion = () => {
+	const uid = Date.now();
+	const content = '<?php return [ "version" => "' + uid + '"]; ?>';
+	fs.writeFile('./version.php', content, err => {
+		if (err) {
+		  console.error(err)
+		  return
+		}
+		//file written successfully
+	  })
+}
 
 mix.sass('src/scss/style.scss', '.').then(function () {
     concat([
@@ -8,7 +21,8 @@ mix.sass('src/scss/style.scss', '.').then(function () {
     ], 'style.css', function (err) {
         if (err) { throw err; }
     });
-});;
+	createVersion();
+});
 
 mix.sass('src/scss/admin.scss', '.')
 
