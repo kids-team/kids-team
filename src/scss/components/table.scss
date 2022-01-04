@@ -47,3 +47,20 @@ table {
 		border-bottom: 4px dotted var(--success);
 	}
 }
+
+.wp-block-table {
+    margin: 0;
+	overflow-x: visible;
+    /* overflow-x: auto; */
+}
+
+.wp-block-table table {
+    border-collapse: separate;
+    width: 100%;
+}
+
+.wp-block-table td, .wp-block-table th {
+    padding: 4px 0px 8px 0px;
+    border: none;
+    word-break: normal;
+}
