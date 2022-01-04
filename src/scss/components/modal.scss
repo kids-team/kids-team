@@ -231,7 +231,7 @@
 
         
 
-        .modal__error {
+        &.modal__error {
             .modal__header {
                 background: var(--error-light);
                 h2 {
@@ -240,24 +240,20 @@
                 }
             }
         }
+
+		&.modal--success {
+			.modal__header {
+				background: var(--success-light);
+				h2 {
+					background: var(--success);
+					color: var(--success-contrast);
+				}
+			}
+		}
     }
 }
 
 
-.modal--success {
-    .modal__header {
-        background: var(--success-light);
-        h2 {
-            background: var(--success);
-            color: var(--success-contrast);
-        }
-    }
-
-    .modal__content {
-        background: var(--success);
-        color: var(--success-contrast);
-    }
-}
 
 /*
 *   Animations - require additional JS!
