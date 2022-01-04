@@ -37,6 +37,10 @@
         margin-right: 1rem;
     }
 
+	&__image--edgy {
+		border-radius: 0;
+	}
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -62,4 +66,5 @@
         display: flex;
 		gap: 1rem;
     }
+
 }
