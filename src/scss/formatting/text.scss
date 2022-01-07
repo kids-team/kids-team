@@ -11,8 +11,8 @@
     line-height: $spacer !important;
 }
 
-p.core-block {
-    
+p.core-block:empty {
+    display: none;
 }
 
 ol.core-block {
