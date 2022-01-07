@@ -158,7 +158,7 @@
             position: relative;
             background: var(--primary-light);
             margin-top: 5rem;
-            min-height: 250px;
+            min-height: 75px;
             height: auto;
             padding: 0;
             
@@ -190,8 +190,7 @@
             display: inline-block;
             font-weight: bold;
             font-size: 2rem;
-            padding: 1rem 2rem;
-            padding: 2rem 3rem;
+            padding: 1rem 3rem;
             padding-left: calc(1000px + space(4));
             margin-left: -1000px;
         }
