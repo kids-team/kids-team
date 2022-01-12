@@ -7,6 +7,9 @@
     margin-top: 1.75rem !important;
     margin-bottom: 1.75rem !important;
     border-color: var(--primary) !important;
+	border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
 
     cite {
         color: gray(700);
