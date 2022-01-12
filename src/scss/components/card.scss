@@ -21,7 +21,7 @@
 
     &--hover {
         transition: all 300ms;
-        &:hover .card__image img {
+        &:hover .card__image img, &:focus .card__image img {
             transform: scale(1.1);
         }
         &.card--shadow:hover {

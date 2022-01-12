@@ -28,6 +28,7 @@
       z-index: 100;
       width: 4.5rem;
       height: 4.5rem;
+	  transition: transform 200ms ease-in-out;
     }
     
     span {
@@ -165,6 +166,10 @@
       &__logo {
           margin-left: $spacer * 2;
           width: auto;
+
+		  &:hover figure, &:focus figure {
+			transform: scale(1.2);
+		  }
       }
 
       .hamburger {
@@ -209,7 +214,7 @@
         a {
           padding: space(1) space(4);
           display: block;
-          &:hover {
+          &:hover, &:focus {
             background: var(--primary);
             color: var(--primary-contrast) !important;
           }
@@ -252,12 +257,12 @@
       }
 
 
-      &:hover {
+      &:hover, &:focus-within {
         > a {
           background: var(--gray-300);
           color: $black;  
           border-bottom-right-radius: 0;
-          &:hover {
+          &:hover, &:focus {
             color: var(--primary-contrast); 
           }  
         }
@@ -276,7 +281,7 @@
         }
       }
 
-      > a:hover {
+      > a:hover, > a:focus {
         background: var(--primary);
         color: var(--primary-contrast);    
       }
@@ -373,3 +378,26 @@
         .hamburger--3dx.is-active .hamburger-inner::after {
           transform: translate3d(0, -8px, 0) rotate(-45deg); }
       
+
+.jump-to-content {
+	position: absolute;
+    top: 0;
+    left: 50%;
+    background: var(--primary);
+    color: var(--primary-contrast);
+    padding: 0.5rem 1rem;
+    display: block;
+    z-index: 9999;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: translate 200ms ease-in-out;
+    transform: translate(0px, -42px);
+	opacity: 0;
+	
+	&:focus {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
