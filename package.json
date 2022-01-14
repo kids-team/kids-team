@@ -2,7 +2,7 @@
   "scripts": {
     "build": "npx mix --production",
     "dev": "npx mix",
-    "watch": "npx mix watch"
+    "start": "npx mix watch"
   },
   "devDependencies": {
     "browser-sync": "^2.27.7",
