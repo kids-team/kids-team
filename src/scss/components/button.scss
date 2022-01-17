@@ -10,7 +10,7 @@
     box-sizing: border-box;
     cursor: pointer;
     display: inline-flex;
-    
+    line-height: 1.5;
 	transition: all 150ms ease-in-out;
     transform: scale(1);
     padding: .5rem 1rem;
@@ -161,7 +161,7 @@
 .button.outline.light:hover { color: #000000dd !important; }
 .button.outline.dark:hover { color: #ffffffdd !important; }
 
-.button:disabled {
+.button:disabled, .button--disabled {
     background: gray(300);
     color: gray(500)
 }
