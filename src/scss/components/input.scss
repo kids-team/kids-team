@@ -19,6 +19,7 @@
 
     &__group {
         padding: 1rem 0;
+		grid-column: 1 / span 2;
     }
 
     &__error {
@@ -28,12 +29,23 @@
         padding-left: 18px;
         display: block;
     }
+
+	.button-group {
+		position: relative;
+		grid-column: 1 / span 2;
+	}
 }
 
 .input, .textarea, .select, .combobox, .help, .checkbox {
 	
     position: relative;
 	grid-column: 1 / span 2;
+
+	p {
+		padding: 0 1.25rem;
+		font-size: .75rem;
+		margin: 0.25rem;
+	}
 
 	&--half {
 		grid-column:auto;
@@ -61,7 +73,7 @@
     input {
         outline: none !important;
         width: 100%;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 1.25rem;
         font-size: space(4);
         font-family: "Exo 2", sans-serif;
         @include border('sm');
@@ -84,7 +96,7 @@
         border: 2px solid gray(400);
         @include border('sm');
         background: var(--white);
-        padding: 1rem;
+        padding: 1.25rem;
         padding-top: 6px;
         outline: none !important;
 		resize: vertical;
@@ -113,7 +125,7 @@
 	appearance: none;
 	outline: none !important;
 	width: 100%;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 1.25rem;
 	font-size: space(4);
 	font-family: "Exo 2", sans-serif;
 	@include border('sm');
@@ -158,6 +170,11 @@
 				width: 32px;
 				height: 32px;
 				border-radius: 99px;
+			}
+
+			.combobox__dummy {
+				width: 32px;
+				height: 32px;
 			}
 
 			span {
