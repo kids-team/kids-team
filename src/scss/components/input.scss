@@ -12,6 +12,8 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 2rem 1rem;
+	padding-top: 1rem;
+    padding-bottom: 1rem;
 
     &:invalid {
 
@@ -30,9 +32,17 @@
         display: block;
     }
 
-	.button-group {
+	.button-group, .input-group {
 		position: relative;
 		grid-column: 1 / span 2;
+	}
+}
+
+.input-group {
+	display: flex;
+	gap: 1rem;
+	&__main {
+		flex: 1;
 	}
 }
 
