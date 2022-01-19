@@ -11,6 +11,7 @@
     cursor: pointer;
     display: inline-flex;
     line-height: 1.5;
+	gap: 0.5rem;
 	transition: all 150ms ease-in-out;
     transform: scale(1);
     padding: .5rem 1rem;
@@ -26,6 +27,10 @@
         line-height: 1.75rem;
         padding: .75rem 1.5rem;
     }
+
+	&--reverse {
+		flex-direction: row-reverse;
+	}
 
     &:hover, &:focus {
         animation: button-zoom-in 150ms ease-in-out;
@@ -57,10 +62,6 @@
             
         }
     }
-
-    i { 
-        margin-right: 1rem;
-     }
 
     &--skew {
         -webkit-transform: perspective(1px) translateZ(0);
