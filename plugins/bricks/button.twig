@@ -1,0 +1,15 @@
+{% set bg = get_color_by_slug(buttonColor) %}
+
+{% set icon_list = ["add_shopping_cart", "arrow_drop_down", "CHF", "cloud_dowload", "date_range", "delete", "email", "euro", "event", "explore", "facebook", "family_restroom", "female", "groups", "help_outline", "instagram", "keyboard_arrow_down", "label", "lightbulb", "male", "nature_people", "navigation", "ok", "place", "report_problem", "savings", "schedule", "search", "shopping_cart", "textsms", "today", "volunteer_activism", "youtube"] %}
+
+<div>
+    <a  
+        {% if hasModal %}data-modal="{{id}}"{% endif %}
+        class="{% if hasModal %}has-modal{% endif %} button {{ isLink ? "button--link" }} {{ not title ? "button--icon" }} {{ outline ? "button--outline" }} {{ iconRight ? "button--reverse" }} {{ size == "small" ? "button--small" }} {{ size == "large" ? "button-large" }}"
+        style="color: {{ isLink or outline ? bg.color : (bg.light ? "#000000" : "#ffffff" ) }}; background: {{ isLink or outline ? "transparent" : bg.color }}; box-shadow: {{ outline ? "inset 0px 0px 0px 2px " ~ bg.color : "none" }};"
+        href="{{ hasModal ? "#/" : url }}"
+    >
+    {% if icon and icon in icon_list %}<i class="material-icons">{{icon}}</i>{% endif %}{{title}}
+    </a>
+</div>
+ 
