@@ -61,24 +61,26 @@
 		grid-column:auto;
 	}
 
-	label {
-        margin-top: -12px;
-        display: inline-block;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        margin-left: 1rem;
-        height: max-content;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        @include border('sm');
-        font-size: 0.75rem;
-        background: gray(400);
-        transition: all 300ms ease-in-out;
-        whitespace: no-wrap;
-        position: absolute;
-    }
 }
 
+.input, .textarea, .select, .combobox, .help {
+	label {
+		margin-top: -12px;
+		display: inline-block;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		margin-left: 1rem;
+		height: max-content;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		@include border('sm');
+		font-size: 0.75rem;
+		background: gray(400);
+		transition: all 300ms ease-in-out;
+		whitespace: no-wrap;
+		position: absolute;
+	}
+}
 .input {
     input {
         outline: none !important;
