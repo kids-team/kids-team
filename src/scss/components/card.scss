@@ -141,6 +141,21 @@
         }
     }
 
+	&__image-overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: rgba(255,255,255,0.7);
+		padding: 1rem 1.5rem;
+		border-top-right-radius: 1.5rem;
+		backdrop-filter: blur(5px);
+		max-width: 80%;
+
+		.card__subtitle {
+			color: var(--gray-800);
+		}
+	}
+
 
     /****************************************
     *   Elements
@@ -161,13 +176,14 @@
         }
     }
 
-    &__title, h2 {
+	// .card-header is legacy
+    &__title, h2, .card-header {
         font-weight: 500;
         font-size: space(6);
         padding-top: 0;
         padding-bottom: 0;
-        display: inline-block; 
         margin: 0;
+		color: var(--black);
     }
 
 	&card__title--small {
@@ -184,9 +200,11 @@
         margin: 0;
     }
 
-    &__text, p {
+	// card-text is legacy
+    &__text, p, .card-text {
         padding: space(2) 0 space(2);
         margin: 0;
+		color: var(--black);
     }
 
     &__footer {
@@ -249,6 +267,25 @@
         padding-left: space(2);
         padding-right: space(2);
     }
+
+	&__label--image {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: #fff;
+		border-radius: 999px;
+		padding-right: 1rem;
+		right: 1rem;
+		top: 1rem;
+		color: var(--black);
+		margin-top: 0 !important;
+		padding-left: 0 !important;
+		img {
+			width: 2.5rem;
+			border-radius: 999px;
+		}
+	}
 
 	&--center {
 		text-align: center;
