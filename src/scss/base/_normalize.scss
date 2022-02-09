@@ -23,6 +23,7 @@ body {
     font-size: $spacer;
     line-height: $line-height-factor;
     -webkit-appearance: none;
+	counter-reset: section;
 }
 
 *:focus {
