@@ -17,7 +17,24 @@ p.core-block:empty {
 
 ol.core-block {
     list-style-type: decimal;
-    padding: map-get($spacers,2) 0 map-get($spacers,2), map-get($spacers,8);
+    padding: map-get($spacers,2) 0 map-get($spacers,2) map-get($spacers,8);
+
+	li {
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+	}
+
+	li::before {
+		counter-increment: section;
+  		content: counter(section);
+		background: rgba(0,0,0,0.2);
+		border-radius: 999px;
+		width: 1.5rem;
+		height: 1.5rem;
+		text-align: center;
+		margin-right: 0.5rem;
+		display: inline-block;
+	}
 }
 
 
@@ -51,12 +68,20 @@ ul.core-block li:before {
     display: inline-block;
     font-family: 'kids-team';
     margin-left: -2rem;
-    position: absolute;
+    margin-right: 0.5rem;
     font-size: 24px;
     color: rgba(0,0,0,0.4);
     line-height: 1;
 	-webkit-font-feature-settings: 'liga';
 	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	white-space: nowrap;
+	font-style: normal;
+	word-wrap: normal;
+	direction: ltr;
 }
 
 .dark ul.core-block li:before {
