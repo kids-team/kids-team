@@ -207,6 +207,7 @@
 		color: var(--black);
     }
 
+	// Legacy
     &__footer {
         margin-top: auto;
         padding-top: space(2);
@@ -221,10 +222,14 @@
 	hr {
 		margin-top: auto;
         padding-top: space(2);
-        border-top: 4px dotted gray(200);
 		margin-left: -1rem;
         margin-right: -1rem;
 		padding: 0.5rem 1rem 0;
+		width: auto !important;
+	}
+
+	.button-group {
+		padding: 0 !important;
 	}
 
     &__actions {
