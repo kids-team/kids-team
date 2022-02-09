@@ -55,6 +55,8 @@ ul.core-block li:before {
     font-size: 24px;
     color: rgba(0,0,0,0.4);
     line-height: 1;
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
 }
 
 .dark ul.core-block li:before {
