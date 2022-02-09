@@ -218,6 +218,15 @@
 		align-items: center;
     }
 
+	hr {
+		margin-top: auto;
+        padding-top: space(2);
+        border-top: 4px dotted gray(200);
+		margin-left: -1rem;
+        margin-right: -1rem;
+		padding: 0.5rem 1rem 0;
+	}
+
     &__actions {
         justify-self: flex-start;
         margin-left: -1rem;
