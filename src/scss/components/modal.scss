@@ -71,6 +71,16 @@
 
 	&__footer {
 		padding: 1rem 2rem;
+
+		&--seperator {
+			border-top: 4px dotted rgba(0,0,0,0.3);
+		}
+
+		&--white {
+			background: #ffffff;
+			border-bottom-right-radius: 2rem;
+
+		}
 	}
 
     &__title { 
