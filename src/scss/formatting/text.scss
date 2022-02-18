@@ -17,6 +17,7 @@ p.core-block:empty {
 
 ol.core-block {
     list-style-type: decimal;
+	counter-reset: list 1;
     padding: map-get($spacers,2) 0 map-get($spacers,2) map-get($spacers,8);
 
 	li {
@@ -25,8 +26,8 @@ ol.core-block {
 	}
 
 	li::before {
-		counter-increment: section;
-  		content: counter(section);
+		counter-increment: list;
+  		content: counter(list);
 		background: rgba(0,0,0,0.2);
 		border-radius: 999px;
 		width: 1.5rem;
