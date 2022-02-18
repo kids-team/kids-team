@@ -114,24 +114,14 @@
                 {% endif %}
                 <!-- End SPACE WARNING -->
                 <!-- PRICE -->
-                {% if bookings and price == 0 %}
+                {% if bookings %}
                 <div class="description__item">
                     <div class="description__image">
-                        <i class="description__icon material-icons">savings</i>
+                        <i class="description__icon material-icons">{{ price ? currency : "savings"}}</i>
                     </div>
                     <div class="description__text">
                         <div class="description__title">{{ __("Price", "em-pro")}}</div>
-                        <div class="description__data"> {{ __("Free", "em-pro")}} </div>
-                    </div>
-                </div>
-                {% elseif bookings and price != 0 %}
-                <div class="description__item">
-                    <div class="description__image">
-                        <i class="description__icon material-icons">{{currency}}</i>
-                    </div>
-                    <div class="description__text">
-                        <div class="description__title">{{ __("Price", "em-pro")}}</div>
-                        <div class="description__data"> {{price}} {{currency}} </div>
+                        <div class="description__data"> {{ price ? currency_format|replace({'#': price, '@': currency}) : __("Free", "em-pro")}} </div>
                     </div>
                 </div>
                 {% endif %}
