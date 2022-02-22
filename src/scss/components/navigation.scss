@@ -263,7 +263,7 @@
           color: $black;  
           border-bottom-right-radius: 0;
           &:hover, &:focus {
-            color: var(--primary-page-contrast); 
+            color: var(--primary-page-contrast) !important; 
           }  
         }
 
@@ -302,7 +302,7 @@
 
 @include media-breakpoint(xxl) {
   .top-bar {
-      span {
+      .top-bar__claim {
           display: inline-block;
           white-space: nowrap;
           font-weight: 600;
@@ -395,8 +395,8 @@
 	position: absolute;
     top: 0;
     left: 50%;
-    background: var(--primary);
-    color: var(--primary-contrast);
+    background: var(--primary-page);
+    color: var(--primary-page-contrast);
     padding: 0.5rem 1rem;
     display: block;
     z-index: 9999;
