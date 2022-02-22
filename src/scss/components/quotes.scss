@@ -6,7 +6,7 @@
     border-right-width: 0;
     margin-top: 1.75rem !important;
     margin-bottom: 1.75rem !important;
-    border-color: var(--primary) !important;
+    border-color: var(--primary-page) !important;
 	border-top: none !important;
     border-bottom: none !important;
     border-right: none !important;
@@ -18,15 +18,15 @@
 }
 
 .dark .wp-block-quote {
-    border-color: var(--primary-light) !important;
+    border-color: var(--primary-page-light) !important;
     cite {
         color: gray(300);
     }
 }
 
 .section--primary .wp-block-quote {
-    color: var(--primary-contrast);
-    border-color: var(--primary-contrast) !important;
+    color: var(--primary-page-contrast);
+    border-color: var(--primary-page-contrast) !important;
 }
 
 .wp-block-pullquote {

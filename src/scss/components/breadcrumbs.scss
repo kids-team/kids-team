@@ -11,8 +11,8 @@
 
     &__item {
         @extend .text-xs;
-        background-color: map-deep-get($themecolors, 'primary', 'color');
-        color: map-deep-get($themecolors, 'primary', 'contrast');
+        background-color: var(--primary-page);
+        color: var(--primary-page-contrast);
         padding: 0.125rem space(2);
         transition: all 300ms ease-in-out;
         &:first-child {

@@ -38,7 +38,7 @@ table {
 
 .table--primary {
 	tr:not(:last-child)::after {
-		border-bottom: 4px dotted var(--primary);
+		border-bottom: 4px dotted var(--primary-page);
 	}
 }
 

@@ -215,8 +215,8 @@
           padding: space(1) space(4);
           display: block;
           &:hover, &:focus {
-            background: var(--primary);
-            color: var(--primary-contrast) !important;
+            background: var(--primary-page);
+            color: var(--primary-page-contrast) !important;
           }
         }
       }
@@ -263,7 +263,7 @@
           color: $black;  
           border-bottom-right-radius: 0;
           &:hover, &:focus {
-            color: var(--primary-contrast); 
+            color: var(--primary-page-contrast); 
           }  
         }
 
@@ -282,8 +282,8 @@
       }
 
       > a:hover, > a:focus {
-        background: var(--primary);
-        color: var(--primary-contrast);    
+        background: var(--primary-page);
+        color: var(--primary-page-contrast);    
       }
     }
 

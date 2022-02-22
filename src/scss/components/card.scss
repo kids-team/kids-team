@@ -136,8 +136,8 @@
 
     &--primary {
         .card__badge, .card__label {
-            background-color: var(--primary);
-            color: var(--primary-contrast);
+            background-color: var(--primary-page);
+            color: var(--primary-page-contrast);
         }
     }
 

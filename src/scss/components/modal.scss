@@ -27,7 +27,7 @@
         width: 0.125rem;
         top: 0;
         content: "";
-        background: var(--primary-contrast);
+        background: var(--primary-page-contrast);
         height: 2rem;
     }
 
@@ -50,14 +50,14 @@
         border-top-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
 		a {
-			color: var(--primary);
+			color: var(--primary-page);
 		}
     }
     &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: var(--primary);
+        background: var(--primary-page);
         height: 4rem;
         padding: 1rem 2rem;
 		border-top-left-radius: 2rem;
@@ -88,7 +88,7 @@
         h2 {
             font-size: space(6);
             font-weight: 500;
-            color: var(--primary-contrast);
+            color: var(--primary-page-contrast);
         }
     } 
     
@@ -171,7 +171,7 @@
         }
         .modal__header {
             position: relative;
-            background: var(--primary-light);
+            background: var(--primary-page-light);
             margin-top: 5rem;
             min-height: 75px;
             height: auto;
@@ -199,8 +199,8 @@
         }
         .modal__title h2 { 
             margin: 0;
-            background: var(--primary);
-            color: var(--primary-contrast);
+            background: var(--primary-page);
+            color: var(--primary-page-contrast);
             border-top-right-radius: 2rem;
             display: inline-block;
             font-weight: bold;
