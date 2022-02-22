@@ -24,8 +24,4 @@ mix.sass('src/scss/style.scss', '.').then(function () {
 	createVersion();
 });
 
-mix.sass('src/scss/admin.scss', '.')
-
-mix.browserSync({
-    proxy: 'kids-team.local',
-});
+mix.sass('src/scss/admin.scss', '.');
