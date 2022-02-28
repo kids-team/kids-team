@@ -7,7 +7,7 @@
 @import 'base/grid';
 
 @import 'base/breakpoints';
-
+@import 'formatting/text';
 @import 'components/alert';
 @import 'components/animations';
 @import 'components/badge';
@@ -18,6 +18,7 @@
 @import 'components/code';
 @import 'components/container';
 @import 'components/footer';
+@import 'components/filter';
 @import 'components/header';
 @import 'components/description';
 @import 'components/image';
@@ -37,7 +38,7 @@
 @import 'components/icon';
 @import 'components/wizzard';
 
-@import 'formatting/text';
+
 @import 'formatting/fonts';
 @import 'formatting/wordpress';
 
