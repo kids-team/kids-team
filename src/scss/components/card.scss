@@ -21,7 +21,7 @@
 
     &--hover {
         transition: all 300ms;
-        &:hover .card__image img, &:focus .card__image img {
+        &:hover .card__image > img, &:focus .card__image > img {
             transform: scale(1.1);
         }
         &.card--shadow:hover {
@@ -52,8 +52,9 @@
             top: space(4);
         }
         .card__label {
-            margin-top: space(-7);
-            margin-left: space(-2);
+			top: 0;
+			margin-left: 1rem;
+			transform: translate(0,-50%);
         }
     }
 
@@ -95,17 +96,16 @@
             left: space(4);
             top: space(4);
         }
-        .card__image, .card__image {
-            
-            align-self: stretch;
-            aspect-ratio: 1/1;
-            height: 100%;
-            width: 33%;
+        .card__image {
+            flex: 1 1 0;
         }
+		.card__content {
+			flex: 2 1 0;
+		}
         .card__label {
-            right: 0;
-            margin-right: space(4);
-            margin-top: -0.75rem;
+            right: 1rem;
+            top: 0;
+            transform: translate(0, -50%);
         }
     }
 
@@ -166,8 +166,8 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        flex-grow: 1;
-        padding: space(4) space(6); 
+        padding: space(4) 0; 
+		flex-grow: 1;
 
         label.card__label {
             margin-top: space(-7); 
@@ -180,8 +180,7 @@
     &__title, h2, .card-header {
         font-weight: 500;
         font-size: space(6);
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 0 space(6);
         margin: 0;
 		color: var(--black);
     }
@@ -193,16 +192,17 @@
 
     &__subtitle {
         font-size: space(3);
-        padding-top: 0;
+        padding: 0 space(6);
         color: gray(500);
-        padding-bottom: 0;
         display: inline-block; 
         margin: 0;
+
+		&.text--primary { color: var(--primary-page)}
     }
 
 	// card-text is legacy
     &__text, p, .card-text {
-        padding: space(2) 0 space(2);
+        padding: space(2) space(6) space(2);
         margin: 0;
 		color: var(--black);
     }
@@ -211,19 +211,17 @@
     &__footer {
         margin-top: auto;
         padding-top: space(2);
-        border-top: 4px dotted gray(200);
-        margin-left: -1rem;
-        margin-right: -1rem;
         display: flex;
-        padding: 0.5rem 1rem 0;
+        padding: 0.5rem 1.5rem 0;
 		align-items: center;
+		&--dotted {
+			border-top: 4px dotted gray(200);
+		}
     }
 
 	hr {
 		margin-top: auto;
         padding-top: space(2);
-		margin-left: -1rem;
-        margin-right: -1rem;
 		padding: 0.5rem 1rem 0;
 		width: auto !important;
 	}
@@ -282,7 +280,7 @@
         padding-right: space(2);
     }
 
-	&__label--image {
+	&__image-label {
 		position: absolute;
 		display: flex;
 		align-items: center;
@@ -300,6 +298,35 @@
 			border-radius: 999px;
 		}
 	}
+
+	
+	&__pills {
+		display: flex;
+		gap: 1rem;
+		
+	}
+
+	&__pill {
+		font-weight: bold;
+		position: relative;
+		&:not(:first-child)::before {
+			position: absolute;
+			height: 100%;
+			left: calc(-0.5rem - 4px);
+			content: "";
+			width: 8px;
+			height: 8px;
+			border-radius: 99px;
+			background-color: var(--gray-500);
+			bottom: 50%;
+			top: 50%;
+			/* left: 50%; */
+			transform: translate(0, -50%);
+		}
+	}
+
+	
+
 
 	&--center {
 		text-align: center;
