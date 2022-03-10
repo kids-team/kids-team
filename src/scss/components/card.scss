@@ -61,7 +61,7 @@
 	&--white, &.bg-white {
 		background-color: var(--white);
 		color: var(--black);
-		a { color: var(--black) }
+		.card__text, .card__title { color: var(--black) }
 	}
 
     &--image-right {
