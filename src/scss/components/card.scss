@@ -162,8 +162,12 @@
 		}
 	}
 
-	.form, .button-group {
+	.form {
 		padding: 0 1.5rem;
+	}
+
+	.button-group {
+		padding: 0 1.5rem !important;
 	}
 
 
@@ -232,10 +236,6 @@
         padding-top: space(2);
 		padding: 0.5rem 1rem 0;
 		width: auto !important;
-	}
-
-	.button-group {
-		padding: 0 !important;
 	}
 
     &__actions {
