@@ -6,6 +6,9 @@
 @import 'base/colors';
 @import 'base/grid';
 
+@import 'formatting/fonts';
+@import 'formatting/wordpress';
+
 @import 'base/breakpoints';
 @import 'formatting/text';
 @import 'components/alert';
@@ -39,7 +42,6 @@
 @import 'components/wizzard';
 
 
-@import 'formatting/fonts';
-@import 'formatting/wordpress';
+
 
 @import 'base/utils';
