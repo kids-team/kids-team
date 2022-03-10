@@ -58,6 +58,12 @@
         }
     }
 
+	&--white, &.bg-white {
+		background-color: var(--white);
+		color: var(--black);
+		a { color: var(--black) }
+	}
+
     &--image-right {
         flex-direction: row-reverse;
         .card__badge {
@@ -154,6 +160,10 @@
 		.card__subtitle {
 			color: var(--gray-800);
 		}
+	}
+
+	.form, .button-group {
+		padding: 0 1.5rem;
 	}
 
 
