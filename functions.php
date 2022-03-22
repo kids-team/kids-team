@@ -20,3 +20,28 @@ add_action( 'wp_head', function(){
 	echo '<link rel="icon" type="image/png" sizes="32x32" href="' . get_stylesheet_directory_uri() . '/favicons/favicon_' . get_locale() . '_32.png" />';
 	echo '<link rel="icon" type="image/png" sizes="16x16" href="' . get_stylesheet_directory_uri() . '/favicons/favicon_' . get_locale() . '_16.png" />';
 });
+
+function add_event_template() {
+	$page_type_object = get_post_type_object( 'event' );
+	$page_type_object->template = [
+		[ 'ctx-blocks/section', [], [
+			[ 'ctx-blocks/grid-row', [], [
+				[ 'ctx-blocks/grid-column', ['widthLarge' => 2], [['core/paragraph', ['placeholder' => 'Event-Beschreibung']], ] ], 
+				[ 'ctx-blocks/grid-column', ['widthLarge' => 1], [
+					['events-manager/details', ['title' => 'Details']], ] ] 
+			] ],
+			[ 'core/separator' ],
+			[ 'ctx-blocks/button-group', [], [ ['ctx-blocks/button', ['title' => 'Anmeldung']] ] ]
+		] ],
+	];
+}
+add_action( 'init', 'add_event_template', 1000 );
+
+function slug_page_template() {
+	$page_type_object = get_post_type_object( 'page' );
+	$page_type_object->template = [
+		[ 'ctx-blocks/base' ],
+	];
+	//$page_type_object->template_lock = ['removal', 'insert'];
+}
+add_action( 'init', 'slug_page_template', 1000 );
