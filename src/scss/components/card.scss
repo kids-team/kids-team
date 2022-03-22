@@ -237,9 +237,10 @@
 
 	hr {
 		margin-top: auto;
-        padding-top: space(2);
-		padding: 0.5rem 1rem 0;
-		width: auto !important;
+		padding: 0.5rem 0rem 0;
+		width: auto!important;
+		margin-left: -1.25rem;
+		margin-right: -1.25rem;
 	}
 
     &__actions {
