@@ -53,7 +53,7 @@
         }
         .card__label {
 			top: 0;
-			margin-left: 1rem;
+			margin-left: -0.5rem;
 			transform: translate(0,-50%);
         }
     }
@@ -61,8 +61,9 @@
 	&--white, &.bg-white {
 		background-color: var(--white);
 		color: var(--black);
-		.card__text, .card__title { color: var(--black) }
 	}
+
+	
 
     &--image-right {
         flex-direction: row-reverse;
@@ -180,7 +181,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: space(4) 0; 
+        padding: space(4) space(6); 
 		flex-grow: 1;
 
         label.card__label {
@@ -194,7 +195,6 @@
     &__title, h2, .card-header {
         font-weight: 500;
         font-size: space(6);
-        padding: 0 space(6);
         margin: 0;
     }
 
@@ -205,7 +205,6 @@
 
     &__subtitle {
         font-size: space(3);
-        padding: 0 space(6);
         color: gray(500);
         display: inline-block; 
         margin: 0;
@@ -214,17 +213,22 @@
     }
 
 	// card-text is legacy
-    &__text, p, .card-text {
-        padding: space(2) space(6) space(2);
+    h2, h3, h4, h5, &__text, p, &__title {
         margin: 0;
+		color: var(--black);
     }
+
+	&--dark {
+		h2, h3, h4, h5, .card__text, p, .card__title {
+			color: var(--white);
+		}
+	}
 
 	// Legacy
     &__footer {
         margin-top: auto;
         padding-top: space(2);
         display: flex;
-        padding: 0.5rem 1.5rem 0;
 		align-items: center;
 		&--dotted {
 			border-top: 4px dotted gray(200);
