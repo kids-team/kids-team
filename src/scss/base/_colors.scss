@@ -36,6 +36,10 @@
     color: $white;
 }
 
+.bg-default {
+	background: var(--gray-100);
+}
+
 
 @each $key, $color in $graytones {
     .bg-gray-#{$key} {
