@@ -16,16 +16,6 @@
     position: absolute; 
 }
 
-.badge.primary { 
-    background: var(--primary);
-    color: var(--primary-contrast);
-}
-
-.badge.primary-inverse { 
-    background: var(--primary-contrast);
-    color: var(--primary);  
- }
-
 .ping {
 	 background: #fff;
 	 border-radius: 50%;
