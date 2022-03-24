@@ -1,7 +1,7 @@
 @each $key, $value in $headings {
     .#{$key}, #{$key} {
         font-size: $text-base * $value;
-        line-height: $line-height-factor * $text-base * $value;
+        //line-height: $line-height-factor * $text-base * $value;
     }
 }
 
@@ -70,7 +70,7 @@ ul.core-block li {
 ul.core-block li:before {
     content: "label";
     display: inline-block;
-    font-family: 'kids-team';
+    font-family: 'material-icons';
     margin-left: -2rem;
     margin-right: 0.5rem;
     font-size: 24px;
