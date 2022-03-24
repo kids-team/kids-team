@@ -10,7 +10,7 @@ const createVersion = () => {
 		  console.error(err)
 		  return
 		}
-		//file written successfully
+		console.log(`Version ${uid} generated`);
 	  })
 }
 
