@@ -32,6 +32,16 @@
 		flex-direction: row-reverse;
 	}
 
+	&--primary {
+		background-color: var(--primary-page);
+		color: var(--primary-page-contrast);
+	}
+
+	&--secondary {
+		background-color: var(--secondary-page);
+		color: var(--secondary-page-contrast);
+	}
+
     &:hover, &:focus {
         animation: button-zoom-in 150ms ease-in-out;
 		transform: scale(1.1);
