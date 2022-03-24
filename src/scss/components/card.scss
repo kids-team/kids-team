@@ -208,20 +208,29 @@
         color: gray(500);
         display: inline-block; 
         margin: 0;
-
+		@extend .h4;
 		&.text--primary { color: var(--primary-page)}
     }
 
+	&__titel {
+		@extend .h2;
+	}
+
 	// card-text is legacy
     h2, h3, h4, h5, &__text, p, &__title {
-        margin: 0;
+     
 		color: var(--black);
     }
 
-	&--dark {
+	&.dark {
 		h2, h3, h4, h5, .card__text, p, .card__title {
 			color: var(--white);
 		}
+	}
+
+	&__text {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
 
 	// Legacy
@@ -247,6 +256,20 @@
         justify-self: flex-start;
         margin-left: -1rem;
     }
+
+	&__hidden-link {
+		position: static;
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 0;
+			left: 0;
+			bottom: 0;
+			top: 0;
+			right: 0;
+			pointer-events: visibleFill;
+		}
+	}
 
     &__supplemental {
         justify-self: flex-end;
