@@ -1,0 +1,30 @@
+.table {
+	
+	width:100%;
+}
+.datenumber {
+	width: 1px;
+	color: #555;
+	text-align: right;
+}
+
+.day {
+	border-bottom: 1px solid #bbb;
+	padding: 3px;
+}
+
+.datename {
+	width: 1px;
+}
+
+.event {
+	width: 100%
+}
+
+.event__time {
+	width: 1px;
+}
+
+.day-7 {
+	background: #dddddd;
+}
