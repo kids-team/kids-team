@@ -3,7 +3,8 @@
     font-family: 'material-icons';
     font-style: normal;
     font-weight: 400;
-    src: url('/wp-content/themes/kids-team/fonts/kids-team.woff2') format('woff2');
+	// since we make changes to this font, we need to specify the version
+    src: url('/wp-content/themes/kids-team/fonts/kids-team.woff2?ver=9324874') format('woff2');
 }
 
   
