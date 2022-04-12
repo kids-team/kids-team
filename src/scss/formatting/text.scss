@@ -17,7 +17,7 @@ p.core-block:empty {
 
 ol.core-block {
     list-style-type: decimal;
-	counter-reset: list 1;
+	counter-reset: list 0;
     padding: map-get($spacers,2) 0 map-get($spacers,2) map-get($spacers,8);
 
 	li {
