@@ -1,33 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,400&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import 'formatting/fonts.scss';
 
-@font-face {
-    font-family: 'material-icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/wp-content/themes/kids-team/fonts/kids-team-icons.woff2') format('woff2');
-}
+@import 'components/icon.scss';
 
-  
-.material-icons, .icon {
-	font-family: 'material-icons';
-	font-size: 24px;
-	line-height: 1;
-	letter-spacing: normal;
-	text-transform: none;
-	display: inline-block;
-	white-space: nowrap;
-	font-style: normal;
-	word-wrap: normal;
-	direction: ltr;
-	-webkit-font-feature-settings: 'liga';
-	-webkit-font-smoothing: antialiased;
-}
-
-.is-root-container > .wp-block-paragraph {	
-	//display: none;
-}
 
 .editor-post-title__block .editor-post-title__input {
   font-family: "Exo 2";
