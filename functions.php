@@ -37,7 +37,7 @@ function add_event_template() {
 	];
 }
 add_action( 'init', 'add_event_template', 1000 );
-
+/*
 function slug_page_template() {
 	$page_type_object = get_post_type_object( 'page' );
 	$page_type_object->template = [
