@@ -9,14 +9,14 @@
     }
 
     &__track {
-        @include border(sm);
+        @include rounded(sm);
     }
 
     &__indicator {
         display: flex;
         justify-content: flex-end;
         padding: space(1);
-        @include border(sm);
+        @include rounded(sm);
     }
 
 

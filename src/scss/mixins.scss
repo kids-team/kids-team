@@ -1,4 +1,4 @@
-@mixin border($size) {
+@mixin rounded($size) {
     border-top-left-radius: map-get($border-multiplier, tl) * map-get($border-base, $size);
     border-top-right-radius: map-get($border-multiplier, tr) * map-get($border-base, $size);
     border-bottom-left-radius: map-get($border-multiplier, bl) * map-get($border-base, $size);

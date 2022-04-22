@@ -79,7 +79,7 @@
 		height: max-content;
 		padding-top: 1px;
 		padding-bottom: 1px;
-		@include border('sm');
+		@include rounded('sm');
 		font-size: 0.75rem;
 		background: gray(400);
 		transition: all 300ms ease-in-out;
@@ -94,7 +94,7 @@
         padding: 0.5rem 1.25rem;
         font-size: space(4);
         font-family: "Exo 2", sans-serif;
-        @include border('sm');
+        @include rounded('sm');
         background: var(--white);
         transition: all 300ms ease-in-out; 
         border: 2px solid gray(400);
@@ -112,7 +112,7 @@
     textarea {
         width: 100%;
         border: 2px solid gray(400);
-        @include border('sm');
+        @include rounded('sm');
         background: var(--white);
         padding: 1.25rem;
         padding-top: 6px;
@@ -146,7 +146,7 @@
 	padding: 0.5rem 1.25rem;
 	font-size: space(4);
 	font-family: "Exo 2", sans-serif;
-	@include border('sm');
+	@include rounded('sm');
 	background: var(--white);
 	transition: all 300ms ease-in-out; 
 	border: 2px solid gray(400);
@@ -333,13 +333,17 @@
 
 
 
-.submit, input[type=submit] {
-    @extend .button;
-    border: none;
-    background: var(--primary);
-    color: var(--primary-contrast);
-    font-family: "Exo 2", sans-serif;
-    font-size: 1rem;
+.submit {
+	grid-column: 1/span 2;
+    position: relative;
+	input[type=submit] {
+		@extend .button;
+		border: none;
+		background: var(--primary);
+		color: var(--primary-contrast);
+		font-family: "Exo 2", sans-serif;
+		font-size: 1rem;
+	} 
 }
 
 .input-row {

@@ -5,6 +5,10 @@
     }
 }
 
+body {
+    font-family: Exo\ 2,sans-serif;
+}
+
 
 .text-xs {
     font-size: $spacer * 0.75 !important;
@@ -116,4 +120,16 @@ ul.core-block li:before {
 .invisible {
     visibility: hidden;
     opacity: 0;
+}
+
+.text--secondary {
+	color: var(--secondary-page);
+}
+
+.text--error {
+	color: var(--error);
+}
+
+.text--warning {
+	color: var(--warning);
 }

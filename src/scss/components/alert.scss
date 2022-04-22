@@ -30,6 +30,5 @@
     &--disabled {
         max-height: 0 !important;
     }
-    border-top-left-radius: radius(lg);
-    border-bottom-right-radius: radius(lg);
+    @include rounded('lg');
 }

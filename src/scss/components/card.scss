@@ -327,33 +327,7 @@
 	}
 
 	
-	&__pills {
-		display: flex;
-		gap: 1rem;
-		
-	}
-
-	&__pill {
-		font-weight: bold;
-		position: relative;
-		&:not(:first-child)::before {
-			position: absolute;
-			height: 100%;
-			left: calc(-0.5rem - 4px);
-			content: "";
-			width: 8px;
-			height: 8px;
-			border-radius: 99px;
-			background-color: var(--gray-500);
-			bottom: 50%;
-			top: 50%;
-			/* left: 50%; */
-			transform: translate(0, -50%);
-		}
-	}
-
 	
-
 
 	&--center {
 		text-align: center;
