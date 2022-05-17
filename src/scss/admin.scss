@@ -76,3 +76,10 @@
     place-items: center;
     margin-bottom: 10px;
 }
+
+#adminmenu .awaiting-mod, #adminmenu .update-plugins {
+	place-items: center;
+    font-weight: bold;
+	display: inline-grid;
+	padding: 0;
+}
