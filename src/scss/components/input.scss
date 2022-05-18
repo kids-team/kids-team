@@ -86,6 +86,24 @@
 		whitespace: no-wrap;
 		position: absolute;
 	}
+
+	&--required {
+		label { border-bottom-right-radius: 0 !important; }
+		label::after {
+			content: "*";
+			font-weight: bold;
+			color: white;
+			margin-left: 0.25rem;
+			position: absolute;
+			background: var(--gray-600);
+			height: 100%;
+			top: 0;
+			z-index: 3;
+			padding-left: 5px;
+			padding-right: 5px;
+			border-bottom-right-radius: 0.5rem;
+		}
+	}
 }
 .input {
     input {
@@ -333,6 +351,7 @@
 
 
 
+
 .submit {
 	grid-column: 1/span 2;
     position: relative;
@@ -390,6 +409,18 @@ select:invalid {
 .error label {
     background: var(--error);
     color: var(--error-contrast);
+}
+
+.input--required.error {
+	label::after {
+		background: var(--error-dark);
+	}
+}
+
+.input--required.filled {
+	label::after {
+		background: var(--success);
+	}
 }
   
 .input-textarea {

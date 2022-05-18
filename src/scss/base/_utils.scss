@@ -87,6 +87,54 @@
 
 $utilities: () !default;
 
+
+
+@each $key, $value in $spacers {
+
+	.mx-#{$key} {
+		margin-left: $value;
+		margin-right: $value;
+	};
+	.my-#{$key} {
+		margin-top: $value;
+		margin-bottom: $value;
+	};
+	.mb-#{$key} {
+		margin-bottom: $value;
+	};
+	.mt-#{$key} {
+		margin-top: $value;
+	};
+	.ml-#{$key} {
+		margin-left: $value;
+	};
+	.mr-#{$key} {
+		margin-right: $value;
+	};
+	.px-#{$key} {
+		padding-left: $value;
+		padding-right: $value;
+	};
+	.py-#{$key} {
+		padding-top: $value;
+		padding-bottom: $value;
+	};
+	.p-#{$key} {
+		padding: $value;
+	};
+	.m-#{$key} {
+		margin: $value;
+	};
+	.w-#{$key} {
+		width: $value;
+		height: $value;
+	};
+	.h-#{$key} {
+		height: $value;
+	};    
+}
+
+
 .margin--0 {
 	margin: 0;
 }
