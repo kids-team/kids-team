@@ -1,6 +1,26 @@
 .progress {
     &__label {
         font-size: 0.75rem;
+		/* margin-top: 2rem; */
+		position: absolute;
+		transform: translate(11px, 33px);
+		background: var(--black);
+		border-radius: 999px;
+		padding: 0px 4px;
+		color: var(--white);
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 5px 7px 5px;
+			border-color: transparent transparent var(--black) transparent;
+			transform: translate(100%, -6px);
+		}
     }
 
     &__legends {
@@ -9,14 +29,15 @@
     }
 
     &__track {
-        @include rounded(sm);
+        @include rounded(md);
     }
 
     &__indicator {
         display: flex;
         justify-content: flex-end;
-        padding: space(1);
-        @include rounded(sm);
+        position: relative;
+        @include rounded(md);
+		height: 1.5rem;
     }
 
 
