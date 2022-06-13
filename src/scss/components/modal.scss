@@ -159,7 +159,6 @@
             border-top-left-radius: 0rem;
             border-bottom-right-radius: 0rem;
             min-height: 90%; 
-            position: absolute;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -280,6 +279,11 @@
     }
 }
 
+@media (screen(md)) {
+	.modal__dialog {
+		position: absolute;
+	}
+}
 
 
 /*
