@@ -125,6 +125,7 @@
 
 .button-group {
     display: flex;
+	flex-wrap: wrap;
     gap: 1rem;
     &--right {
         justify-content: flex-end;
