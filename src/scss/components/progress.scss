@@ -1,3 +1,5 @@
+@use '../tools/' as tools;
+
 .progress {
     &__label {
         font-size: 0.75rem;
@@ -29,14 +31,14 @@
     }
 
     &__track {
-        @include rounded(md);
+        border-radius: tools.rounded(md);
     }
 
     &__indicator {
         display: flex;
         justify-content: flex-end;
         position: relative;
-        @include rounded(md);
+        border-radius: tools.rounded(md);
 		height: 1.5rem;
     }
 
@@ -49,11 +51,11 @@
     }
 
     .legend__value {
-        font-size: space(6);
+        font-size: tools.space(6);
         font-weight: bold;
     }
 
     .legend__label {
-        font-size: space(3);
+        font-size: tools.space(3);
     }
 }

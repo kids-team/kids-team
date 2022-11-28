@@ -1,0 +1,41 @@
+@use "../tools/" as tools;
+
+.flex--row {
+    flex-direction: row;
+}
+
+.flex--column {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+@include tools.media-breakpoint(md) {
+    .md\:flex--row {
+        flex-direction: row;
+    }
+
+    .md\:flex--column {
+        flex-direction: column;
+    }
+
+    .md\:flex {
+        display: flex;
+    }
+}
+
+@include tools.media-breakpoint(xl) {
+    .xl\:flex--row {
+        flex-direction: row;
+    }
+
+    .xl\:flex--column {
+        flex-direction: column;
+    }
+
+    .xl\:flex {
+        display: flex;
+    }
+}

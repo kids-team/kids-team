@@ -1,3 +1,5 @@
+@use '../tools' as tools; 
+
 /*
 *
 *   Modal component
@@ -71,7 +73,7 @@
     &__content { 
         max-width: 768px;
         padding: 2rem;
-        color: $black;
+        color: var(--black);
     }
 
 	&__footer {
@@ -91,7 +93,7 @@
     &__title { 
         display: flex; 
         h2 {
-            font-size: space(6);
+            font-size: tools.space(6);
             font-weight: 500;
             color: var(--primary-page-contrast);
         }
@@ -160,6 +162,8 @@
             border-bottom-right-radius: 0rem;
             min-height: 90%; 
             width: 100%;
+			max-width: 1440px;
+    		margin: auto;
             display: flex;
             flex-direction: column;
             bottom: 0;
@@ -203,7 +207,7 @@
             right: 0;
             bottom: 0;
             display: flex;
-            max-width: map-get($screens, "xxl");
+            max-width: screen("xxl");
             align-items: flex-end;
             height: 100%;
             margin: auto;
@@ -215,9 +219,9 @@
             border-top-right-radius: 2rem;
             display: inline-block;
             font-weight: bold;
-            font-size: space(7);
+            font-size: tools.space(7);
             padding: .5rem 3rem;
-            padding-left: calc(1000px + space(4));
+            padding-left: calc(1000px + tools.space(4));
             margin-left: -1000px;
         }
         .modal__close { 

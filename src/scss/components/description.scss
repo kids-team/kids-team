@@ -1,18 +1,20 @@
+@use '../tools/' as tools;
+
 .description {
     &__image, img {
-        height: space(12);
+        height: tools.space(12);
         border-radius: 999px;
         flex-shrink: 0;
-        width: space(12);
+        width: tools.space(12);
         border-radius: 999px;
-        height: space(12);
+        height: tools.space(12);
         background: #00000022;
         display: grid;
         place-items: center;
 
         img {
-            width: space(12);
-            height: space(12);
+            width: tools.space(12);
+            height: tools.space(12);
             object-fit: cover;
         }
     }
@@ -48,11 +50,11 @@
 
     display: flex;
     flex-direction: column;
-    gap: space(8);
+    gap: tools.space(8);
 
     &__item {
         display: flex;
-        gap: space(5);
+        gap: tools.space(5);
 		align-items: center;
     }
     &__icon {

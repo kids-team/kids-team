@@ -1,4 +1,4 @@
-
+@use '../tools/' as tools;
 
 .nav {
 
@@ -12,7 +12,7 @@
     }
 
     &__title {
-        padding: space(1) space(2);
+        padding: tools.space(1) tools.space(2);
     }
 
     &__icon {
@@ -24,6 +24,6 @@
     }
 
     @at-root .dark &__link {
-        color: $white;
+        color: var(--white);
     }
 }

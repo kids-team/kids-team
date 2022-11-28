@@ -1,9 +1,11 @@
+@use '../tools/' as tools;
+
 .alert {
     margin: 2rem 0rem;
     padding: 2rem;
     display: relative;
     transition: all 300ms ease-in-out;
-	@include rounded('lg');
+	border-radius: tools.rounded('lg');
     
     &__title {
         margin: 0;
@@ -43,8 +45,8 @@
 	}
 
 	&--error {
-		background-color: var(--error-light);
-		color: var(--error-light-contrast)
+		background-color: var(--error);
+		color: var(--error-contrast)
 	}
 
 	&--success {

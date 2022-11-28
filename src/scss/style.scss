@@ -1,46 +1,44 @@
+/*!
+Theme Name: kids-team
+Text Domain: kidsteamchild
+Version: 1.5.1
+Template: blueprint
+Description: Theme for Austrian, German and Swiss kidsteam-Site. Needs blueprint to work!
+Author: Thomas Gollenia
+Author URI: https://gollenia.at/
+Theme URI: https://github.com/gollenia/kidsteam/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+GitHub Theme URI: gollenia/kids-team
+GitHub Theme URI: https://github.com/gollenia/kids-team
+*/
 
-@import 'functions';
-@import 'mixins';
-@import 'variables';
-@import 'base/normalize';
-@import 'base/colors';
-@import 'base/grid';
 
-@import 'formatting/fonts';
-@import 'formatting/wordpress';
-
-@import 'base/breakpoints';
-@import 'formatting/text';
-@import 'components/alert';
-@import 'components/animations';
-@import 'components/badge';
-@import 'components/breadcrumbs';
-@import 'components/button';
-@import 'components/card';
-@import 'components/code';
-@import 'components/container';
-@import 'components/footer';
-@import 'components/filter';
-@import 'components/header';
-@import 'components/description';
-@import 'components/image';
-@import 'components/input';
-@import 'components/itemlist';
-@import 'components/table';
-@import 'components/modal';
-@import 'components/nav';
-@import 'components/navigation';
-@import 'components/numberpicker';
-@import 'components/hero';
-@import 'components/progress';
-@import 'components/pills';
-@import 'components/quotes';
-@import 'components/section';
-@import 'components/tabs';
-@import 'components/icon';
-@import 'components/wizzard';
+@use 'sass:meta';
+@use 'settings';
+@use 'tools';
 
 
 
 
-@import 'base/utils';
+@layer generic {
+	@include meta.load-css('generic');
+}
+
+@layer elements {
+	@include meta.load-css('elements');
+}
+
+@layer objects {
+	@include meta.load-css('objects');
+}
+
+@layer components {
+	@include meta.load-css('components');
+}
+
+@layer utils {
+	@include meta.load-css('utils');
+}
+
+@layer generic, elements, objects, components, utils;						

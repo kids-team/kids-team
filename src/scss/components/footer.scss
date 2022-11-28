@@ -1,26 +1,38 @@
-.footer {
-    background: gray(800);
-    color: gray(500);
-    padding: space(12) 0 space(12) 0;
+@use "../tools" as tools;
 
-	a {
-		color: #ffffff;
-	}
+.footer {
+    background: tools.gray(800);
+    color: tools.gray(500);
+    padding: tools.space(12) 0 tools.space(12) 0;
+    margin-top: tools.space(12);
+    border-radius: tools.rounded("xl");
+
+    a {
+        color: #ffffff;
+    }
 }
 
 .bottom {
-	padding: 0rem 1rem;
-    &__text {
+    padding: 0rem 1rem;
+
+    .content,
+    .bottom__text {
         display: flex;
         gap: 1rem;
         justify-content: flex-end;
         margin-top: 0.25rem;
+        align-items: center;
+
+        a {
+            color: #bbb;
+            font-size: 0.75rem;
+        }
     }
 
     &__logo {
         figure {
-            height: space(5);
-            width: space(5);
+            height: tools.space(5);
+            width: tools.space(5);
             margin: 0;
         }
     }

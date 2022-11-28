@@ -1,21 +1,23 @@
+@use '../tools/' as tools;
+
 .pills {
 	display: flex;
 	gap: 1rem;
-
-	
+	flex-wrap: wrap;
 
 	&__item {
 		font-weight: bold;
 		position: relative;
 		font-weight: 700;
 		position: relative;
-		background: var(--gray-200);
-		color: var(--gray-600);
-		padding: 0px space(2);
-		@include rounded(md);
+		background: var(--gray-300);
+		white-space: nowrap;
+		color: var(--gray-800);
+		padding: 0px tools.space(2);
+		border-radius: tools.rounded(md);
 
 		&--small {
-			@include rounded(sm);
+			border-radius: tools.rounded(sm);
 		}
 
 		&--warning {
@@ -32,13 +34,27 @@
 			background: var(--error-light);
 			color: var(--error);
 		}
+
+		&--primary {
+			background: var(--primary-page);
+			color: var(--primary-page-contrast);
+		}
+
+		&--dark {
+			background-color: var(--gray-800);
+			color: var(--gray-100)
+		}
+
+	}
+
+	a.pills__item:hover {
+		background-color: var(--primary-page);
+		color: var(--primary-page-contrast)
 	}
 
 	&--small {
 		.pills__item {
-			@include rounded(sm);
+			border-radius: tools.rounded(sm);
 		}
 	}
 }
-
-

@@ -19,7 +19,7 @@
 		display: inline-block;
 		border: 2px solid var(--gray-700);
 		padding: 0.25rem 1rem;
-		@include rounded('sm');
+		border-radius: rounded('sm');
 		color: var(--gray-700);
 		cursor: pointer;
 

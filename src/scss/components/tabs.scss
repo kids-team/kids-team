@@ -1,9 +1,11 @@
+@use '../tools' as tools;
+
 .tabs {
     display: flex;
-    padding-top: space(12);
+    padding-top: tools.space(12);
 
     &__item {
-        @include rounded('sm');
+        border-radius: tools.rounded(sm);
         overflow: hidden;
         padding: 0.25rem 1rem;
         margin-right: 1rem;
