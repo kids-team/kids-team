@@ -19,10 +19,6 @@
         padding-top: 2rem;
         display: flex;
         flex-direction: column;
-
-        > div:first-child {
-            flex: 1;
-        }
     }
 
     p,
@@ -32,14 +28,23 @@
     h2 {
         padding: 1rem;
         line-height: 1.5;
+        margin: 0;
+    }
+
+    &__titlebox {
+        margin-top: auto;
+    }
+
+    &__text {
+        flex: 1;
     }
 
     &__title {
         position: relative;
         display: inline-block;
-        background: var(--primary-page-transparent);
+        background: var(--primary-transparent);
         backdrop-filter: blur(5px);
-        color: var(--primary-page-contrast);
+        color: var(--primary-contrast);
         margin-left: 0px;
         padding: 2rem 2rem 2rem 1rem;
         text-align: right;

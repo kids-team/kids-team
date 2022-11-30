@@ -1,5 +1,4 @@
 .wp-block-media-text {
-
     display: grid;
     grid-template-columns: 50% 1fr;
     grid-template-rows: auto;
@@ -12,7 +11,6 @@
         img {
             height: auto !important;
         }
-        
     }
 
     &__content {
@@ -27,25 +25,65 @@
     font-size: 2rem;
 }
 
+.has-small-font-size {
+    font-size: 0.75rem;
+}
+
+.has-x-large-font-size {
+    font-size: 3rem;
+}
+
+h1,
+h2,
+h3 {
+    &.has-background {
+        border-top-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        backdrop-filter: blur(5px);
+    }
+}
+
+.has-gochi-font-family {
+    font-family: "Gochi Hand";
+}
+
 .wp-block-image img {
     height: auto !important;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.wp-block-gallery {
+    .wp-block-image img {
+        border-radius: 0px;
+    }
+    .wp-block-image:first-child {
+        img {
+            border-top-left-radius: 1.5rem;
+        }
+    }
+    .wp-block-image:last-child {
+        img {
+            border-bottom-right-radius: 1.5rem;
+        }
+    }
 }
 
 .grecaptcha-badge {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 figure.wp-block-embed {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 
-	&.wp-embed-aspect-16-9 {
-		aspect-ratio: 16/9;
-	}
+    &.wp-embed-aspect-16-9 {
+        aspect-ratio: 16/9;
+    }
 
-	.wp-block-embed__wrapper, iframe {
-		width: 100%;
-		height: 100%;
-	}
+    .wp-block-embed__wrapper,
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
 }
-

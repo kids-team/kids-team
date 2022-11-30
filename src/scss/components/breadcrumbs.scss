@@ -14,8 +14,8 @@
 
     &__item {
         font-size: 0.75rem;
-        background-color: var(--primary-page);
-        color: var(--primary-page-contrast);
+        background-color: var(--primary);
+        color: var(--primary-contrast);
         padding: 0.125rem tools.space(2);
         transition: all 300ms ease-in-out;
         &:first-child {

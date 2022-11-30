@@ -1,65 +1,65 @@
 .text-right {
-	text-align: right;
+    text-align: right;
 }
 
 .text-left {
-	text-align: left;
+    text-align: left;
 }
 
 .text--primary {
-	color: var(--primary-page);
+    color: var(--primary);
 }
 
 .text-center {
-	text-align: center;
+    text-align: center;
 }
 
 .font-bold {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .font-normal {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 .justify-between {
-	justify-content: space-between;
+    justify-content: space-between;
 }
 
 .invisible {
-	visibility: hidden;
-	opacity: 0;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .text--secondary {
-	color: var(--secondary-page);
+    color: var(--secondary-page);
 }
 
 .text--error {
-	color: var(--error);
+    color: var(--error);
 }
 
 .text--warning {
-	color: var(--warning);
+    color: var(--warning);
 }
 
 .text-xs {
-	font-size: space(3) !important;
-	line-height: space(4) !important;
+    font-size: space(3) !important;
+    line-height: space(4) !important;
 }
 
 .link {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .capitalize {
-	text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 .uppercase {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .bold {
-	font-weight: 600;
+    font-weight: 600;
 }

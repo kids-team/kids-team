@@ -38,13 +38,8 @@
     }
 
     &--primary {
-        background-color: var(--primary-page);
-        color: var(--primary-page-contrast);
-    }
-
-    &--secondary {
-        background-color: var(--secondary-page);
-        color: var(--secondary-page-contrast);
+        background-color: var(--primary);
+        color: var(--primary-contrast);
     }
 
     &:hover,
