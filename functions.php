@@ -8,9 +8,9 @@ add_action('wp_enqueue_scripts', function () use ($script) {
 		[],
 		$script['version']
 	);
-	wp_dequeue_style('wp-block-library');
-	wp_dequeue_style('wp-block-library-theme');
-});
+	//wp_dequeue_style('wp-block-library');
+	//wp_dequeue_style('wp-block-library-theme');
+}, 100);
 
 add_action('admin_enqueue_scripts', function () use ($script) {
 	wp_enqueue_style(
@@ -21,11 +21,7 @@ add_action('admin_enqueue_scripts', function () use ($script) {
 	);
 }, 99);
 
-function wps_deregister_styles()
-{
-	wp_dequeue_style('global-styles');
-}
-add_action('wp_enqueue_scripts', 'wps_deregister_styles', 100);
+
 
 add_action('wp_head', function () {
 	echo '<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="' . get_stylesheet_directory_uri() . '/favicons/favicon_' . get_locale() . '_180.png" />';
@@ -39,7 +35,6 @@ function add_event_template()
 	if (!post_type_exists('event')) return;
 	$page_type_object = get_post_type_object('event');
 	$page_type_object->template = [
-
 		['ctx-blocks/grid-row', [], [
 			['ctx-blocks/grid-column', ['widthLarge' => 2], [['core/paragraph', ['placeholder' => 'Event-Beschreibung']],]],
 			['ctx-blocks/grid-column', ['widthLarge' => 1], [
