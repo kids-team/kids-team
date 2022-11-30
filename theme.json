@@ -1,6 +1,12 @@
 {
     "version": 2,
     "settings": {
+        "appearanceTools": true,
+        "radius": true,
+        "spacing": {
+            "margin": true,
+            "padding": false
+        },
         "custom": {
             "line-height": {
                 "body": 1.7,
@@ -10,9 +16,40 @@
         "layout": {
             "contentSize": "1440px",
             "wideSize": "1440px"
+        },
+        "typography": {
+            "fluid": true,
+            "letterSpacing": true,
+            "fontFamilies": [
+                {
+                    "fontFamily": "Gochi Hand",
+                    "slug": "gochi",
+                    "name": "Gochi Hand"
+                }
+            ]
         }
     },
-    "styles": {},
+    "styles": {
+        "spacing": {
+            "margin": {
+                "top": "5rem",
+                "right": "auto",
+                "bottom": "60px",
+                "left": "auto"
+            },
+            "padding": {
+                "left": "1rem",
+                "right": "1rem"
+            }
+        },
+        "elements": {
+            "link": {
+                "typography": {
+                    "textDecoration": "none"
+                }
+            }
+        }
+    },
     "customTemplates": {},
     "templateParts": [
         {
