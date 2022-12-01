@@ -1,6 +1,7 @@
 <?php
 
 $script = require_once(__DIR__ . "/version.php");
+
 add_action('wp_enqueue_scripts', function () use ($script) {
 	wp_enqueue_style(
 		'child-style',
@@ -8,8 +9,6 @@ add_action('wp_enqueue_scripts', function () use ($script) {
 		[],
 		$script['version']
 	);
-	//wp_dequeue_style('wp-block-library');
-	//wp_dequeue_style('wp-block-library-theme');
 }, 100);
 
 add_action('admin_enqueue_scripts', function () use ($script) {
@@ -22,14 +21,22 @@ add_action('admin_enqueue_scripts', function () use ($script) {
 }, 99);
 
 
-
+/**
+ * Since we need dynamic favicons - we include them in the header here
+ * 
+ * @return void
+ */
 add_action('wp_head', function () {
 	echo '<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="' . get_stylesheet_directory_uri() . '/favicons/favicon_' . get_locale() . '_180.png" />';
 	echo '<link rel="icon" type="image/png" sizes="32x32" href="' . get_stylesheet_directory_uri() . '/favicons/favicon_' . get_locale() . '_32.png" />';
 	echo '<link rel="icon" type="image/png" sizes="16x16" href="' . get_stylesheet_directory_uri() . '/favicons/favicon_' . get_locale() . '_16.png" />';
 });
 
-
+/**
+ * Add template for events. Can we move this into HTML?
+ *
+ * @return void
+ */
 function add_event_template()
 {
 	if (!post_type_exists('event')) return;
@@ -47,18 +54,3 @@ function add_event_template()
 }
 
 add_action('init', 'add_event_template', 1000);
-
-function slug_page_template() {
-	$page_type_object = get_post_type_object( 'page' );
-	$page_type_object->template = [
-		[ 'ctx-blocks/base' ],
-	];
-	//$page_type_object->template_lock = ['removal', 'insert'];
-}
-add_action( 'init', 'slug_page_template', 1000 );
-
-function prefix_default_page_template( $settings ) {
-	$settings['defaultBlockTemplate'] = "";
-	return $settings;
-}
-add_filter( 'block_editor_settings_all', 'prefix_default_page_template' );
