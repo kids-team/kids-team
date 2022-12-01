@@ -1,5 +1,22 @@
 {
     "version": 2,
+    "customTemplates": [
+        {
+            "name": "blank",
+            "title": "Blank",
+            "postTypes": ["page", "post"]
+        },
+        {
+            "name": "no-header",
+            "title": "Kein Seitenkopf",
+            "postTypes": ["page", "post"]
+        },
+        {
+            "name": "single-event",
+            "title": "Event",
+            "postTypes": ["event"]
+        }
+    ],
     "settings": {
         "appearanceTools": true,
         "radius": true,
@@ -50,7 +67,6 @@
             }
         }
     },
-    "customTemplates": {},
     "templateParts": [
         {
             "name": "header",
