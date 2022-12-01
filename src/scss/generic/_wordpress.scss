@@ -87,3 +87,7 @@ figure.wp-block-embed {
         height: 100%;
     }
 }
+
+.wp-site-blocks > * + * {
+    margin-block-start: 0px !important;
+}

@@ -22,7 +22,7 @@
         "radius": true,
         "spacing": {
             "margin": true,
-            "padding": false
+            "padding": true
         },
         "custom": {
             "line-height": {
