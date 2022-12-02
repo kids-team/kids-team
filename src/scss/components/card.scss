@@ -246,29 +246,6 @@
         }
     }
 
-    // card-text is legacy
-    h2,
-    h3,
-    h4,
-    h5,
-    &__text,
-    p,
-    &__title {
-        color: var(--black);
-    }
-
-    &.dark {
-        h2,
-        h3,
-        h4,
-        h5,
-        .card__text,
-        p,
-        .card__title {
-            color: var(--white);
-        }
-    }
-
     &__text,
     .description {
         margin-top: 1rem;
