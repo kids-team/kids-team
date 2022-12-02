@@ -231,21 +231,6 @@
         font-weight: 600;
     }
 
-    &__subtitle,
-    h4,
-    h5,
-    h6 {
-        font-size: tools.space(3);
-        color: tools.gray(500);
-        display: inline-block;
-        margin: 0;
-        font-size: 1rem;
-
-        &.text--primary {
-            color: var(--primary);
-        }
-    }
-
     &__text,
     .description {
         margin-top: 1rem;
@@ -271,6 +256,7 @@
         width: auto !important;
         margin-left: -1.25rem;
         margin-right: -1.25rem;
+        border-top: 4px dotted tools.gray(200);
     }
 
     &__actions {
