@@ -179,7 +179,7 @@
         .card__badge,
         .card__label {
             background-color: var(--primary);
-            color: var(--primary);
+            color: var(--primary-contrast);
         }
     }
 
@@ -256,7 +256,7 @@
         width: auto !important;
         margin-left: -1.25rem;
         margin-right: -1.25rem;
-        border-top: 4px dotted tools.gray(200);
+        border-bottom: 4px dotted tools.gray(200);
     }
 
     &__actions {
