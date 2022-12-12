@@ -60,7 +60,6 @@
     }
     &__icon {
         font-size: 30px !important;
-        color: #000000cc;
     }
 
     &__title {
@@ -141,21 +140,6 @@
                 /* left: 50%; */
                 transform: translate(0, -50%);
             }
-        }
-    }
-}
-
-.dark {
-    .description__image {
-        background: #ffffff22;
-    }
-    .description__icon {
-        color: #ffffffcc;
-    }
-    a.description__item {
-        color: white;
-        &:hover {
-            color: var(--primary);
         }
     }
 }
