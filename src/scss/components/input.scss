@@ -334,6 +334,11 @@
         transform: scale(0);
         //transition: 300ms transform ease-in-out;
         box-shadow: inset 1em 1em var(--primary);
+
+        &::after {
+            // required icon fix
+            display: none !important;
+        }
     }
 
     input[type="radio"]:checked::before {
