@@ -1,7 +1,10 @@
+.wp-block-table td,
+.wp-block-table th {
+    border: 0px solid !important;
+}
+
 table {
     border-spacing: 1rem 0px;
-    margin-left: -1rem;
-    margin-right: -1rem;
 }
 
 .table--dotted {
@@ -24,6 +27,18 @@ table {
             border-bottom: 4px dotted #00000033;
             bottom: 0;
         }
+    }
+
+    tr.tr--primary:not(:last-child)::after {
+        border-bottom: 4px dotted var(--primary);
+    }
+
+    tr.tr--success:not(:last-child)::after {
+        border-bottom: 4px dotted var(--success);
+    }
+
+    tr.tr--warning:not(:last-child)::after {
+        border-bottom: 4px dotted var(--warning);
     }
 }
 
