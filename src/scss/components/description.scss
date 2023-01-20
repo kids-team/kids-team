@@ -12,12 +12,7 @@
         background: #00000022;
         display: grid;
         place-items: center;
-
-        img {
-            width: tools.space(12);
-            height: tools.space(12);
-            object-fit: cover;
-        }
+        object-fit: cover;
     }
     &--cards {
         .description__item {
