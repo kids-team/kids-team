@@ -12,6 +12,22 @@
     display: flex;
 }
 
+.flex--align-center {
+    align-items: center;
+}
+
+.flex--justify-center {
+    justify-content: center;
+}
+
+.flex--justify-between {
+    justify-content: space-between;
+}
+
+.flex--justify-end {
+    justify-content: flex-end;
+}
+
 @include tools.media-breakpoint(md) {
     .md\:flex--row {
         flex-direction: row;
