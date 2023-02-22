@@ -457,11 +457,13 @@
 .toggle {
     label {
         gap: 1rem;
+        display: flex;
     }
 
     &__control {
         position: relative; /* Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
         width: 48px;
+        min-width: 48px;
         height: 24px;
         display: inline-block;
     }
