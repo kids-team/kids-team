@@ -385,10 +385,16 @@
         margin-left: 0;
         padding: 0;
         display: flex;
+        flex-wrap: wrap;
 
         span {
             display: block;
         }
+    }
+
+    .error-message {
+        width: 100%;
+        margin-left: 1rem;
     }
 
     p {
@@ -448,6 +454,68 @@
     }
 }
 
+.toggle {
+    label {
+        gap: 1rem;
+    }
+
+    &__control {
+        position: relative; /* Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
+        width: 48px;
+        height: 24px;
+        display: inline-block;
+    }
+
+    &__switch {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        border-radius: 34px;
+        transition: 0.4s;
+    }
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    input:checked + .toggle__switch {
+        background-color: #2196f3;
+    }
+
+    input:focus + .toggle__switch {
+        box-shadow: 0 0 1px #2196f3;
+    }
+
+    input:checked + .toggle__switch:before {
+        transform: translateX(22px);
+    }
+
+    &__switch:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 4px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .toggle__switch {
+        background-color: #2196f3;
+    }
+
+    input:focus + .toggle__switch {
+        box-shadow: 0 0 1px #2196f3;
+    }
+}
+
 .submit {
     position: relative;
 
@@ -457,6 +525,128 @@
         color: var(--primary-contrast);
         font-family: "Exo 2", sans-serif;
         font-size: 1rem;
+    }
+}
+
+.range {
+    label {
+        display: inline-block;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-left: 1rem;
+        height: max-content;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-radius: 0.5rem 0rem 0.5rem 0rem;
+        font-size: 0.75rem;
+        background: var(--gray-400);
+        transition: all 300ms ease-in-out;
+        white-space: nowrap;
+    }
+    &__set {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    &__control {
+        flex: 1;
+    }
+
+    &__ticks {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+    &__tick {
+        background: var(--gray-300);
+        flex: 1;
+        height: 5px;
+        max-width: 5px;
+        min-width: 5px;
+        border-radius: 0.5rem;
+    }
+
+    &__labels {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 8px;
+        font-size: 13px;
+        color: var(--gray-600);
+    }
+
+    &__value {
+        min-width: 2rem;
+        background: var(--gray-300);
+        text-align: center;
+        font-size: 13px;
+        border-top-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+    input[type="range"] {
+        width: 100%;
+        appearance: none;
+        height: 7px;
+        -webkit-appearance: none;
+        background-color: var(--gray-300);
+        background-image: linear-gradient(var(--primary), var(--primary));
+        background-size: 30% 70%;
+        background-repeat: repeat-y;
+        border-radius: 99px;
+        padding: 0;
+    }
+    input[type="range"]:focus {
+        outline: none;
+    }
+    input[type="range"]::-webkit-slider-runnable-track {
+        border: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        width: 20px;
+        height: 20px;
+        background: #fcffff;
+        border: 2px solid var(--gray-600);
+        border-radius: 15px;
+        position: relative;
+        cursor: pointer;
+        -webkit-appearance: none;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            border-color: var(--primary);
+            background-color: var(--white);
+            transform: scale(1.2);
+        }
+    }
+
+    input[type="range"]::-moz-range-track {
+        border: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+    }
+    input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        background: #fcffff;
+        border: 2px solid var(--gray-600);
+        border-radius: 15px;
+        position: relative;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            border-color: var(--primary);
+            background-color: var(--white);
+            transform: scale(1.2);
+        }
     }
 }
 
