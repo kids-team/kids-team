@@ -50,19 +50,36 @@
 }
 
 @font-face {
-    font-family: "Gochi Hand";
+    font-family: "Fuzzy Bubbles";
     font-style: normal;
     size-adjust: 1.2;
     font-weight: 400;
-    src: url("../fonts/gochi-hand-v14-latin-regular.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/fuzzy-bubbles-regular.eot"); /* IE9 Compat Modes */
     src: local(""),
-        url("../fonts/gochi-hand-v14-latin-regular.eot?#iefix")
+        url("../fonts/fuzzy-bubbles-regular.eot?#iefix")
             format("embedded-opentype"),
-        /* IE6-IE8 */ url("../fonts/gochi-hand-v14-latin-regular.woff2")
+        /* IE6-IE8 */ url("../fonts/fuzzy-bubbles-regular.woff2")
             format("woff2"),
-        /* Super Modern Browsers */
-            url("../fonts/gochi-hand-v14-latin-regular.woff") format("woff"),
-        /* Modern Browsers */ url("../fonts/gochi-hand-v14-latin-regular.ttf")
+        /* Super Modern Browsers */ url("../fonts/fuzzy-bubbles-regular.woff")
+            format("woff"),
+        /* Modern Browsers */ url("../fonts/fuzzy-bubbles-regular.ttf")
+            format("truetype"); /* Safari, Android, iOS */
+    //url('../fonts/gochi-hand-v14-latin-regular.svg#GochiHand') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "Fuzzy Bubbles";
+    font-style: normal;
+    size-adjust: 1.2;
+    font-weight: 700;
+    src: url("../fonts/fuzzy-bubbles-bold.eot"); /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/fuzzy-bubbles-bold.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("../fonts/fuzzy-bubbles-bold.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("../fonts/fuzzy-bubbles-bold.woff")
+            format("woff"),
+        /* Modern Browsers */ url("../fonts/fuzzy-bubbles-bold.ttf")
             format("truetype"); /* Safari, Android, iOS */
     //url('../fonts/gochi-hand-v14-latin-regular.svg#GochiHand') format('svg'); /* Legacy iOS */
 }
@@ -70,6 +87,6 @@
 // @todo: Unify classes
 .font-script,
 .script {
-    font-family: "Gochi Hand", sans-serif;
+    font-family: "Fuzzy Bubbles", sans-serif;
     font-weight: 500;
 }
