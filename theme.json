@@ -40,9 +40,9 @@
             "letterSpacing": true,
             "fontFamilies": [
                 {
-                    "fontFamily": "Gochi Hand",
-                    "slug": "gochi",
-                    "name": "Gochi Hand"
+                    "fontFamily": "Fuzzy Bubbles",
+                    "slug": "fuzzy-bubbles",
+                    "name": "Fuzzy Bubbles"
                 }
             ]
         }
