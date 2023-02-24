@@ -80,8 +80,10 @@
 
     &__content {
         max-width: 768px;
-        padding: 2rem;
+        padding: 0rem;
         color: var(--black);
+        max-height: 80vh;
+        overflow-y: auto;
     }
 
     &__footer {
