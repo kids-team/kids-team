@@ -52,7 +52,9 @@
 .select,
 .combobox,
 .help,
-.checkbox {
+.checkbox,
+.login-username,
+.login-password {
     position: relative;
 
     p {
@@ -66,7 +68,9 @@
 .textarea,
 .select,
 .combobox,
-.help {
+.help,
+.login-username,
+.login-password {
     label {
         margin-top: -12px;
         display: inline-block;
@@ -111,7 +115,9 @@
     }
 }
 
-.input {
+.input,
+.login-username,
+.login-password {
     input {
         outline: none !important;
         width: 100%;
@@ -376,7 +382,8 @@
     }
 }
 
-.checkbox {
+.checkbox,
+.login-remember {
     align-items: center;
 
     label {
@@ -517,7 +524,8 @@
     }
 }
 
-.submit {
+.submit,
+.login-submit {
     position: relative;
 
     input[type="submit"] {
@@ -709,4 +717,28 @@ select:invalid {
 
 .input-textarea {
     flex-flow: column;
+}
+
+.login-info {
+    max-width: 400px;
+    padding: 2rem 1rem 2rem 1rem;
+    background: #fff;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+
+    .login-notice {
+        margin-bottom: 2rem;
+    }
+    .login-username,
+    .login-password {
+        margin-bottom: 2rem;
+    }
+    label {
+        z-index: 1;
+    }
+
+    .login-submit {
+        display: flex;
+
+        justify-content: flex-end;
+    }
 }
