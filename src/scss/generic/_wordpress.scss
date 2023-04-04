@@ -107,3 +107,8 @@ figure.wp-block-embed {
 .has-black-background {
     background-color: black;
 }
+
+.wp-site-blocks > * + * {
+    margin: auto;
+    max-width: var(--wp--style--global--content-size);
+}

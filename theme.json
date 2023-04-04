@@ -19,11 +19,16 @@
     ],
     "settings": {
         "appearanceTools": true,
+        "useRootPaddingAwareAlignments": true,
         "radius": true,
+        "dimensions": {
+            "minHeight": true
+        },
         "spacing": {
             "margin": true,
             "padding": true,
-            "units": ["rem"]
+            "units": ["rem"],
+            "blockGap": true
         },
         "custom": {
             "line-height": {
@@ -45,6 +50,29 @@
                     "name": "Fuzzy Bubbles"
                 }
             ]
+        },
+        "blocks": {
+            "core/heading": {
+                "supports": {
+                    "radius": true,
+                    "typography": {
+                        "fontSize": true,
+                        "lineHeight": true,
+                        "letterSpacing": true,
+                        "fontFamily": true,
+                        "fontWeight": true,
+                        "textTransform": true,
+                        "textDecoration": true,
+                        "fontStyle": true,
+                        "color": true
+                    }
+                }
+            },
+            "core/group": {
+                "spacing": {
+                    "padding": "4"
+                }
+            }
         }
     },
     "styles": {
@@ -56,14 +84,21 @@
                 "left": "auto"
             },
             "padding": {
-                "left": "1rem",
-                "right": "1rem"
+                "left": "1.5rem",
+                "right": "1.5rem"
             }
         },
         "elements": {
             "link": {
                 "typography": {
                     "textDecoration": "none"
+                }
+            }
+        },
+        "blocks": {
+            "core/cover": {
+                "supports": {
+                    "radius": true
                 }
             }
         }

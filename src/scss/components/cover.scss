@@ -1,0 +1,32 @@
+.cover {
+    position: relative;
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        height: 100% !important;
+        width: 100%;
+
+        &--original {
+            position: relative;
+        }
+
+        &--parallax {
+            position: fixed;
+        }
+    }
+
+    &__content {
+        position: absolute;
+
+        left: 0;
+        right: 0;
+
+        display: flex;
+        padding: inherit;
+    }
+}
