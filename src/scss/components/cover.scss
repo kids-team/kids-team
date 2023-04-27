@@ -18,6 +18,10 @@
         &--parallax {
             position: fixed;
         }
+
+        &.has-parallax {
+            position: relative;
+        }
     }
 
     &__content {
@@ -28,5 +32,14 @@
 
         display: flex;
         padding: inherit;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
     }
 }

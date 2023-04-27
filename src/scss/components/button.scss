@@ -9,7 +9,6 @@
 
 .button {
     align-items: center;
-    border-radius: tools.rounded(md);
     box-sizing: border-box;
     cursor: pointer;
     display: inline-flex;
@@ -19,12 +18,12 @@
     transform: scale(1);
     padding: 0.5rem 1rem;
     position: relative;
+    color: inherit;
 
     &--small {
         font-size: 0.75rem;
         line-height: 1rem;
         padding: 0.25rem 0.5rem;
-        border-radius: tools.rounded(sm);
     }
 
     &--large {
@@ -42,8 +41,8 @@
         color: var(--primary-contrast);
     }
 
-    &:hover:not[disabled],
-    &:focus:not[disabled] {
+    &:hover,
+    &:focus {
         animation: button-zoom-in 150ms ease-in-out;
         transform: scale(1.1);
     }
