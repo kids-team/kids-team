@@ -1,22 +1,5 @@
 {
     "version": 2,
-    "customTemplates": [
-        {
-            "name": "blank",
-            "title": "Blank",
-            "postTypes": ["page", "post"]
-        },
-        {
-            "name": "no-header",
-            "title": "Kein Seitenkopf",
-            "postTypes": ["page", "post"]
-        },
-        {
-            "name": "single-event",
-            "title": "Event",
-            "postTypes": ["event"]
-        }
-    ],
     "settings": {
         "appearanceTools": true,
         "useRootPaddingAwareAlignments": true,
@@ -36,6 +19,28 @@
                 "heading": 1.3
             }
         },
+        "shadow": {
+            "presets": [
+                {
+                    "name": "Small",
+                    "slug": "sm",
+                    "shadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
+                },
+                {
+                    "name": "Medium",
+                    "slug": "md",
+                    "shadow": "0 4px  10px 0 rgba( 0, 0, 0, 0.3 )"
+                },
+                {
+                    "name": "Large",
+                    "slug": "lg",
+                    "shadow": "0 8px  15px 0 rgba( 0, 0, 0, 0.3 )"
+                }
+            ]
+        },
+        "color": {
+            "defaultPalette": false
+        },
         "layout": {
             "contentSize": "1440px",
             "wideSize": "1440px"
@@ -45,9 +50,99 @@
             "letterSpacing": true,
             "fontFamilies": [
                 {
+                    "fontFamily": "Exo 2",
+                    "slug": "exo-2",
+                    "name": "Exo 2",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Exo 2",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/Exo2-Regular.woff2"]
+                        },
+                        {
+                            "fontFamily": "Exo 2",
+                            "fontWeight": "200",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/Exo2-ExtraLight.woff2"]
+                        },
+                        {
+                            "fontFamily": "Exo 2",
+                            "fontWeight": "600",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/Exo2-SemiBold.woff2"]
+                        },
+
+                        {
+                            "fontFamily": "Exo 2",
+                            "fontWeight": "400",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": ["file:./assets/fonts/Exo2-Italic.woff2"]
+                        },
+                        {
+                            "fontFamily": "Exo 2",
+                            "fontWeight": "200",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/Exo2-ExtraLightItalic.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Exo 2",
+                            "fontWeight": "600",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/Exo2-SemiBoldItalic.woff2"
+                            ]
+                        }
+                    ]
+                },
+                {
                     "fontFamily": "Fuzzy Bubbles",
                     "slug": "fuzzy-bubbles",
-                    "name": "Fuzzy Bubbles"
+                    "name": "Fuzzy Bubbles",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Fuzzy Bubbles",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/fuzzy-bubbles-regular.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Fuzzy Bubbles",
+                            "fontWeight": "bold",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/fuzzy-bubbles-bold.woff2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fontFamily": "Gochi Hand",
+                    "slug": "gochi-hand",
+                    "name": "Gochi Hand",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Gochi Hand",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/gochi-hand-v14-latin-regular.woff2"
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -64,7 +159,14 @@
                         "textTransform": true,
                         "textDecoration": true,
                         "fontStyle": true,
-                        "color": true
+                        "color": true,
+                        "__experimentalDefaultControls": {
+                            "fontFamily": true,
+                            "fontSize": true,
+                            "fontWeight": true,
+                            "textTransform": true,
+                            "lineHeight": true
+                        }
                     }
                 }
             },
@@ -76,6 +178,10 @@
         }
     },
     "styles": {
+        "color": {
+            "background": "#f4f4f4",
+            "text": "var(--wp--preset--color--primary)"
+        },
         "spacing": {
             "margin": {
                 "right": "auto",
@@ -100,19 +206,40 @@
                 "supports": {
                     "radius": true
                 }
+            },
+            "core/heading": {
+                "typography": {
+                    "fontWeight": "600"
+                }
+            },
+            "ctx-blocks/button": {
+                "border": {
+                    "radius": {
+                        "topLeft": ".75rem",
+                        "topRight": "0",
+                        "bottomLeft": "0",
+                        "bottomRight": ".75rem"
+                    }
+                }
+            },
+            "events-manager/booking": {
+                "border": {
+                    "radius": {
+                        "topLeft": ".75rem",
+                        "topRight": "0",
+                        "bottomLeft": "0",
+                        "bottomRight": ".75rem"
+                    }
+                }
+            },
+            "ctx-blocks/grid-row": {
+                "spacing": {
+                    "blockGap": "var(--wp--preset--spacing--50)"
+                }
             }
-        }
-    },
-    "templateParts": [
-        {
-            "name": "header",
-            "title": "Header",
-            "area": "header"
         },
-        {
-            "name": "test",
-            "title": "Footer",
-            "area": "footer"
+        "typography": {
+            "fontFamily": "\"Exo 2\", sans-serif"
         }
-    ]
+    }
 }
