@@ -46,10 +46,13 @@
     &--image-top {
         flex-direction: column;
 
-        .card__image,
         .card__image {
             aspect-ratio: 16/9;
             width: 100%;
+            img {
+                border-top-left-radius: inherit;
+                border-top-right-radius: inherit;
+            }
         }
 
         .card__badge {
@@ -86,7 +89,6 @@
             top: tools.space(4);
         }
 
-        .card__image,
         .card__image {
             align-self: stretch;
             aspect-ratio: 1/1;
@@ -95,6 +97,8 @@
 
             img {
                 aspect-ratio: 1/1;
+                border-top-right-radius: inherit;
+                border-bottom-right-radius: inherit;
             }
         }
 
@@ -111,10 +115,13 @@
     &--image-bottom {
         flex-direction: column-reverse;
 
-        .card__image,
         .card__image {
             aspect-ratio: 16/9;
             width: 100%;
+            img {
+                border-bottom-left-radius: inherit;
+                border-bottom-right-radius: inherit;
+            }
         }
 
         .card__badge {
@@ -129,6 +136,10 @@
         .card__badge {
             left: tools.space(4);
             top: tools.space(4);
+            img {
+                border-top-left-radius: inherit;
+                border-bottom-left-radius: inherit;
+            }
         }
 
         .card__image {
