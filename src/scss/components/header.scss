@@ -1,6 +1,10 @@
 @use "./button";
 @use "../tools" as tools;
 
+/* Header 
+ * @deprecated
+*/
+
 .header {
     background-size: cover;
     position: relative;

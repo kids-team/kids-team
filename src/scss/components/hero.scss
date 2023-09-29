@@ -1,15 +1,16 @@
-@use './button';
-@use '../tools/' as tools;
+@use "./button";
+@use "../tools/" as tools;
 
+/* Hero
+ * @deprecated 
+ */
 .hero {
     background-size: cover;
     background-color: var(--white);
     position: relative;
-	aspect-ratio: 16/9;
+    aspect-ratio: 16/9;
     display: flex;
     align-items: flex-end;
-    
-    
 
     &__title {
         position: relative;
@@ -19,7 +20,7 @@
         border-bottom-left-radius: 2.5rem;
         border-top-right-radius: 2.5rem;
         color: var(--black);
-        margin-left: -2000px; 
+        margin-left: -2000px;
         padding: 50px 50px 50px 2000px;
         text-align: right;
         h1 {
@@ -40,7 +41,7 @@
         a {
             position: absolute;
             right: 0;
-            
+
             background-color: var(--secondary);
             color: var(--secondary-contrast);
             margin-right: tools.space(4);
@@ -49,22 +50,22 @@
         }
     }
 
-	&__label--image {
-		position: absolute;
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		background: #fff;
-		border-radius: 999px;
-		padding-right: 1rem;
-		right: 1rem;
-		top: 1rem;
-		color: var(--black);
-		margin-top: 0 !important;
-		padding-left: 0 !important;
-		img {
-			width: 2.5rem;
-			border-radius: 999px;
-		}
-	}
+    &__label--image {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #fff;
+        border-radius: 999px;
+        padding-right: 1rem;
+        right: 1rem;
+        top: 1rem;
+        color: var(--black);
+        margin-top: 0 !important;
+        padding-left: 0 !important;
+        img {
+            width: 2.5rem;
+            border-radius: 999px;
+        }
+    }
 }

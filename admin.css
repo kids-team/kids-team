@@ -1,1 +1,82 @@
-.font-script,.script{font-family:Fuzzy Bubbles,sans-serif;font-weight:500}@font-face{font-family:material-icons;font-style:normal;font-weight:400;src:url(fonts/1e71fdb1cede0045652c.woff2?ver=9324776) format("woff2")}.icon,.material-icons{word-wrap:normal;-webkit-font-feature-settings:"liga";-webkit-font-smoothing:antialiased;direction:ltr;display:inline-block;font-family:material-icons;font-size:24px;font-style:normal;letter-spacing:normal;line-height:1;text-transform:none;white-space:nowrap}.material-icons--bubble{align-items:center;aspect-ratio:1/1;background:#eee;border-radius:999px;display:flex;justify-content:center;place-items:center;justify-items:center}.material-icons--micro-bubble{height:1rem;width:1rem}.ctx-color-badge{align-items:center;border-radius:4px;display:flex;height:24px;padding-left:6px;width:80px}.manage-column.column-color{width:150px}.description.error{color:#b00!important}.color-select{margin-top:20px}.ctx-color-selector{display:flex;flex-wrap:wrap;margin-top:20px}.ctx-color-selector-input{border:0!important;margin-left:10px;padding:0}.ctx-color-selector-button{background-color:#3066be;border:1px solid #bbb;border-radius:50%;color:#fff;height:24px;padding:0;width:24px}.ctx-color-selector-holder{display:grid;margin-bottom:10px;place-items:center;width:16%}#adminmenu .awaiting-mod,#adminmenu .update-plugins{display:inline-grid;font-weight:700;padding:0;place-items:center}.fill-primary{fill:var(--wp--preset--color--vivid-cyan-blue)}.editor-styles-wrapper{max-width:1440px!important;min-width:800px!important}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/admin.scss ***!
+  \********************************************************************************************************************************************************/
+.font-script,
+.script {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 500;
+}
+
+.ctx-color-badge {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+  height: 24px;
+  width: 80px;
+}
+
+.manage-column.column-color {
+  width: 150px;
+}
+
+.description.error {
+  color: #bb0000 !important;
+}
+
+.color-select {
+  margin-top: 20px;
+}
+
+.ctx-color-selector {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.ctx-color-selector-input {
+  margin-left: 10px;
+  margin-left: 10px;
+  padding: 0;
+  border: 0 !important;
+}
+
+.ctx-color-selector-button {
+  background-color: #3066be;
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+}
+
+.ctx-color-selector-holder {
+  width: 16%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+}
+
+#adminmenu .awaiting-mod,
+#adminmenu .update-plugins {
+  place-items: center;
+  font-weight: bold;
+  display: inline-grid;
+  padding: 0;
+}
+
+.fill-primary {
+  fill: var(--wp--preset--color--vivid-cyan-blue);
+}
+
+/*
+.wp-block-post-title {
+    display: inline-block;
+    width: fit-content;
+}
+*/
+.editor-styles-wrapper {
+  min-width: 800px !important;
+  max-width: 1440px !important;
+}

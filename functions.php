@@ -14,6 +14,15 @@ add_action('wp_enqueue_scripts', function () use ($script) {
 add_action('admin_enqueue_scripts', function () use ($script) {
 	wp_enqueue_style(
 		'child-style',
+		"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200",
+		[],
+		"1.0.0"
+	);
+}, 99);
+
+add_action('admin_enqueue_scripts', function () use ($script) {
+	wp_enqueue_style(
+		'material-icons',
 		get_stylesheet_directory_uri() . '/admin.css',
 		[],
 		$script['version']

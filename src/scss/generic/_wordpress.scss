@@ -84,10 +84,6 @@ figure.wp-block-embed {
     }
 }
 
-.wp-site-blocks > * + * {
-    margin-block-start: 0px !important;
-}
-
 .wp-justify {
     text-align: justify !important;
 }
@@ -100,7 +96,15 @@ figure.wp-block-embed {
     background-color: black;
 }
 
-.wp-site-blocks > * + * {
-    margin: auto;
-    max-width: var(--wp--style--global--content-size);
+.wp-block-cover__inner-container {
+    position: relative;
+    .wp-block-group.has-background {
+        backdrop-filter: blur(5px);
+    }
+
+    .wp-block-ctx-blocks-button {
+        position: absolute !important;
+        top: 0;
+        margin-top: -1.25rem !important;
+    }
 }
