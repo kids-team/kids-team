@@ -1,6 +1,41 @@
 @use "../tools" as tools;
 @use "../settings/sizes" as sizes;
 
+.block-navigation__submenu-container {
+    background: #ffffff;
+    padding-left: 0;
+    background-color: #ffffff;
+    border-bottom-right-radius: tools.space(4);
+    position: absolute;
+    transform: scaleY(0.7);
+    opacity: 0;
+    pointer-events: none;
+    transform-origin: top;
+    transition: all 100ms ease-in-out;
+    top: 0;
+    margin-top: tools.space(9);
+    width: max-content;
+    right: 0;
+    padding: tools.space(0) 0;
+
+    .wp-block-navigation-item {
+        color: grayscale(900);
+        padding: 0;
+        font-size: 1rem;
+
+        a {
+            padding: tools.space(1) tools.space(4);
+            display: flex;
+            justify-items: center;
+
+            &:hover,
+            &:focus {
+                background: var(--primary);
+                color: var(--primary-contrast) !important;
+            }
+        }
+    }
+}
 /*
 *   Mobile
 */

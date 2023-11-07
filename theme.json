@@ -17,7 +17,8 @@
             "line-height": {
                 "body": 1.7,
                 "heading": 1.3
-            }
+            },
+            "primary-color": "#3e3e3f"
         },
         "shadow": {
             "presets": [
@@ -43,7 +44,8 @@
         },
         "layout": {
             "contentSize": "1440px",
-            "wideSize": "1440px"
+            "wideSize": "1440px",
+            "fullSize": "1440px"
         },
         "typography": {
             "fluid": true,
@@ -174,13 +176,18 @@
                 "spacing": {
                     "padding": "4"
                 }
+            },
+            "core/blockquote": {
+                "border": {
+                    "style": "dotted"
+                }
             }
         }
     },
     "styles": {
         "color": {
             "background": "#f4f4f4",
-            "text": "var(--wp--preset--color--primary)"
+            "text": "#3e3e3f"
         },
         "spacing": {
             "margin": {
@@ -233,6 +240,14 @@
             "ctx-blocks/grid-row": {
                 "spacing": {
                     "blockGap": "var(--wp--preset--spacing--50)"
+                }
+            },
+            "core/latest-posts__post-title": {
+                "spacing": {
+                    "margin": {
+                        "left": "1rem",
+                        "right": "1rem"
+                    }
                 }
             }
         },

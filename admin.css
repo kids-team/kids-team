@@ -1,82 +1,44 @@
 /*!********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/admin.scss ***!
   \********************************************************************************************************************************************************/
-.font-script,
-.script {
-  font-family: "Fuzzy Bubbles", sans-serif;
-  font-weight: 500;
+@font-face {
+  font-family: "material-icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/1e71fdb1cede0045652c.woff2?ver=9324776) format("woff2");
+}
+.material-icons, .icon {
+  font-family: "material-icons";
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  font-style: normal;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
 }
 
-.ctx-color-badge {
-  border-radius: 4px;
+.material-icons--bubble {
+  border-radius: 999px;
+  background: #eee;
   display: flex;
+  /* place-content: center; */
+  place-items: center;
+  aspect-ratio: 1/1;
   align-items: center;
-  padding-left: 6px;
-  height: 24px;
-  width: 80px;
+  justify-items: center;
+  justify-content: center;
 }
 
-.manage-column.column-color {
-  width: 150px;
-}
-
-.description.error {
-  color: #bb0000 !important;
-}
-
-.color-select {
-  margin-top: 20px;
-}
-
-.ctx-color-selector {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.ctx-color-selector-input {
-  margin-left: 10px;
-  margin-left: 10px;
-  padding: 0;
-  border: 0 !important;
-}
-
-.ctx-color-selector-button {
-  background-color: #3066be;
-  color: #ffffff;
-  width: 24px;
-  height: 24px;
-  padding: 0;
-  border: 1px solid #bbb;
-  border-radius: 50%;
-}
-
-.ctx-color-selector-holder {
-  width: 16%;
-  display: grid;
-  place-items: center;
-  margin-bottom: 10px;
-}
-
-#adminmenu .awaiting-mod,
-#adminmenu .update-plugins {
-  place-items: center;
-  font-weight: bold;
-  display: inline-grid;
-  padding: 0;
+.material-icons--micro-bubble {
+  width: 1rem;
+  height: 1rem;
 }
 
 .fill-primary {
-  fill: var(--wp--preset--color--vivid-cyan-blue);
-}
-
-/*
-.wp-block-post-title {
-    display: inline-block;
-    width: fit-content;
-}
-*/
-.editor-styles-wrapper {
-  min-width: 800px !important;
-  max-width: 1440px !important;
+  fill: var(--primary);
 }

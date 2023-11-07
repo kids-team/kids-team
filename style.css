@@ -148,16 +148,16 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     text-align: justify !important;
   }
   .has-white-background {
-    background-color: white;
+    background-color: #ffffff;
   }
   .has-black-background {
-    background-color: black;
+    background-color: #000000;
   }
   .wp-block-cover__inner-container {
     position: relative;
   }
   .wp-block-cover__inner-container .wp-block-group.has-background {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
   }
   .wp-block-cover__inner-container .wp-block-ctx-blocks-button {
     position: absolute !important;
@@ -255,312 +255,9 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     color: rgba(255, 255, 255, 0.4);
   }
 }
-@layer objects {
-  /*
-  /   Border Radius base multiplier
-  */
-  /*
-  /   Border Radius multiplier for each corner
-  */
-  /*
-  / We go mobilile first, so no need of ups and downs.
-  */
-  .grid--columns-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid__column--span-1 {
-    grid-column: span 1/span 1;
-  }
-  .grid--columns-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid__column--span-2 {
-    grid-column: span 2/span 2;
-  }
-  .grid--columns-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .grid__column--span-3 {
-    grid-column: span 3/span 3;
-  }
-  .grid--columns-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .grid__column--span-4 {
-    grid-column: span 4/span 4;
-  }
-  .grid--columns-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-  .grid__column--span-5 {
-    grid-column: span 5/span 5;
-  }
-  .grid--columns-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-  .grid__column--span-6 {
-    grid-column: span 6/span 6;
-  }
-  @media (min-width: 768px) {
-    .md\:grid__column--span-1 {
-      grid-column: span 1/span 1;
-    }
-  }
-  @media (min-width: 768px) {
-    .md\:grid--columns-1 {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 768px) {
-    .md\:grid__column--span-2 {
-      grid-column: span 2/span 2;
-    }
-  }
-  @media (min-width: 768px) {
-    .md\:grid--columns-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 768px) {
-    .md\:grid__column--span-3 {
-      grid-column: span 3/span 3;
-    }
-  }
-  @media (min-width: 768px) {
-    .md\:grid--columns-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 768px) {
-    .md\:grid__column--span-4 {
-      grid-column: span 4/span 4;
-    }
-  }
-  @media (min-width: 768px) {
-    .md\:grid--columns-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 768px) {
-    .md\:grid__column--span-5 {
-      grid-column: span 5/span 5;
-    }
-  }
-  @media (min-width: 768px) {
-    .md\:grid--columns-5 {
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 768px) {
-    .md\:grid__column--span-6 {
-      grid-column: span 6/span 6;
-    }
-  }
-  @media (min-width: 768px) {
-    .md\:grid--columns-6 {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid__column--span-1 {
-      grid-column: span 1/span 1;
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid--columns-1 {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid__column--span-2 {
-      grid-column: span 2/span 2;
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid--columns-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid__column--span-3 {
-      grid-column: span 3/span 3;
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid--columns-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid__column--span-4 {
-      grid-column: span 4/span 4;
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid--columns-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid__column--span-5 {
-      grid-column: span 5/span 5;
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid--columns-5 {
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid__column--span-6 {
-      grid-column: span 6/span 6;
-    }
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid--columns-6 {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid__column--span-1 {
-      grid-column: span 1/span 1;
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid--columns-1 {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid__column--span-2 {
-      grid-column: span 2/span 2;
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid--columns-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid__column--span-3 {
-      grid-column: span 3/span 3;
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid--columns-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid__column--span-4 {
-      grid-column: span 4/span 4;
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid--columns-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid__column--span-5 {
-      grid-column: span 5/span 5;
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid--columns-5 {
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid__column--span-6 {
-      grid-column: span 6/span 6;
-    }
-  }
-  @media (min-width: 1280px) {
-    .xl\:grid--columns-6 {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
-  }
-  .grid--gap-1 {
-    gap: 0.25rem;
-  }
-  .grid--gap-2 {
-    gap: 0.5rem;
-  }
-  .grid--gap-3 {
-    gap: 0.75rem;
-  }
-  .grid--gap-4 {
-    gap: 1rem;
-  }
-  .grid--gap-5 {
-    gap: 1.25rem;
-  }
-  .grid--gap-6 {
-    gap: 1.5rem;
-  }
-  .grid--gap-7 {
-    gap: 1.75rem;
-  }
-  .grid--gap-8 {
-    gap: 2rem;
-  }
-  .grid--gap-9 {
-    gap: 2.25rem;
-  }
-  .grid--gap-10 {
-    gap: 2.5rem;
-  }
-  .grid--gap-11 {
-    gap: 2.75rem;
-  }
-  .grid--gap-12 {
-    gap: 3rem;
-  }
-  @media (min-width: 1024px) {
-    .lg\:grid {
-      display: grid;
-    }
-  }
-  .grid {
-    display: grid;
-  }
-  .grid > * {
-    min-width: 0;
-  }
-  .grid__column {
-    margin-block-start: 0 !important;
-  }
-  .equalizer > div {
-    display: flex;
-    flex-direction: column;
-  }
-  .equalizer .card {
-    height: 100%;
-  }
-  .equalizer h1 {
-    margin: 1.5rem;
-    line-height: 4.5rem;
-  }
-  .equalizer h2,
-  .equalizer h3 {
-    margin: 0;
-    line-height: 3rem;
-  }
-  .equalizer h4,
-  .equalizer h5 {
-    margin: 0;
-    line-height: 1.5rem;
-  }
-  .equalizer li {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
-  .equalizer p {
-    margin-bottom: 1.5rem;
-  }
-}
+/*@layer objects {
+    @include meta.load-css("objects");
+}*/
 @layer components {
   /*
   /   Border Radius base multiplier
@@ -651,57 +348,6 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
       margin-bottom: 1rem;
       background-color: #e1d4c8;
     }
-  }
-  .alert {
-    margin: 2rem 1.5rem;
-    padding: 2rem;
-    display: relative;
-    transition: all 300ms ease-in-out;
-    border-radius: 2rem 0rem 2rem 0rem;
-  }
-  .alert__title {
-    margin: 0;
-  }
-  .alert__text {
-    margin: 1rem 0 0 0;
-  }
-  .alert__close:before,
-  .alert .close:after {
-    position: absolute;
-    top: 0;
-    width: 1rem;
-  }
-  .alert__close {
-    position: relative;
-  }
-  .alert__close:before {
-    transform: rotate(-45deg);
-  }
-  .alert__close:after {
-    transform: rotate(45deg);
-  }
-  .alert--hidden {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-  .alert--disabled {
-    max-height: 0 !important;
-  }
-  .alert--warning {
-    background-color: var(--warning-light);
-    color: var(--warning-light-contrast);
-  }
-  .alert--info {
-    background-color: var(--info);
-    color: var(--info-contrast);
-  }
-  .alert--error {
-    background-color: var(--error);
-    color: var(--error-contrast);
-  }
-  .alert--success {
-    background-color: var(--success-light);
-    color: var(--success-light-contrast);
   }
   .spinning-loader {
     width: 30px;
@@ -1783,6 +1429,18 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
   /* Header 
    * @deprecated
   */
+  header.wp-block-template-part {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(0deg, #f4f4f4 100%, transparent 0);
+    background-size: 100% 80px;
+    padding-top: 16px;
+    background-repeat: no-repeat;
+  }
+  header.wp-block-template-part > .wp-block-group {
+    margin-bottom: -57px;
+  }
   .header {
     background-size: cover;
     position: relative;
@@ -2105,7 +1763,7 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     margin-top: 0.25rem;
   }
   .error-message {
-    color: var(--error);
+    color: #db4c64;
     font-size: 0.75rem;
     line-height: 1rem;
     padding-left: 18px;
@@ -2119,7 +1777,7 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     padding: 1rem 0;
   }
   .form__error {
-    color: var(--error);
+    color: #db4c64;
     font-size: 0.75rem;
     line-height: 1rem;
     padding-left: 18px;
@@ -2181,7 +1839,7 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     padding-bottom: 1px;
     border-radius: 0.5rem 0rem 0.5rem 0rem;
     font-size: 0.75rem;
-    background: var(--gray-400);
+    background: #d1d1d1;
     transition: all 300ms ease-in-out;
     white-space: nowrap;
     position: absolute;
@@ -2228,28 +1886,28 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     padding: 0.5rem 1.25rem;
     font-size: 1rem;
     border-radius: 0.5rem 0rem 0.5rem 0rem;
-    background: var(--white);
+    background: #ffffff;
     transition: all 300ms ease-in-out;
-    border: 2px solid var(--gray-400);
-    color: var(--darkgray);
+    border: 2px solid #d1d1d1;
+    color: #595959;
   }
   .input input:focus,
   .login-username input:focus,
   .login-password input:focus {
-    border-color: var(--primary);
-    color: var(--primary);
+    border-color: #00abe5;
+    color: #00abe5;
   }
   .input:focus-within label,
   .login-username:focus-within label,
   .login-password:focus-within label {
-    background-color: var(--primary);
-    color: var(--primary-contrast);
+    background-color: #00abe5;
+    color: #ffffff;
   }
   .input:focus-within label::after,
   .login-username:focus-within label::after,
   .login-password:focus-within label::after {
-    background-color: var(--primary-dark) !important;
-    color: var(--primary-contrast) !important;
+    background-color: #0084b2 !important;
+    color: #ffffff !important;
   }
   .input--large input,
   .login-username--large input,
@@ -2265,25 +1923,25 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
   }
   .textarea textarea {
     width: 100%;
-    border: 2px solid var(--gray-400);
+    border: 2px solid #d1d1d1;
     border-radius: 0.5rem 0rem 0.5rem 0rem;
-    background: var(--white);
+    background: #ffffff;
     padding: 1.25rem;
     padding-top: 6px;
     outline: none !important;
     resize: vertical;
   }
   .textarea textarea:focus {
-    border-color: var(--primary);
-    color: var(--primary);
+    border-color: #00abe5;
+    color: #00abe5;
   }
   .textarea:focus-within label {
-    background-color: var(--primary);
-    color: var(--primary-contrast);
+    background-color: #00abe5;
+    color: #ffffff;
   }
   .textarea:focus-within label::after {
-    background-color: var(--primary-dark) !important;
-    color: var(--primary-contrast) !important;
+    background-color: #0084b2 !important;
+    color: #ffffff !important;
   }
   .select::after,
   .combobox::after {
@@ -2313,27 +1971,27 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     padding: 0.5rem 1.25rem;
     font-size: 1rem;
     border-radius: 0.5rem 0rem 0.5rem 0rem;
-    background: var(--white);
+    background: #ffffff;
     transition: all 300ms ease-in-out;
-    border: 2px solid var(--gray-400);
-    color: var(--darkgray);
+    border: 2px solid #d1d1d1;
+    color: #595959;
   }
   .select select:focus,
   .select input[type=text]:focus,
   .combobox select:focus,
   .combobox input[type=text]:focus {
-    border-color: var(--primary);
-    color: var(--primary);
+    border-color: #00abe5;
+    color: #00abe5;
   }
   .select:focus-within label,
   .combobox:focus-within label {
-    background-color: var(--primary);
-    color: var(--primary-contrast);
+    background-color: #00abe5;
+    color: #ffffff;
   }
   .select:focus-within label::after,
   .combobox:focus-within label::after {
-    background-color: var(--primary-dark) !important;
-    color: var(--primary-contrast) !important;
+    background-color: #0084b2 !important;
+    color: #ffffff !important;
   }
   .combobox ul {
     position: absolute;
@@ -2342,9 +2000,9 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     width: 100%;
     overflow-y: scroll;
     background: #fff;
-    border-left: 2px solid var(--gray-400);
-    border-right: 2px solid var(--gray-400);
-    border-bottom: 2px solid var(--gray-400);
+    border-left: 2px solid #d1d1d1;
+    border-right: 2px solid #d1d1d1;
+    border-bottom: 2px solid #d1d1d1;
     border-bottom-right-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -2358,8 +2016,8 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     cursor: pointer;
   }
   .combobox ul li:hover, .combobox ul li.selected {
-    background-color: var(--primary);
-    color: var(--primary-contrast);
+    background-color: #00abe5;
+    color: #ffffff;
   }
   .combobox ul li:hover span, .combobox ul li.selected span {
     color: rgba(255, 255, 255, 0.5333333333);
@@ -2407,7 +2065,7 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     padding: 1px 0.5rem;
     border-radius: 0.5rem 0rem 0.5rem 0rem;
     font-size: 0.75rem;
-    background: var(--gray-400);
+    background: #d1d1d1;
     transition: all 300ms ease-in-out;
     white-space: nowrap;
   }
@@ -2421,11 +2079,11 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     color: currentColor;
     width: 1.25rem;
     height: 1.25rem;
-    border: 2px solid var(--gray-400);
+    border: 2px solid #d1d1d1;
     border-radius: 999px;
   }
   .radio input[type=radio]:focus {
-    border-color: var(--primary);
+    border-color: #00abe5;
   }
   .radio input[type=radio]::before {
     content: "";
@@ -2433,7 +2091,7 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     height: 0.75rem;
     border-radius: 50%;
     transform: scale(0);
-    box-shadow: inset 1em 1em var(--primary);
+    box-shadow: inset 1em 1em #00abe5;
   }
   .radio input[type=radio]::before::after {
     display: none !important;
@@ -2482,7 +2140,7 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     height: 1.5rem;
     width: 1.5rem;
     border: 2px solid var(--gray-600);
-    background: var(--white);
+    background: #ffffff;
     border-top-left-radius: 0.4rem;
     border-bottom-right-radius: 0.4rem;
     transition: all 300ms ease-in-out;
@@ -2494,13 +2152,13 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
   }
   .checkbox input:checked,
   .login-remember input:checked {
-    border-color: var(--primary);
+    border-color: #00abe5;
     box-shadow: inset 0px 0px 0px 2px #fff;
   }
   .checkbox input:checked::after,
   .login-remember input:checked::after {
     transform: scale-y(100);
-    color: var(--primary);
+    color: #00abe5;
     animation-name: ctx-checkbox-check;
     -webkit-animation-duration: 300ms;
     animation-duration: 300ms;
@@ -2519,11 +2177,11 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
   }
   .checkbox input[disabled],
   .login-remember input[disabled] {
-    border: 2px solid var(--gray-400);
+    border: 2px solid #d1d1d1;
   }
   .checkbox input[disabled]::after,
   .login-remember input[disabled]::after {
-    color: var(--gray-400);
+    color: #d1d1d1;
   }
   .toggle label {
     gap: 1rem;
@@ -2552,10 +2210,10 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     height: 0;
   }
   .toggle input:checked + .toggle__switch {
-    background-color: #2196f3;
+    background-color: #00abe5;
   }
   .toggle input:focus + .toggle__switch {
-    box-shadow: 0 0 1px #2196f3;
+    box-shadow: 0 0 1px #00abe5;
   }
   .toggle input:checked + .toggle__switch:before {
     transform: translateX(22px);
@@ -2572,10 +2230,10 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     border-radius: 50%;
   }
   .toggle input:checked + .toggle__switch {
-    background-color: #2196f3;
+    background-color: #00abe5;
   }
   .toggle input:focus + .toggle__switch {
-    box-shadow: 0 0 1px #2196f3;
+    box-shadow: 0 0 1px #00abe5;
   }
   .submit,
   .login-submit {
@@ -2584,8 +2242,8 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
   .submit input[type=submit],
   .login-submit input[type=submit] {
     border: none;
-    background: var(--primary);
-    color: var(--primary-contrast);
+    background: #00abe5;
+    color: #ffffff;
     font-size: 1rem;
   }
   .range label {
@@ -2647,7 +2305,7 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     height: 7px;
     -webkit-appearance: none;
     background-color: var(--gray-300);
-    background-image: linear-gradient(var(--primary), var(--primary));
+    background-image: linear-gradient(#00abe5, #00abe5);
     background-size: 30% 70%;
     background-repeat: repeat-y;
     border-radius: 99px;
@@ -2674,8 +2332,8 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     transition: all 200ms ease-in-out;
   }
   .range input[type=range]::-webkit-slider-thumb:hover {
-    border-color: var(--primary);
-    background-color: var(--white);
+    border-color: #00abe5;
+    background-color: #ffffff;
     transform: scale(1.2);
   }
   .range input[type=range]::-moz-range-track {
@@ -2695,8 +2353,8 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     transition: all 200ms ease-in-out;
   }
   .range input[type=range]::-moz-range-thumb:hover {
-    border-color: var(--primary);
-    background-color: var(--white);
+    border-color: #00abe5;
+    background-color: #ffffff;
     transform: scale(1.2);
   }
   .input-row {
@@ -2724,21 +2382,26 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
   }
   .error input,
   .error select {
-    color: var(--error);
-    border-color: var(--error);
+    color: #db4c64;
+    border-color: #db4c64;
+  }
+  .filled input,
+  .filled select {
+    color: #017a47;
+    border-color: #88c756;
   }
   select:invalid {
     color: var(--mediumgray);
   }
   .error label {
-    background: var(--error);
+    background: #db4c64;
     color: var(--error-contrast);
   }
   .input--required.error label::after {
-    background-color: var(--error-dark);
+    background-color: #840a08;
   }
   .input--required.filled label::after {
-    background-color: var(--success);
+    background-color: #88c756;
   }
   .input-textarea {
     flex-flow: column;
@@ -3230,6 +2893,37 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
   }
   .dark .nav__link {
     color: var(--white);
+  }
+  .block-navigation__submenu-container {
+    background: #ffffff;
+    padding-left: 0;
+    background-color: #ffffff;
+    border-bottom-right-radius: 1rem;
+    position: absolute;
+    transform: scaleY(0.7);
+    opacity: 0;
+    pointer-events: none;
+    transform-origin: top;
+    transition: all 100ms ease-in-out;
+    top: 0;
+    margin-top: 2.25rem;
+    width: max-content;
+    right: 0;
+    padding: 0rem 0;
+  }
+  .block-navigation__submenu-container .wp-block-navigation-item {
+    color: grayscale(900);
+    padding: 0;
+    font-size: 1rem;
+  }
+  .block-navigation__submenu-container .wp-block-navigation-item a {
+    padding: 0.25rem 1rem;
+    display: flex;
+    justify-items: center;
+  }
+  .block-navigation__submenu-container .wp-block-navigation-item a:hover, .block-navigation__submenu-container .wp-block-navigation-item a:focus {
+    background: var(--primary);
+    color: var(--primary-contrast) !important;
   }
   /*
   *   Mobile
@@ -4169,7 +3863,7 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
   .popup__body {
     padding: 1rem;
   }
-  .hamburger {
+  .wp-block-navigation__responsive-container-open {
     padding-top: 1.25rem;
     padding-right: 0.5rem;
     display: inline-block;
@@ -4183,29 +3877,31 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     order: 99;
     margin-bottom: -0.25rem;
   }
-  .hamburger--active span {
+  .wp-block-navigation__responsive-container-open--active span {
     background-color: transparent !important;
     transform: rotateY(180deg);
   }
-  .hamburger--active span::before {
+  .wp-block-navigation__responsive-container-open--active span::before {
     transform: translate3d(0, 8px, 0) rotate(45deg);
   }
-  .hamburger--active span::after {
+  .wp-block-navigation__responsive-container-open--active span::after {
     transform: translate3d(0, -8px, 0) rotate(-45deg);
   }
-  .hamburger div {
+  .wp-block-navigation__responsive-container-open div {
     width: 2rem;
     height: 2rem;
     display: inline-block;
     position: relative;
   }
-  .hamburger span {
+  .wp-block-navigation__responsive-container-open span {
     display: block;
     top: 50%;
     margin-top: -2px;
     transition: transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
-  .hamburger span, .hamburger span::before, .hamburger span::after {
+  .wp-block-navigation__responsive-container-open span,
+  .wp-block-navigation__responsive-container-open span::before,
+  .wp-block-navigation__responsive-container-open span::after {
     width: 2rem;
     height: 2px;
     background-color: var(--black);
@@ -4215,15 +3911,16 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     transition-duration: 300ms;
     transition-timing-function: ease;
   }
-  .hamburger span::before, .hamburger span::after {
+  .wp-block-navigation__responsive-container-open span::before,
+  .wp-block-navigation__responsive-container-open span::after {
     transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
     content: "";
     display: block;
   }
-  .hamburger span::before {
+  .wp-block-navigation__responsive-container-open span::before {
     top: -8px;
   }
-  .hamburger span::after {
+  .wp-block-navigation__responsive-container-open span::after {
     bottom: -8px;
   }
   @media (min-width: 1024px) {
@@ -4231,17 +3928,69 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
       display: none;
     }
   }
+  .wp-block-latest-posts__list {
+    display: grid !important;
+    gap: 2rem;
+  }
+  .wp-block-latest-posts.columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wp-block-latest-posts.columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .wp-block-latest-posts.columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .wp-block-latest-posts.columns-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .wp-block-latest-posts li {
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    position: relative;
+    width: 100% !important;
+    margin: 0 !important;
+    transition: all 0.3s ease-in-out;
+  }
+  .wp-block-latest-posts li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  .wp-block-latest-posts__featured-image img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+  .wp-block-latest-posts__post-title {
+    margin: 1rem;
+    font-size: 1.25rem;
+  }
+  .wp-block-latest-posts__post-date {
+    margin: 0 1rem;
+    position: absolute;
+    top: 0;
+    background: var(--primary);
+    color: #fff;
+    padding: 1px 8px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-top: -11px;
+    right: 0;
+  }
+  .wp-block-latest-posts__post-excerpt {
+    margin: 0 1rem;
+  }
+  .wp-block-latest-posts__post-author {
+    margin: 0 1rem;
+    color: #999999;
+  }
 }
 @layer utils {
   .fill-primary {
     fill: var(--primary);
   }
-  .fill-secondary {
-    fill: themecolor(secondary);
-  }
   .bg-white {
-    background: var(--white);
-    color: var(--black);
+    background: #ffffff;
+    color: #000000;
   }
   .bg-black {
     background: var(--black);
@@ -4255,205 +4004,6 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
   }
   .dark {
     color: var(--white);
-  }
-  .bg-primary,
-  has-primary-background {
-    background-color: var(--primary);
-    color: var(--primary-contrast);
-  }
-  .bg-primary-light {
-    background-color: var(--primary-light);
-    color: var(--primary-dark);
-  }
-  .bg-primary-dark {
-    background-color: var(--primary-dark);
-    color: var(--primary-light);
-  }
-  .text-primary,
-  has-primary-color {
-    color: var(--primary);
-  }
-  .bg-secondary,
-  has-secondary-background {
-    background-color: var(--secondary);
-    color: var(--secondary-contrast);
-  }
-  .bg-secondary-light {
-    background-color: var(--secondary-light);
-    color: var(--secondary-dark);
-  }
-  .bg-secondary-dark {
-    background-color: var(--secondary-dark);
-    color: var(--secondary-light);
-  }
-  .text-secondary,
-  has-secondary-color {
-    color: var(--secondary);
-  }
-  .bg-success,
-  has-success-background {
-    background-color: var(--success);
-    color: var(--success-contrast);
-  }
-  .bg-success-light {
-    background-color: var(--success-light);
-    color: var(--success-dark);
-  }
-  .bg-success-dark {
-    background-color: var(--success-dark);
-    color: var(--success-light);
-  }
-  .text-success,
-  has-success-color {
-    color: var(--success);
-  }
-  .bg-warning,
-  has-warning-background {
-    background-color: var(--warning);
-    color: var(--warning-contrast);
-  }
-  .bg-warning-light {
-    background-color: var(--warning-light);
-    color: var(--warning-dark);
-  }
-  .bg-warning-dark {
-    background-color: var(--warning-dark);
-    color: var(--warning-light);
-  }
-  .text-warning,
-  has-warning-color {
-    color: var(--warning);
-  }
-  .bg-error,
-  has-error-background {
-    background-color: var(--error);
-    color: var(--error-contrast);
-  }
-  .bg-error-light {
-    background-color: var(--error-light);
-    color: var(--error-dark);
-  }
-  .bg-error-dark {
-    background-color: var(--error-dark);
-    color: var(--error-light);
-  }
-  .text-error,
-  has-error-color {
-    color: var(--error);
-  }
-  .bg-gray,
-  has-gray-background {
-    background-color: var(--gray-600);
-    color: var(--white);
-  }
-  .bg-gray-light {
-    background-color: var(--gray-300);
-    color: var(--gray-800);
-  }
-  .bg-gray-dark {
-    background-color: var(--gray-800);
-    color: var(--gray-300);
-  }
-  .text-gray,
-  has-gray-color {
-    color: var(--gray-600);
-  }
-  .bg-white,
-  has-white-background {
-    background-color: var(--white);
-    color: var(--black);
-  }
-  .bg-white-light {
-    background-color: var(--white);
-    color: var(--white);
-  }
-  .bg-white-dark {
-    background-color: var(--white);
-    color: var(--white);
-  }
-  .text-white,
-  has-white-color {
-    color: var(--white);
-  }
-  .bg-black,
-  has-black-background {
-    background-color: var(--black);
-    color: var(--white);
-  }
-  .bg-black-light {
-    background-color: var(--black);
-    color: var(--black);
-  }
-  .bg-black-dark {
-    background-color: var(--black);
-    color: var(--black);
-  }
-  .text-black,
-  has-black-color {
-    color: var(--black);
-  }
-  .bg-gray-100 {
-    background-color: var(--gray-100);
-    color: var(--gray-100-contrast);
-  }
-  .text-gray-100 {
-    color: var(--gray-100);
-  }
-  .bg-gray-200 {
-    background-color: var(--gray-200);
-    color: var(--gray-200-contrast);
-  }
-  .text-gray-200 {
-    color: var(--gray-200);
-  }
-  .bg-gray-300 {
-    background-color: var(--gray-300);
-    color: var(--gray-300-contrast);
-  }
-  .text-gray-300 {
-    color: var(--gray-300);
-  }
-  .bg-gray-400 {
-    background-color: var(--gray-400);
-    color: var(--gray-400-contrast);
-  }
-  .text-gray-400 {
-    color: var(--gray-400);
-  }
-  .bg-gray-500 {
-    background-color: var(--gray-500);
-    color: var(--gray-500-contrast);
-  }
-  .text-gray-500 {
-    color: var(--gray-500);
-  }
-  .bg-gray-600 {
-    background-color: var(--gray-600);
-    color: var(--gray-600-contrast);
-  }
-  .text-gray-600 {
-    color: var(--gray-600);
-  }
-  .bg-gray-700 {
-    background-color: var(--gray-700);
-    color: var(--gray-700-contrast);
-  }
-  .text-gray-700 {
-    color: var(--gray-700);
-  }
-  .bg-gray-800 {
-    background-color: var(--gray-800);
-    color: var(--gray-800-contrast);
-  }
-  .text-gray-800 {
-    color: var(--gray-800);
-  }
-  .bg-gray-900 {
-    background-color: var(--gray-900);
-    color: var(--gray-900-contrast);
-  }
-  .text-gray-900 {
-    color: var(--gray-900);
   }
   .text-right {
     text-align: right;

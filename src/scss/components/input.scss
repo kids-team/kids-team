@@ -2,7 +2,7 @@
 @use "../tools/" as tools;
 
 .error-message {
-    color: var(--error);
+    color: #db4c64;
     font-size: 0.75rem;
     line-height: 1rem;
     padding-left: 18px;
@@ -18,7 +18,7 @@
     }
 
     &__error {
-        color: var(--error);
+        color: #db4c64;
         font-size: 0.75rem;
         line-height: 1rem;
         padding-left: 18px;
@@ -82,7 +82,7 @@
         padding-bottom: 1px;
         border-radius: tools.rounded("sm");
         font-size: 0.75rem;
-        background: tools.gray(400);
+        background: #d1d1d1;
         transition: all 300ms ease-in-out;
         white-space: nowrap;
         position: absolute;
@@ -124,24 +124,24 @@
         padding: 0.5rem 1.25rem;
         font-size: tools.space(4);
         border-radius: tools.rounded("sm");
-        background: var(--white);
+        background: #ffffff;
         transition: all 300ms ease-in-out;
-        border: 2px solid tools.gray(400);
-        color: var(--darkgray);
+        border: 2px solid #d1d1d1;
+        color: #595959;
 
         &:focus {
-            border-color: var(--primary);
-            color: var(--primary);
+            border-color: #00abe5;
+            color: #00abe5;
         }
     }
 
     &:focus-within label {
-        background-color: var(--primary);
-        color: var(--primary-contrast);
+        background-color: #00abe5;
+        color: #ffffff;
 
         &::after {
-            background-color: var(--primary-dark) !important;
-            color: var(--primary-contrast) !important;
+            background-color: #0084b2 !important;
+            color: #ffffff !important;
         }
     }
 
@@ -162,27 +162,27 @@
 
     textarea {
         width: 100%;
-        border: 2px solid tools.gray(400);
+        border: 2px solid #d1d1d1;
         border-radius: tools.rounded("sm");
-        background: var(--white);
+        background: #ffffff;
         padding: 1.25rem;
         padding-top: 6px;
         outline: none !important;
         resize: vertical;
 
         &:focus {
-            border-color: var(--primary);
-            color: var(--primary);
+            border-color: #00abe5;
+            color: #00abe5;
         }
     }
 
     &:focus-within label {
-        background-color: var(--primary);
-        color: var(--primary-contrast);
+        background-color: #00abe5;
+        color: #ffffff;
 
         &::after {
-            background-color: var(--primary-dark) !important;
-            color: var(--primary-contrast) !important;
+            background-color: #0084b2 !important;
+            color: #ffffff !important;
         }
     }
 }
@@ -216,24 +216,24 @@
         padding: 0.5rem 1.25rem;
         font-size: tools.space(4);
         border-radius: tools.rounded("sm");
-        background: var(--white);
+        background: #ffffff;
         transition: all 300ms ease-in-out;
-        border: 2px solid tools.gray(400);
-        color: var(--darkgray);
+        border: 2px solid #d1d1d1;
+        color: #595959;
 
         &:focus {
-            border-color: var(--primary);
-            color: var(--primary);
+            border-color: #00abe5;
+            color: #00abe5;
         }
     }
 
     &:focus-within label {
-        background-color: var(--primary);
-        color: var(--primary-contrast);
+        background-color: #00abe5;
+        color: #ffffff;
 
         &::after {
-            background-color: var(--primary-dark) !important;
-            color: var(--primary-contrast) !important;
+            background-color: #0084b2 !important;
+            color: #ffffff !important;
         }
     }
 }
@@ -246,9 +246,9 @@
         width: 100%;
         overflow-y: scroll;
         background: #fff;
-        border-left: 2px solid tools.gray(400);
-        border-right: 2px solid tools.gray(400);
-        border-bottom: 2px solid tools.gray(400);
+        border-left: 2px solid #d1d1d1;
+        border-right: 2px solid #d1d1d1;
+        border-bottom: 2px solid #d1d1d1;
         border-bottom-right-radius: 0.5rem;
 
         display: flex;
@@ -264,8 +264,8 @@
 
             &:hover,
             &.selected {
-                background-color: var(--primary);
-                color: var(--primary-contrast);
+                background-color: #00abe5;
+                color: #ffffff;
 
                 span {
                     color: #ffffff88;
@@ -330,7 +330,7 @@
         padding: 1px 0.5rem;
         border-radius: tools.rounded("sm");
         font-size: 0.75rem;
-        background: tools.gray(400);
+        background: #d1d1d1;
         transition: all 300ms ease-in-out;
         white-space: nowrap;
     }
@@ -345,11 +345,11 @@
         color: currentColor;
         width: tools.space(5);
         height: tools.space(5);
-        border: 2px solid tools.gray(400);
+        border: 2px solid #d1d1d1;
         border-radius: 999px;
 
         &:focus {
-            border-color: var(--primary);
+            border-color: #00abe5;
         }
     }
 
@@ -360,7 +360,7 @@
         border-radius: 50%;
         transform: scale(0);
         //transition: 300ms transform ease-in-out;
-        box-shadow: inset 1em 1em var(--primary);
+        box-shadow: inset 1em 1em #00abe5;
 
         &::after {
             // required icon fix
@@ -413,7 +413,7 @@
         height: 1.5rem;
         width: 1.5rem;
         border: 2px solid tools.gray(600);
-        background: var(--white);
+        background: #ffffff;
         border-top-left-radius: 0.4rem;
         border-bottom-right-radius: 0.4rem;
         transition: all 300ms ease-in-out;
@@ -424,12 +424,12 @@
         }
 
         &:checked {
-            border-color: var(--primary);
+            border-color: #00abe5;
             box-shadow: inset 0px 0px 0px 2px #fff;
 
             &::after {
                 transform: scale-y(100);
-                color: var(--primary);
+                color: #00abe5;
                 animation-name: ctx-checkbox-check;
                 -webkit-animation-duration: 300ms;
                 animation-duration: 300ms;
@@ -449,10 +449,10 @@
         }
 
         &[disabled] {
-            border: 2px solid tools.gray(400);
+            border: 2px solid #d1d1d1;
 
             &::after {
-                color: tools.gray(400);
+                color: #d1d1d1;
             }
         }
     }
@@ -490,11 +490,11 @@
     }
 
     input:checked + .toggle__switch {
-        background-color: #2196f3;
+        background-color: #00abe5;
     }
 
     input:focus + .toggle__switch {
-        box-shadow: 0 0 1px #2196f3;
+        box-shadow: 0 0 1px #00abe5;
     }
 
     input:checked + .toggle__switch:before {
@@ -514,11 +514,11 @@
     }
 
     input:checked + .toggle__switch {
-        background-color: #2196f3;
+        background-color: #00abe5;
     }
 
     input:focus + .toggle__switch {
-        box-shadow: 0 0 1px #2196f3;
+        box-shadow: 0 0 1px #00abe5;
     }
 }
 
@@ -528,8 +528,8 @@
 
     input[type="submit"] {
         border: none;
-        background: var(--primary);
-        color: var(--primary-contrast);
+        background: #00abe5;
+        color: #ffffff;
         font-size: 1rem;
     }
 }
@@ -599,7 +599,7 @@
         height: 7px;
         -webkit-appearance: none;
         background-color: var(--gray-300);
-        background-image: linear-gradient(var(--primary), var(--primary));
+        background-image: linear-gradient(#00abe5, #00abe5);
         background-size: 30% 70%;
         background-repeat: repeat-y;
         border-radius: 99px;
@@ -626,8 +626,8 @@
         transition: all 200ms ease-in-out;
 
         &:hover {
-            border-color: var(--primary);
-            background-color: var(--white);
+            border-color: #00abe5;
+            background-color: #ffffff;
             transform: scale(1.2);
         }
     }
@@ -649,8 +649,8 @@
         transition: all 200ms ease-in-out;
 
         &:hover {
-            border-color: var(--primary);
-            background-color: var(--white);
+            border-color: #00abe5;
+            background-color: #ffffff;
             transform: scale(1.2);
         }
     }
@@ -687,8 +687,14 @@ span.wpcf7-list-item {
 
 .error input,
 .error select {
-    color: var(--error);
-    border-color: var(--error);
+    color: #db4c64;
+    border-color: #db4c64;
+}
+
+.filled input,
+.filled select {
+    color: #017a47;
+    border-color: #88c756;
 }
 
 select:invalid {
@@ -696,19 +702,19 @@ select:invalid {
 }
 
 .error label {
-    background: var(--error);
+    background: #db4c64;
     color: var(--error-contrast);
 }
 
 .input--required.error {
     label::after {
-        background-color: var(--error-dark);
+        background-color: #840a08;
     }
 }
 
 .input--required.filled {
     label::after {
-        background-color: var(--success);
+        background-color: #88c756;
     }
 }
 

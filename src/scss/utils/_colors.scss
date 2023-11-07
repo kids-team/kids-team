@@ -4,13 +4,9 @@
     fill: var(--primary);
 }
 
-.fill-secondary {
-    fill: themecolor(secondary);
-}
-
 .bg-white {
-    background: var(--white);
-    color: var(--black);
+    background: #ffffff;
+    color: #000000;
 }
 
 .bg-black {
@@ -28,34 +24,4 @@
 
 .dark {
     color: var(--white);
-}
-
-@each $key, $color in colors.$themecolors {
-    .bg-#{$key},
-    has-#{$key}-background {
-        background-color: map-get($color, color);
-        color: map-get($color, contrast);
-    }
-    .bg-#{$key}-light {
-        background-color: map-get($color, light);
-        color: map-get($color, dark);
-    }
-    .bg-#{$key}-dark {
-        background-color: map-get($color, dark);
-        color: map-get($color, light);
-    }
-    .text-#{$key},
-    has-#{$key}-color {
-        color: map-get($color, color);
-    }
-}
-
-@each $key, $color in colors.$graytones {
-    .bg-gray-#{$key} {
-        background-color: map-get($color, color);
-        color: map-get($color, contrast);
-    }
-    .text-gray-#{$key} {
-        color: map-get($color, color);
-    }
 }

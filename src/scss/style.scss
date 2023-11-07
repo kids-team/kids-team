@@ -13,32 +13,28 @@ GitHub Theme URI: gollenia/kids-team
 GitHub Theme URI: https://github.com/gollenia/kids-team
 */
 
-
-@use 'sass:meta';
-@use 'settings';
-@use 'tools';
-
-
-
+@use "sass:meta";
+@use "settings";
+@use "tools";
 
 @layer generic {
-	@include meta.load-css('generic');
+    @include meta.load-css("generic");
 }
 
 @layer elements {
-	@include meta.load-css('elements');
+    @include meta.load-css("elements");
 }
 
-@layer objects {
-	@include meta.load-css('objects');
-}
+/*@layer objects {
+    @include meta.load-css("objects");
+}*/
 
 @layer components {
-	@include meta.load-css('components');
+    @include meta.load-css("components");
 }
 
 @layer utils {
-	@include meta.load-css('utils');
+    @include meta.load-css("utils");
 }
 
-@layer generic, elements, objects, components, utils;						
+@layer generic, elements, objects, components, utils;

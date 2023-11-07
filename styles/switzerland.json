@@ -1,0 +1,96 @@
+{
+    "version": 2,
+    "title": "Schweiz",
+    "description": "Hauptfarbe Orange",
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "name": "Orange",
+                    "slug": "primary",
+                    "color": "#fbb900"
+                },
+                {
+                    "name": "Helles Orange",
+                    "slug": "lightorange",
+                    "color": "#ffe699"
+                },
+                {
+                    "name": "Schwarz",
+                    "slug": "black",
+                    "color": "#000000"
+                },
+                {
+                    "name": "Weiß",
+                    "slug": "white",
+                    "color": "#ffffff"
+                },
+                {
+                    "name": "Hellgrau",
+                    "slug": "lightgray",
+                    "color": "#f4f4f9"
+                },
+                {
+                    "name": "Grau",
+                    "slug": "gray",
+                    "color": "#9d9fa2"
+                },
+                {
+                    "name": "Dunkelgrau",
+                    "slug": "darkgray",
+                    "color": "#3e3e3f"
+                },
+                {
+                    "name": "Blau",
+                    "slug": "blue",
+                    "color": "#00abe5"
+                },
+                {
+                    "name": "Hellblau",
+                    "slug": "lightblue",
+                    "color": "#bce0f5"
+                },
+                {
+                    "name": "Dunkelblau",
+                    "slug": "darkblue",
+                    "color": "#1c46ed"
+                },
+                {
+                    "name": "Grün",
+                    "slug": "green",
+                    "color": "#88c756"
+                },
+                {
+                    "name": "Dunkelgrün",
+                    "slug": "darkgreen",
+                    "color": "#017a47"
+                },
+                {
+                    "name": "Hellgrün",
+                    "slug": "lightgreen",
+                    "color": "#dceccd"
+                },
+                {
+                    "name": "Lila",
+                    "slug": "purple",
+                    "color": "#8f6daf"
+                },
+                {
+                    "name": "Dunkles Lila",
+                    "slug": "darkpurple",
+                    "color": "#4a2e92"
+                },
+                {
+                    "name": "Rot",
+                    "slug": "red",
+                    "color": "#db4c64"
+                },
+                {
+                    "name": "Dunkles Rot",
+                    "slug": "darkred",
+                    "color": "#f2c5c3"
+                }
+            ]
+        }
+    }
+}

@@ -89,17 +89,17 @@ figure.wp-block-embed {
 }
 
 .has-white-background {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .has-black-background {
-    background-color: black;
+    background-color: #000000;
 }
 
 .wp-block-cover__inner-container {
     position: relative;
     .wp-block-group.has-background {
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
     }
 
     .wp-block-ctx-blocks-button {
