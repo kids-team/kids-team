@@ -18,7 +18,10 @@
                 "body": 1.7,
                 "heading": 1.3
             },
-            "primary-color": "#3e3e3f"
+            "primary-color": {
+                "value": "#3e3e3f",
+                "type": "color"
+            }
         },
         "shadow": {
             "presets": [
@@ -225,6 +228,15 @@
                         "bottomLeft": "0",
                         "bottomRight": ".75rem"
                     }
+                },
+                "spacing": {
+                    "padding": {
+                        "top": "0.6rem",
+                        "bottom": "0.6rem",
+                        "left": "1rem",
+                        "right": "1rem"
+                    },
+                    "blockGap": "var(--wp--preset--spacing--50)"
                 }
             },
             "events-manager/booking": {

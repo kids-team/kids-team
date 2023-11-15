@@ -164,6 +164,26 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     top: 0;
     margin-top: -1.25rem !important;
   }
+  @media (min-width: 768px) {
+    .alignfull {
+      max-width: var(--wp--style--global--content-size);
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+  .wp-block-navigation-submenu {
+    border-bottom-right-radius: 1rem;
+  }
+  .wp-block-navigation-submenu li:last-child {
+    border-bottom-right-radius: inherit;
+  }
+  .wp-block-navigation-submenu li:hover {
+    background-color: var(--primary);
+    color: #ffffff;
+  }
+  .wp-block-navigation-submenu a {
+    color: #000000;
+  }
 }
 @layer elements {
   a {
@@ -3932,17 +3952,22 @@ GitHub Theme URI: https://github.com/gollenia/kids-team
     display: grid !important;
     gap: 2rem;
   }
-  .wp-block-latest-posts.columns-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .wp-block-latest-posts.columns-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .wp-block-latest-posts.columns-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .wp-block-latest-posts.columns-5 {
-    grid-template-columns: repeat(5, 1fr);
+  @media (min-width: 600px) {
+    .wp-block-latest-posts__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .wp-block-latest-posts.columns-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .wp-block-latest-posts.columns-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .wp-block-latest-posts.columns-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .wp-block-latest-posts.columns-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
   }
   .wp-block-latest-posts li {
     box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
