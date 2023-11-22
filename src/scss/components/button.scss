@@ -50,33 +50,6 @@
         transform: scale(1.1);
     }
 
-    @each $key, $color in settings.$themecolors {
-        &--#{$key} {
-            background: map-get($color, color);
-            color: map-get($color, contrast);
-
-            &.button--link {
-                color: map-get($color, color);
-                background: transparent;
-
-                &:hover {
-                    background: map-get($color, light);
-                }
-            }
-
-            &.button--outline {
-                color: map-get($color, color);
-                background: transparent;
-                border: 2px solid map-get($color, color);
-
-                &::hover {
-                    color: map-get($color, contrast);
-                    background: map-get($color, color) !important;
-                }
-            }
-        }
-    }
-
     &--skew {
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
