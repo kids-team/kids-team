@@ -74,3 +74,27 @@
         color: #999999;
     }
 }
+
+.event-card {
+    transition: transform 300ms;
+    box-shadow: var(--wp--preset--shadow--md);
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: var(--wp--preset--shadow--lg);
+    }
+}
+
+.event-card-label {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    margin-top: -1.2rem;
+    background-color: var(--wp--preset--color--primary);
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    color: #fff;
+    padding: 0.1rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}

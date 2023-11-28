@@ -28,17 +28,17 @@
                 {
                     "name": "Small",
                     "slug": "sm",
-                    "shadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
+                    "shadow": "0 1px 5px 0 rgba(0, 0, 0, 0.1)"
                 },
                 {
                     "name": "Medium",
                     "slug": "md",
-                    "shadow": "0 4px  10px 0 rgba( 0, 0, 0, 0.3 )"
+                    "shadow": "0 3px 7px 0 rgba(0, 0, 0, 0.1)"
                 },
                 {
                     "name": "Large",
                     "slug": "lg",
-                    "shadow": "0 8px  15px 0 rgba( 0, 0, 0, 0.3 )"
+                    "shadow": "0 25px 50px -12px rgba(0, 0, 0, 0.25);"
                 }
             ]
         },
@@ -239,6 +239,17 @@
                     "blockGap": "var(--wp--preset--spacing--50)"
                 }
             },
+            "ctx-blocks/card": {
+                "variations": {
+                    "dotted": {
+                        "border": {
+                            "style": "dotted",
+                            "width": "4px",
+                            "color": "#3e3e3f"
+                        }
+                    }
+                }
+            },
             "events-manager/booking": {
                 "border": {
                     "radius": {
@@ -247,6 +258,15 @@
                         "bottomLeft": "0",
                         "bottomRight": ".75rem"
                     }
+                },
+                "spacing": {
+                    "padding": {
+                        "top": "0.6rem",
+                        "bottom": "0.6rem",
+                        "left": "1rem",
+                        "right": "1rem"
+                    },
+                    "blockGap": "var(--wp--preset--spacing--50)"
                 }
             },
             "ctx-blocks/grid-row": {
