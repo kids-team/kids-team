@@ -1,9 +1,10 @@
 name: Debug
-on: [workflow_dispatch]
+on:
+  workflow_dispatch
 
 jobs:
-  environment: dev
   example-job:
+      runs-on: ubuntu-latest
       steps:
         - name: path
           run: echo -n "path ${{ secrets.SERVER_PATH }}" >> foo && cut -c1-3 foo && cut -c4
