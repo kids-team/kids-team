@@ -58,7 +58,7 @@ function add_event_template()
 			]]
 		]],
 		['core/separator'],
-		['ctx-blocks/button-group', [], [['events-manager/booking', ['title' => 'Anmeldung']]]]
+		['core/group', ['type' => 'flex', 'flexWrap' => 'nowrap'], [['events-manager/booking', ['title' => 'Anmeldung']]]]
 	];
 }
 
