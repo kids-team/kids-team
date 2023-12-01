@@ -231,8 +231,8 @@
                 },
                 "spacing": {
                     "padding": {
-                        "top": "0.6rem",
-                        "bottom": "0.6rem",
+                        "top": "0.4rem",
+                        "bottom": "0.4rem",
                         "left": "1rem",
                         "right": "1rem"
                     },
@@ -272,6 +272,11 @@
             "ctx-blocks/grid-row": {
                 "spacing": {
                     "blockGap": "var(--wp--preset--spacing--50)"
+                }
+            },
+            "ctx-blocks/description-item": {
+                "border": {
+                    "radius": "999px"
                 }
             },
             "core/latest-posts__post-title": {

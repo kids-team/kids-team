@@ -50,6 +50,7 @@
     &__post-title {
         margin: 1rem;
         font-size: 1.25rem;
+        display: block;
     }
 
     &__post-date {
@@ -67,6 +68,8 @@
 
     &__post-excerpt {
         margin: 0 1rem;
+        max-height: 3rem;
+        overflow: hidden;
     }
 
     &__post-author {

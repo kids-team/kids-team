@@ -2,7 +2,7 @@
 @use "../tools/" as tools;
 
 .error-message {
-    color: #db4c64;
+    color: #f15152;
     font-size: 0.75rem;
     line-height: 1rem;
     padding-left: 18px;
@@ -18,7 +18,7 @@
     }
 
     &__error {
-        color: #db4c64;
+        color: #f15152;
         font-size: 0.75rem;
         line-height: 1rem;
         padding-left: 18px;
@@ -687,8 +687,8 @@ span.wpcf7-list-item {
 
 .error input,
 .error select {
-    color: #db4c64;
-    border-color: #db4c64;
+    color: #f15152;
+    border-color: #f15152;
 }
 
 .filled input,
@@ -702,19 +702,19 @@ select:invalid {
 }
 
 .error label {
-    background: #db4c64;
+    background: #f15152;
     color: var(--error-contrast);
 }
 
 .input--required.error {
     label::after {
-        background-color: #840a08;
+        background-color: #ac2a2a;
     }
 }
 
 .input--required.filled {
     label::after {
-        background-color: #88c756;
+        background-color: #017a47;
     }
 }
 
