@@ -7,6 +7,14 @@
 @use "../tools" as tools;
 @use "../settings/" as settings;
 
+.ctx__button--icon-only {
+    border-radius: 999px;
+    height: 2.25rem;
+    width: 2.25rem;
+    display: grid;
+    place-content: center;
+}
+
 .button {
     position: relative;
     align-items: center;

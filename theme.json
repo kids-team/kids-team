@@ -290,7 +290,7 @@
     "templateParts": [
         {
             "name": "header",
-            "title": "Header",
+            "title": "Navigation",
             "area": "header"
         },
         {
@@ -303,6 +303,11 @@
         {
             "name": "noheader",
             "title": "Seite ohne Titelbild",
+            "postTypes": ["page", "post", "event"]
+        },
+        {
+            "name": "empty",
+            "title": "Leere Seite",
             "postTypes": ["page", "post", "event"]
         }
     ]
