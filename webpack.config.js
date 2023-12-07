@@ -1,8 +1,9 @@
 const webpack = require("webpack")
 const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const TerserPlugin = require("terser-webpack-plugin")
+
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
+const TerserPlugin = require("terser-webpack-plugin")
 
 const createVersion = () => {
     const uid = Date.now()
@@ -50,7 +51,7 @@ module.exports = (env, argv) => {
         plugins: [new MiniCssExtractPlugin()],
         optimization: {
             minimize: true,
-            minimizer: [new TerserPlugin({})],
+            minimizer: [new TerserPlugin({}), new CssMinimizerPlugin()],
         },
         watch: devMode,
         watchOptions: {
