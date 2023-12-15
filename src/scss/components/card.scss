@@ -4,9 +4,9 @@
         border-bottom-right-radius: 0.5rem;
     }
 
-    hr {
-        margin-left: -1rem;
-        margin-right: -1rem;
+    .wp-block-separator {
+        margin-left: -1rem !important;
+        margin-right: -1rem !important;
         width: calc(100% + 2rem);
     }
 
