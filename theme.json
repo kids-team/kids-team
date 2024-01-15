@@ -1,9 +1,9 @@
 {
     "version": 2,
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
     "settings": {
         "appearanceTools": true,
         "useRootPaddingAwareAlignments": true,
-        "radius": true,
         "dimensions": {
             "minHeight": true
         },
@@ -47,8 +47,7 @@
         },
         "layout": {
             "contentSize": "1440px",
-            "wideSize": "1440px",
-            "fullSize": "1440px"
+            "wideSize": "1440px"
         },
         "typography": {
             "fluid": true,
@@ -152,37 +151,9 @@
             ]
         },
         "blocks": {
-            "core/heading": {
-                "supports": {
-                    "radius": true,
-                    "typography": {
-                        "fontSize": true,
-                        "lineHeight": true,
-                        "letterSpacing": true,
-                        "fontFamily": true,
-                        "fontWeight": true,
-                        "textTransform": true,
-                        "textDecoration": true,
-                        "fontStyle": true,
-                        "color": true,
-                        "__experimentalDefaultControls": {
-                            "fontFamily": true,
-                            "fontSize": true,
-                            "fontWeight": true,
-                            "textTransform": true,
-                            "lineHeight": true
-                        }
-                    }
-                }
-            },
-            "core/group": {
-                "spacing": {
-                    "padding": "4"
-                }
-            },
             "core/blockquote": {
                 "border": {
-                    "style": "dotted"
+                    "style": true
                 }
             }
         }
@@ -197,8 +168,8 @@
                 "bottom": "60px"
             },
             "padding": {
-                "left": "1.5rem",
-                "right": "1.5rem",
+                "left": "1rem",
+                "right": "1rem",
                 "bottom": "2rem"
             }
         },
@@ -210,11 +181,6 @@
             }
         },
         "blocks": {
-            "core/cover": {
-                "supports": {
-                    "radius": true
-                }
-            },
             "core/heading": {
                 "typography": {
                     "fontWeight": "600"
@@ -277,14 +243,6 @@
             "ctx-blocks/description-item": {
                 "border": {
                     "radius": "999px"
-                }
-            },
-            "core/latest-posts__post-title": {
-                "spacing": {
-                    "margin": {
-                        "left": "1rem",
-                        "right": "1rem"
-                    }
                 }
             }
         },
