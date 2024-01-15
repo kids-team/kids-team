@@ -6,11 +6,6 @@
 
 @use "../settings/" as settings;
 
-li {
-    padding: 0;
-    list-style-type: none;
-}
-
 ul,
 ol,
 p {
@@ -27,7 +22,6 @@ body {
     -webkit-tap-highlight-color: transparent;
     font-size: settings.$spacer;
     line-height: settings.$line-height-factor;
-    -webkit-appearance: none;
     counter-reset: section;
 }
 
