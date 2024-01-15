@@ -135,3 +135,10 @@ figure.wp-block-embed {
 .mb-0 {
     margin-bottom: 0 !important;
 }
+
+@media screen and (max-width: 1440px) {
+    body .is-layout-constrained > .alignwide {
+        margin-left: -1rem !important;
+        margin-right: -1rem !important;
+    }
+}
