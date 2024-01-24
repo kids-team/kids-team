@@ -5,7 +5,7 @@ $script = require_once(__DIR__ . "/version.php");
 add_action('wp_enqueue_scripts', function () use ($script) {
 	wp_enqueue_style(
 		'child-style',
-		get_stylesheet_directory_uri() . '/style.css',
+		get_stylesheet_directory_uri() . '/assets/css/style.css',
 		[],
 		$script['version']
 	);
@@ -21,7 +21,7 @@ add_action('admin_enqueue_scripts', function () use ($script) {
 
 	wp_enqueue_style(
 		'admin-style',
-		get_stylesheet_directory_uri() . '/admin.css',
+		get_stylesheet_directory_uri() . '/assets/css/admin.css',
 		[],
 		$script['version']
 	);

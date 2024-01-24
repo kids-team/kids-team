@@ -44,11 +44,15 @@ module.exports = (env, argv) => {
             ],
         },
         output: {
-            filename: "[name].js",
+            filename: "assets/css/[name].js",
             path: path.resolve(__dirname),
             assetModuleFilename: "fonts/[hash][ext][query]",
         },
-        plugins: [new MiniCssExtractPlugin()],
+        plugins: [
+            new MiniCssExtractPlugin({
+                filename: "assets/css/[name].css",
+            }),
+        ],
         optimization: {
             minimize: true,
             minimizer: [new TerserPlugin({}), new CssMinimizerPlugin()],

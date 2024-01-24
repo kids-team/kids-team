@@ -237,6 +237,6 @@
 
 .button:disabled,
 .button--disabled {
-    background: tools.gray(300);
-    color: tools.gray(500);
+    background: var(--gray-400);
+    color: var(--gray-500);
 }
