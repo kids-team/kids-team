@@ -141,4 +141,9 @@ figure.wp-block-embed {
         margin-left: -1rem !important;
         margin-right: -1rem !important;
     }
+
+    .has-global-padding > .alignfull {
+        margin-right: calc(var(--wp--style--root--padding-right) * -1);
+        margin-left: calc(var(--wp--style--root--padding-left) * -1);
+    }
 }
