@@ -103,14 +103,6 @@ figure.wp-block-embed {
     }
 }
 
-.alignfull {
-    @media (min-width: 768px) {
-        max-width: var(--wp--style--global--content-size);
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-}
-
 .wp-block-navigation-submenu {
     border-bottom-right-radius: 1rem;
 
