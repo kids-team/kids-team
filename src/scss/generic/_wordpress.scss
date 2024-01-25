@@ -136,7 +136,9 @@ figure.wp-block-embed {
     margin-bottom: 0 !important;
 }
 
-body .is-layout-constrained > .alignwide {
-    margin-left: -1rem !important;
-    margin-right: -1rem !important;
+@media (max-width: 1440px) {
+    body .is-layout-constrained > .alignwide {
+        margin-left: -1rem !important;
+        margin-right: -1rem !important;
+    }
 }
