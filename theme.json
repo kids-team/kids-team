@@ -46,7 +46,7 @@
             "defaultPalette": false
         },
         "layout": {
-            "contentSize": "1440px",
+            "contentSize": "calc(1440px - 2rem)",
             "wideSize": "1440px"
         },
         "typography": {
