@@ -30,36 +30,3 @@
     visibility: hidden;
     opacity: 0;
 }
-
-.text--secondary {
-    color: var(--secondary-page);
-}
-
-.text--error {
-    color: var(--error);
-}
-
-.text--warning {
-    color: var(--warning);
-}
-
-.text-xs {
-    font-size: space(3) !important;
-    line-height: space(4) !important;
-}
-
-.link {
-    cursor: pointer;
-}
-
-.capitalize {
-    text-transform: capitalize;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.bold {
-    font-weight: 600;
-}

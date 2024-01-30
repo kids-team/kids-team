@@ -10,10 +10,6 @@
     @include meta.load-css("elements");
 }
 
-/*@layer objects {
-    @include meta.load-css("objects");
-}*/
-
 @layer components {
     @include meta.load-css("components");
 }
@@ -22,4 +18,4 @@
     @include meta.load-css("utils");
 }
 
-@layer generic, elements, objects, components, utils;
+@layer generic, elements, components, utils;

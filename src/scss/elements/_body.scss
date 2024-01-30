@@ -1,7 +1,0 @@
-@use "../settings/sizes" as sizes;
-@use "../tools/" as tools;
-
-@include tools.media-breakpoint(xl) {
-    body {
-    }
-}
