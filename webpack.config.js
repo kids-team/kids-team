@@ -1,6 +1,7 @@
 const webpack = require("webpack")
 const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const fs = require("fs")
 
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const TerserPlugin = require("terser-webpack-plugin")
@@ -17,8 +18,29 @@ const createVersion = () => {
     })
 }
 
+class CustomPlugin {
+    constructor(name, command, stage = "afterEmit") {
+        this.name = name
+        this.command = command
+        this.stage = stage
+    }
+
+    apply(compiler) {
+        compiler.hooks[this.stage].tap(this.name, () => {
+            const uid = Date.now()
+            const content = '<?php return [ "version" => "' + uid + '"]; ?>'
+            fs.writeFile("./version.php", content, (err) => {
+                if (err) {
+                    console.error(err)
+                    return
+                }
+                console.log(`Version ${uid} generated`)
+            })
+        })
+    }
+}
+
 module.exports = (env, argv) => {
-    console.log("Mode: ", argv.mode)
     let devMode = argv.mode === "development"
     return {
         mode: "production",
@@ -52,6 +74,7 @@ module.exports = (env, argv) => {
             new MiniCssExtractPlugin({
                 filename: "assets/css/[name].css",
             }),
+            new CustomPlugin("Generate version", "php version.php"),
         ],
         optimization: {
             minimize: true,
