@@ -205,6 +205,7 @@
                     "blockGap": "var(--wp--preset--spacing--50)"
                 }
             },
+
             "ctx-blocks/card": {
                 "variations": {
                     "dotted": {
@@ -214,6 +215,16 @@
                             "color": "#3e3e3f"
                         }
                     }
+                }
+            },
+            "core/navigation-link": {
+                "typography": {
+                    "fontWeight": "600"
+                }
+            },
+            "core/navigation-submenu": {
+                "typography": {
+                    "fontWeight": "600"
                 }
             },
             "events-manager/booking": {
