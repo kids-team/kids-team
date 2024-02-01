@@ -58,7 +58,7 @@
                 {
                     "name": "Grün",
                     "slug": "green",
-                    "color": "#88c756"
+                    "color": "#AECA28"
                 },
                 {
                     "name": "Dunkelgrün",
@@ -73,12 +73,12 @@
                 {
                     "name": "Lila",
                     "slug": "purple",
-                    "color": "#8f6daf"
+                    "color": "#ab6790"
                 },
                 {
                     "name": "Dunkles Lila",
                     "slug": "darkpurple",
-                    "color": "#4a2e92"
+                    "color": "#5e384f"
                 },
                 {
                     "name": "Rot",
