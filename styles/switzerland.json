@@ -43,7 +43,7 @@
                 {
                     "name": "Blau",
                     "slug": "blue",
-                    "color": "#00abe5"
+                    "color": "#2d9ad5"
                 },
                 {
                     "name": "Hellblau",
@@ -53,7 +53,7 @@
                 {
                     "name": "Dunkelblau",
                     "slug": "darkblue",
-                    "color": "#1c46ed"
+                    "color": "#1c6288"
                 },
                 {
                     "name": "Grün",
