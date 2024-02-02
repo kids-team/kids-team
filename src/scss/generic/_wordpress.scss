@@ -134,3 +134,12 @@ figure.wp-block-embed {
         margin-right: -1rem !important;
     }
 }
+
+.wp-block-separator:before {
+    display: none !important;
+}
+
+.wp-block-separator.is-style-dots {
+    border-bottom: 4px dotted !important;
+}
+

@@ -3,3 +3,10 @@
 .fill-primary {
     fill: var(--wp--preset--color--primary);
 }
+
+.block-editor-block-list__block[data-type="core/separator"].wp-block-separator.is-style-dots {
+    border-bottom: 4px dotted !important;
+}
+.wp-block-separator::before {
+    display: none !important;
+}
