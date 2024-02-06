@@ -49,6 +49,7 @@
             "contentSize": "calc(1440px - 2rem)",
             "wideSize": "1440px"
         },
+
         "typography": {
             "fluid": true,
             "letterSpacing": true,
@@ -155,6 +156,11 @@
                 "border": {
                     "style": true
                 }
+            },
+            "core/column": {
+                "spacing": {
+                    "units": ["%"]
+                }
             }
         }
     },
@@ -185,6 +191,9 @@
                 "typography": {
                     "fontWeight": "600"
                 }
+            },
+            "core/column": {
+                "spacing": {}
             },
             "ctx-blocks/button": {
                 "border": {
