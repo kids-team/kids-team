@@ -116,6 +116,7 @@
 }
 
 .input,
+.post-password-form p,
 .login-username,
 .login-password {
     input {
@@ -524,6 +525,7 @@
 }
 
 .submit,
+.post-password-form,
 .login-submit {
     position: relative;
 
@@ -744,5 +746,34 @@ select:invalid {
         display: flex;
 
         justify-content: flex-end;
+    }
+}
+
+.post-password-form input[type="submit"] {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.post-password-form {
+    max-width: 400px !important;
+    padding: 2rem 1rem 2rem 1rem;
+    background: #fff;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    p:first-of-type {
+        margin-bottom: 2rem;
+    }
+
+    p:last-of-type {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="submit"] {
+        margin-top: 1rem;
+        align-self: flex-end;
+        width: auto;
     }
 }
