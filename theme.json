@@ -198,20 +198,23 @@
             "ctx-blocks/button": {
                 "border": {
                     "radius": {
-                        "topLeft": ".75rem",
+                        "topLeft": "1rem",
                         "topRight": "0",
                         "bottomLeft": "0",
-                        "bottomRight": ".75rem"
+                        "bottomRight": "1rem"
                     }
                 },
                 "spacing": {
                     "padding": {
-                        "top": "0.4rem",
-                        "bottom": "0.4rem",
-                        "left": "1rem",
-                        "right": "1rem"
+                        "top": "var(--wp--preset--spacing--30)",
+                        "bottom": "var(--wp--preset--spacing--30)",
+                        "left": "var(--wp--preset--spacing--40)",
+                        "right": "var(--wp--preset--spacing--40)"
                     },
                     "blockGap": "var(--wp--preset--spacing--50)"
+                },
+                "color": {
+                    "background": "var(--wp--preset--color--primary)"
                 }
             },
 
