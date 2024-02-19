@@ -1,6 +1,4 @@
-# This workflow runs composer and deploys the theme on a server
-
-name: Deploy on Server
+name: Deploy on kids-team Server
 
 on: [push, workflow_dispatch]
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -10,6 +8,11 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: "20.x"
+            - run: npm ci
+            - run: npm run build
             - name: rsync deployments
               uses: burnett01/rsync-deployments@6.0.0
               with:
