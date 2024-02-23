@@ -4,9 +4,6 @@
 *
 */
 
-@use "../tools" as tools;
-@use "../settings/" as settings;
-
 .ctx__button--icon-only {
     border-radius: 999px;
     height: 2.25rem;
@@ -35,18 +32,6 @@
     position: relative;
     color: inherit;
 
-    &--small {
-        font-size: 0.75rem;
-        line-height: 1rem;
-        padding: 0.25rem 0.5rem;
-    }
-
-    &--large {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        padding: 0.75rem 1.5rem;
-    }
-
     &--primary {
         background-color: var(--primary);
         color: var(--primary-contrast);
@@ -61,23 +46,6 @@
     &:focus {
         animation: button-zoom-in 150ms ease-in-out;
         transform: scale(1.1);
-    }
-
-    &--pop {
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-
-        &:active {
-            -webkit-animation-name: ctx-pop;
-            animation-name: ctx-pop;
-            -webkit-animation-duration: 0.3s;
-            animation-duration: 0.3s;
-            -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-            -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-        }
     }
 
     &--icon {
@@ -138,50 +106,4 @@
 
 .button--pseudo {
     cursor: default;
-}
-
-/*
-*   Animation stuff
-*/
-
-@-webkit-keyframes ctx-pop {
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-}
-
-@keyframes ctx-pop {
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-}
-
-@keyframes wank {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    30% {
-        transform: rotate(-5deg);
-    }
-
-    70% {
-        transform: rotate(5deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes rush {
-    0% {
-        background-position-x: 20px;
-    }
-
-    100% {
-        background-position-x: -20px;
-    }
 }
