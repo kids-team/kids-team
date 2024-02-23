@@ -45,7 +45,7 @@ function enqueue_admin_scripts() {
 
 	wp_enqueue_style(
 		'admin-styles',
-		get_stylesheet_directory_uri() . '/build/style-admin.css',
+		get_stylesheet_directory_uri() . '/build/admin.css',
 		[],
 		$script['version']
 	);
