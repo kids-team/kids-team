@@ -16,7 +16,7 @@ jobs:
             - name: rsync deployments
               uses: burnett01/rsync-deployments@6.0.0
               with:
-                  switches: -avzr --delete --exclude .git --exclude .github --exclude src --exclude package.json --exclude package-lock.json --exclude .gitignore --exclude mix-manifest.json --exclude webpack.mix.js --exclude DOCKER_ENV --exclude docker_tag --exclude output.log
+                  switches: -avzr --delete --exclude .git --exclude .github --exclude src --exclude node_modules --exclude package-lock.json --exclude .gitignore
                   path: /
                   remote_path: ${{ secrets.SERVER_PATH }}
                   remote_host: ${{ secrets.SERVER }}
