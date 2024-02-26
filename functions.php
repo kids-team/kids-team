@@ -35,6 +35,8 @@ function enqueue_admin_scripts() {
 		return;
 	}
 
+	wp_enqueue_style('material-symbols-outlined', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
 	wp_enqueue_script(
 		'admin-scripts',
 		get_stylesheet_directory_uri() . '/build/admin.js',
