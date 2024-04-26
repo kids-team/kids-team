@@ -71,6 +71,9 @@ function kids_team_mime_types() {
 	add_filter('mime_types', function() use (&$mimes){
 		return $mimes;
 	});
+
+		
+//add_theme_support( 'post-thumbnails' );
 }
 
 
@@ -79,3 +82,10 @@ add_action('wp_enqueue_scripts', 'enqueue_scripts');
 add_action('admin_enqueue_scripts', 'enqueue_admin_scripts');
 
 require_once(__DIR__ . "/lib/Color.php");
+
+function my_theme_setup(){
+    add_theme_support('post-thumbnails');
+}
+
+add_action('after_setup_theme', 'my_theme_setup');
+
