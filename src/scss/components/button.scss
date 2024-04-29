@@ -54,7 +54,7 @@
     &--icon {
         height: 40px;
         width: 40px;
-        border-radius: 999px;
+        border-radius: 999px !important;
         display: grid;
         place-content: center;
 
@@ -104,6 +104,11 @@
         height: 20px;
         min-width: 20px;
         margin-right: -7px;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
     }
 }
 
