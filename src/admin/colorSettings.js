@@ -16,7 +16,7 @@ const pageColorSettings = () => {
         select("core/editor").getCurrentPostType()
     )
 
-    if (!["post", "page", "event"].includes(postType)) return <></>
+    if (!["post", "page", "event"].includes(postType)) return null
     const {
         meta,
         meta: { page_colors },
