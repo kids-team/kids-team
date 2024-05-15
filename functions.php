@@ -82,6 +82,7 @@ add_action('wp_enqueue_scripts', 'enqueue_scripts');
 add_action('admin_enqueue_scripts', 'enqueue_admin_scripts');
 
 require_once(__DIR__ . "/lib/Color.php");
+require_once(__DIR__ . "/lib/Menu.php");
 
 function my_theme_setup(){
     add_theme_support('post-thumbnails');

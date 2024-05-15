@@ -316,3 +316,12 @@
         transform: scale(0.5);
     }
 }
+
+.ctx-gdpr-modal-dialog {
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.ctx-gdpr-modal.is-visible {
+    backdrop-filter: blur(3px);
+}

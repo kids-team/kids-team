@@ -6,4 +6,5 @@ import "./scss/admin.scss"
 registerPlugin("plugin-color-settings", {
     icon: null,
     render: colorSettings,
+	
 })
