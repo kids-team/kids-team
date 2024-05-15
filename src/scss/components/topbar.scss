@@ -186,6 +186,10 @@
 
                 .ctx-menu__item-arrow i {
                     color: var(--primary-contrast) !important;
+                    animation-name: arrowdown;
+                    animation-duration: 600ms;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in-out;
                 }
             }
         }
@@ -233,4 +237,22 @@ header.wp-block-template-part {
     right: 1rem;
     top: 1rem;
     z-index: 2;
+}
+
+@keyframes arrowdown {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(2px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
