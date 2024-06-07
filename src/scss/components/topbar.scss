@@ -70,7 +70,7 @@
         }
 
         &__item {
-            &:has(button:focus) {
+            &:focus-within {
                 .ctx-menu__submenu {
                     opacity: 1;
                     pointer-events: all;
@@ -204,6 +204,7 @@
             overflow: hidden;
             a {
                 display: block;
+                text-wrap: nowrap;
                 padding: 0.4rem 1rem;
                 font-weight: normal;
                 &:hover {
