@@ -64,6 +64,26 @@
         }
     }
 
+    &--error {
+        background-color: #e53e3e !important;
+        color: #fff !important;
+    }
+
+    &--breathing::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        background-color: inherit;
+        animation: breathing 2s infinite ease-in-out;
+        opacity: 0;
+        filter: blur(4px);
+        z-index: -1;
+    }
+
     &--icon-animated {
         transition: all 0.3s ease-in-out;
         animation-name: wank;
@@ -126,4 +146,19 @@ button.button--primary {
     padding-right: var(--wp--preset--spacing--40);
     padding-bottom: var(--wp--preset--spacing--30);
     padding-left: var(--wp--preset--spacing--40);
+}
+
+@keyframes breathing {
+    0% {
+        opacity: 0;
+        scale: 1;
+    }
+    50% {
+        opacity: 0.5;
+        scale: 1.2;
+    }
+    100% {
+        opacity: 0;
+        scale: 1;
+    }
 }
