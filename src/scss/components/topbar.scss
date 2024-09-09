@@ -158,6 +158,7 @@
         &__item {
             a {
                 font-weight: 600;
+                color: #3e3e3f;
             }
 
             span {
@@ -175,7 +176,9 @@
                 span {
                     transition: all 300ms ease-in-out;
                     background-color: var(--primary);
-                    color: var(--primary-contrast);
+                    a {
+                        color: var(--primary-contrast);
+                    }
                 }
                 & > .ctx-menu__submenu {
                     opacity: 1;
