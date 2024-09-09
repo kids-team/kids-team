@@ -35,7 +35,7 @@ function ctx_nav_item( $block_content, $block, $instance ) {
 	if ( 'core/navigation-link' === $block['blockName'] ) {
 		
 		$block_content = "<li class='ctx-menu__item'><span>";
-		$block_content .= $block['attrs']['title'] ? "<i class='ctx-menu__item-icon material-icons'>" . $block['attrs']['title'] . "</i>" : "<i class='ctx-menu__item-icon'></i>";
+		$block_content .= key_exists('title', $block['attrs']) ? "<i class='ctx-menu__item-icon material-icons'>" . $block['attrs']['title'] . "</i>" : "<i class='ctx-menu__item-icon'></i>";
 		$block_content .= "<a href='" . $block['attrs']['url'] . "'>" . $block['attrs']['label'] . "</a>";
 		$block_content .= "</span></li>";
 	}
