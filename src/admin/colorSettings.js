@@ -7,7 +7,7 @@
  */
 import { ColorPalette } from "@wordpress/components"
 import { useDispatch, useSelect } from "@wordpress/data"
-import { PluginDocumentSettingPanel } from "@wordpress/edit-post"
+import { PluginDocumentSettingPanel } from "@wordpress/editor"
 import { useEffect, useState } from "@wordpress/element"
 import { __ } from "@wordpress/i18n"
 
