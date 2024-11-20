@@ -135,7 +135,6 @@
             background: #fff;
             opacity: 0;
             pointer-events: none;
-
             padding: 0;
             margin: 0;
             transform: scaleY(0);
@@ -143,6 +142,7 @@
             transition: all 300ms ease-in-out;
             border-bottom-right-radius: 1rem;
             margin-bottom: 0;
+            box-shadow: 1px 5px rgba(0, 0, 0, 0.2);
         }
 
         &__item-icon {
@@ -190,7 +190,7 @@
                 .ctx-menu__item-arrow i {
                     color: var(--primary-contrast) !important;
                     animation-name: arrowdown;
-                    animation-duration: 600ms;
+                    animation-duration: 1200ms;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
                 }
