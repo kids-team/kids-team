@@ -242,7 +242,7 @@
                     "fontWeight": "600"
                 }
             },
-            "events/booking": {
+            "events-manager/booking": {
                 "border": {
                     "radius": {
                         "topLeft": ".75rem",
