@@ -1,1 +1,67 @@
-@font-face{font-family:material-icons;font-style:normal;font-weight:400;src:url(fonts/kids-team.f1660f1f.woff2) format("woff2")}.icon,.material-icons{display:inline-block;font-family:material-icons;font-size:24px;font-style:normal;letter-spacing:normal;line-height:1;text-transform:none;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:"liga";-webkit-font-smoothing:antialiased}.material-icons--bubble{aspect-ratio:1/1;background:#eee;border-radius:999px;display:flex;place-items:center;align-items:center;justify-content:center;justify-items:center}.material-icons--micro-bubble{height:1rem;width:1rem}.fill-primary{fill:var(--primary)}.block-editor-block-list__block[data-type="core/separator"].wp-block-separator.is-style-dots{border-bottom:4px dotted!important}.wp-block-separator:before{display:none!important}
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/scss/admin.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "material-icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/kids-team.f1660f1f.woff2) format("woff2");
+}
+.material-icons,
+.icon {
+  font-family: "material-icons";
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  font-style: normal;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons--bubble {
+  border-radius: 999px;
+  background: #eee;
+  display: flex;
+  /* place-content: center; */
+  place-items: center;
+  aspect-ratio: 1/1;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.material-icons--micro-bubble {
+  width: 1rem;
+  height: 1rem;
+}
+
+.fill-primary {
+  fill: var(--primary);
+}
+
+.block-editor-block-list__block[data-type="core/separator"].wp-block-separator.is-style-dots {
+  border-bottom: 4px dotted !important;
+}
+
+.wp-block-separator::before {
+  display: none !important;
+}
+
+#wpcontent,
+#wpfooter {
+  margin-left: 200px !important;
+}
+
+#adminmenu,
+#adminmenu .wp-submenu,
+#adminmenuback,
+#adminmenuwrap {
+  width: 200px !important;
+}
+
+/*# sourceMappingURL=admin.css.map*/

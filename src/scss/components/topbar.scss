@@ -70,22 +70,12 @@
         }
 
         &__item {
-            &:focus-within {
-                .ctx-menu__submenu {
-                    opacity: 1;
-                    pointer-events: all;
-                    transform: scaleY(1);
-                    height: auto !important;
-                }
-
-                .ctx-menu__item-arrow {
-                    transform: rotate(0deg);
-                }
-            }
+            
             width: 100%;
             border-bottom: 4px dotted #e1e1e1;
             a {
                 font-weight: 600;
+				color:#3e3e3f;
             }
 
             span {
@@ -102,6 +92,20 @@
         }
 
         &__item--has-children {
+
+			&:focus-within {
+                .ctx-menu__submenu {
+                    opacity: 1;
+                    pointer-events: all;
+                    transform: scaleY(1);
+                    height: auto !important;
+                }
+
+                .ctx-menu__item-arrow {
+                    transform: rotate(0deg);
+                }
+            }
+
             span {
                 border-bottom-right-radius: 0rem;
             }

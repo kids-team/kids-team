@@ -259,6 +259,10 @@
                         "right": "1rem"
                     },
                     "blockGap": "var(--wp--preset--spacing--50)"
+                },
+				"color": {
+                    "background": "var(--wp--preset--color--primary)",
+					"text": "#ffffff"
                 }
             },
             "ctx-blocks/grid-row": {
@@ -292,12 +296,17 @@
         {
             "name": "noheader",
             "title": "Seite ohne Titelbild",
-            "postTypes": ["page", "post", "event"]
+            "postTypes": ["page", "post", "event"]	
         },
         {
             "name": "empty",
-            "title": "Leere Seite",
+            "title": "Seite ohne Titelbild, Menü und Footer",
             "postTypes": ["page", "post", "event"]
-        }
+        },
+		{
+			"name": "single-event",
+			"title": "Einzelne Veranstaltung",
+			"postTypes": ["event"]
+		}
     ]
 }
