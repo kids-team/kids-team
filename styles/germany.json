@@ -1,62 +1,67 @@
 {
     "version": 2,
-    "title": "Deutschland",
-    "description": "Hauptfarbe Grün",
+    "title": "Germany",
+    "description": "Green Design",
     "settings": {
         "color": {
             "palette": [
                 {
-                    "name": "Grün",
+                    "name": "Green",
                     "slug": "primary",
                     "color": "#88c756"
                 },
                 {
-                    "name": "Hellgrün",
+                    "name": "Light Green",
                     "slug": "lightgreen",
                     "color": "#dceccd"
                 },
                 {
-                    "name": "Dunkelgrün",
+                    "name": "Dark Green",
                     "slug": "darkgreen",
                     "color": "#017a47"
                 },
                 {
-                    "name": "Schwarz",
+                    "name": "Black",
                     "slug": "black",
                     "color": "#000000"
                 },
                 {
-                    "name": "Weiß",
+                    "name": "White",
                     "slug": "white",
                     "color": "#ffffff"
                 },
                 {
-                    "name": "Hellgrau",
+                    "name": "Light Gray",
                     "slug": "lightgray",
-                    "color": "#f4f4f9"
+                    "color": "#f4f4f4"
                 },
+				{
+					"name": "Medium Gray",
+					"slug": "mediumgray",
+					"color": "#c1c1c1"
+				},
                 {
-                    "name": "Grau",
+                    "name": "Gray",
                     "slug": "gray",
-                    "color": "#9d9fa2"
+                    "color": "#9d9d9d"
                 },
                 {
-                    "name": "Dunkelgrau",
+                    "name": "Dark Gray",
                     "slug": "darkgray",
-                    "color": "#3e3e3f"
+                    "color": "#3e3e3e"
                 },
                 {
-                    "name": "Blau",
+                    "name": "Blue",
                     "slug": "blue",
                     "color": "#00abe5"
                 },
                 {
-                    "name": "Hellblau",
+                    "name": "Light Blue",
                     "slug": "lightblue",
                     "color": "#bce0f5"
                 },
                 {
-                    "name": "Dunkelblau",
+                    "name": "Dark Blue",
                     "slug": "darkblue",
                     "color": "#1c46ed"
                 },
@@ -66,27 +71,27 @@
                     "color": "#fbb900"
                 },
                 {
-                    "name": "Helles Orange",
+                    "name": "Light Orange",
                     "slug": "lightorange",
                     "color": "#ffe699"
                 },
                 {
-                    "name": "Lila",
+                    "name": "Purple",
                     "slug": "purple",
                     "color": "#8f6daf"
                 },
                 {
-                    "name": "Dunkles Lila",
+                    "name": "Dark Purple",
                     "slug": "darkpurple",
                     "color": "#4a2e92"
                 },
                 {
-                    "name": "Rot",
+                    "name": "Red",
                     "slug": "red",
                     "color": "#db4c64"
                 },
                 {
-                    "name": "Dunkles Rot",
+                    "name": "Dark Red",
                     "slug": "darkred",
                     "color": "#f2c5c3"
                 }

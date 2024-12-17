@@ -1,0 +1,221 @@
+# Copyright (C) 2024 Thomas Gollenia
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: kids-team 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/kids-team\n"
+"Last-Translator: \n"
+"Language-Team: Deutsch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-12-16T12:06:56+00:00\n"
+"PO-Revision-Date: 2024-12-16 12:21+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: kids-team\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.6.14; wp-6.7.1"
+
+#. Theme Name of the theme
+#: style.css
+msgid "kids-team"
+msgstr "kids-team"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/gollenia/kidsteam/"
+msgstr "https://github.com/gollenia/kidsteam/"
+
+#. Description of the theme
+#: style.css
+msgid "Theme for Austrian, German and Swiss kidsteam-Site."
+msgstr "Thema für kids-team Österreich, Schweiz und Deutschland"
+
+#. Author of the theme
+#: style.css
+msgid "Thomas Gollenia"
+msgstr "Thomas Gollenia"
+
+#. Author URI of the theme
+#: style.css
+msgid "https://gollenia.at/"
+msgstr "https://gollenia.at/"
+
+#: patterns/card.php
+msgctxt "Pattern title"
+msgid "Card"
+msgstr "Karte"
+
+#: patterns/header-cover.php
+msgctxt "Pattern title"
+msgid "Header Cover"
+msgstr "Seitenkopf - Bild"
+
+#: build/admin.js:73 build/admin.js:51
+msgid "Color Settings"
+msgstr "Farbeinstellungen"
+
+#: build/admin.js:75 build/admin.js:54
+msgid "Primary Color"
+msgstr "Primärfarbe"
+
+#: styles/austria.json
+msgctxt "Style variation name"
+msgid "Austria"
+msgstr "Österreich"
+
+#: styles/austria.json
+msgctxt "Style variation description"
+msgid "Blue Design"
+msgstr "Blaues Design"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Blue"
+msgstr "Blau"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Light Blue"
+msgstr "Hellblau"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Black"
+msgstr "Schwarz"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "White"
+msgstr "Weiß"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Light Gray"
+msgstr "Hellgrau"
+
+#: styles/austria.json styles/germany.json
+msgctxt "Color name"
+msgid "Medium Gray"
+msgstr "Mittelgrau"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Gray"
+msgstr "Grau"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Dark Gray"
+msgstr "Dunkelgrau"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Dark Blue"
+msgstr "Dunkelblau"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Green"
+msgstr "Grün"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Dark Green"
+msgstr "Dunkelgrün"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Light Green"
+msgstr "Hellgrün"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Orange"
+msgstr "Orange"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Light Orange"
+msgstr "Hellorange"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Purple"
+msgstr "Lila"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Dark Purple"
+msgstr "Dunkellila"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Red"
+msgstr "Rot"
+
+#: styles/austria.json styles/germany.json styles/switzerland.json
+msgctxt "Color name"
+msgid "Dark Red"
+msgstr "Dunkelrot"
+
+#: styles/germany.json
+msgctxt "Style variation name"
+msgid "Germany"
+msgstr "Deutschland"
+
+#: styles/germany.json
+msgctxt "Style variation description"
+msgid "Green Design"
+msgstr "Grünes Design"
+
+#: styles/switzerland.json
+msgctxt "Style variation name"
+msgid "Switzerland"
+msgstr "Schweiz"
+
+#: styles/switzerland.json
+msgctxt "Style variation description"
+msgid "Orange Design"
+msgstr "Oranges Design"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Exo 2"
+msgstr "Exo 2"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Fuzzy Bubbles"
+msgstr "Fuzzy Bubbles"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Gochi Hand"
+msgstr "Gochi Hand"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Navigation"
+msgstr "Navigation"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Footer"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page without header"
+msgstr "Seite ohne Header"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Empty Page (no header, no footer)"
+msgstr "Leere Seite (kein Header, kein Footer)"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Event"
+msgstr "Einzelnes Event"

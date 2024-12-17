@@ -10,6 +10,8 @@ function enqueue_scripts() {
 		return;
 	}
 
+
+
 	wp_enqueue_script(
 		'theme-scripts',
 		get_stylesheet_directory_uri() . '/build/theme.js',
@@ -52,6 +54,8 @@ function enqueue_admin_scripts() {
 		$script['version']
 	);
 
+	wp_set_script_translations( 'admin-scripts', 'kids-team', dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+
 }
 
 function kids_team_mime_types() {
@@ -76,7 +80,11 @@ function kids_team_mime_types() {
 //add_theme_support( 'post-thumbnails' );
 }
 
+function kidsteam_load_textdomain() {
+	load_plugin_textdomain('kids-team', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
+}
 
+add_action( 'plugin_loaded', 'kidsteam_load_textdomain', 10 );
 add_action('init', 'kids_team_mime_types');
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
 add_action('admin_enqueue_scripts', 'enqueue_admin_scripts');

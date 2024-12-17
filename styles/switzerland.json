@@ -1,7 +1,7 @@
 {
     "version": 2,
-    "title": "Schweiz",
-    "description": "Hauptfarbe Orange",
+    "title": "Switzerland",
+    "description": "Orange Design",
     "settings": {
         "color": {
             "palette": [
@@ -11,82 +11,82 @@
                     "color": "#fbb900"
                 },
                 {
-                    "name": "Helles Orange",
+                    "name": "Light Orange",
                     "slug": "lightorange",
                     "color": "#ffe699"
                 },
                 {
-                    "name": "Schwarz",
+                    "name": "Black",
                     "slug": "black",
                     "color": "#000000"
                 },
                 {
-                    "name": "Weiß",
+                    "name": "White",
                     "slug": "white",
                     "color": "#ffffff"
                 },
                 {
-                    "name": "Hellgrau",
+                    "name": "Light Gray",
                     "slug": "lightgray",
                     "color": "#f4f4f9"
                 },
                 {
-                    "name": "Grau",
+                    "name": "Gray",
                     "slug": "gray",
                     "color": "#9d9fa2"
                 },
                 {
-                    "name": "Dunkelgrau",
+                    "name": "Dark Gray",
                     "slug": "darkgray",
                     "color": "#3e3e3f"
                 },
                 {
-                    "name": "Blau",
+                    "name": "Blue",
                     "slug": "blue",
                     "color": "#2d9ad5"
                 },
                 {
-                    "name": "Hellblau",
+                    "name": "Light Blue",
                     "slug": "lightblue",
                     "color": "#bce0f5"
                 },
                 {
-                    "name": "Dunkelblau",
+                    "name": "Dark Blue",
                     "slug": "darkblue",
                     "color": "#1c6288"
                 },
                 {
-                    "name": "Grün",
+                    "name": "Green",
                     "slug": "green",
                     "color": "#AECA28"
                 },
                 {
-                    "name": "Dunkelgrün",
+                    "name": "Dark Green",
                     "slug": "darkgreen",
                     "color": "#017a47"
                 },
                 {
-                    "name": "Hellgrün",
+                    "name": "Light Green",
                     "slug": "lightgreen",
                     "color": "#dceccd"
                 },
                 {
-                    "name": "Lila",
+                    "name": "Purple",
                     "slug": "purple",
                     "color": "#ab6790"
                 },
                 {
-                    "name": "Dunkles Lila",
+                    "name": "Dark Purple",
                     "slug": "darkpurple",
                     "color": "#5e384f"
                 },
                 {
-                    "name": "Rot",
+                    "name": "Red",
                     "slug": "red",
                     "color": "#db4c64"
                 },
                 {
-                    "name": "Dunkles Rot",
+                    "name": "Dark Red",
                     "slug": "darkred",
                     "color": "#f2c5c3"
                 }

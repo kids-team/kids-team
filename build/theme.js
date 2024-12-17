@@ -10,7 +10,37 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/style.scss */ "./src/scss/style.scss");
+/* harmony import */ var _theme_menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./theme/menu.js */ "./src/theme/menu.js");
 
+
+(0,_theme_menu_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
+
+/***/ }),
+
+/***/ "./src/theme/menu.js":
+/*!***************************!*\
+  !*** ./src/theme/menu.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function menu() {
+  document.addEventListener('DOMContentLoaded', function () {
+    const submenus = document.querySelector('.ctx-menu__item--has-children');
+    if (!submenus) return;
+    const menuToggle = document.querySelector('.ctx-menu__item-arrow');
+    menuToggle.addEventListener('click', function (event) {
+      for (let i = 0; i < submenus.length; i++) {
+        submenus[i].classList.remove('ctx-menu__item--has-children--open');
+      }
+      event.target.closest('.ctx-menu__item--has-children').classList.toggle('active');
+    });
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);
 
 /***/ }),
 
@@ -85,6 +115,18 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
 /******/ 		};
 /******/ 	})();
 /******/ 	

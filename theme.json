@@ -295,17 +295,17 @@
     "customTemplates": [
         {
             "name": "noheader",
-            "title": "Seite ohne Titelbild",
+            "title": "Page without header",
             "postTypes": ["page", "post", "event"]	
         },
         {
             "name": "empty",
-            "title": "Seite ohne Titelbild, Menü und Footer",
+            "title": "Empty Page (no header, no footer)",
             "postTypes": ["page", "post", "event"]
         },
 		{
 			"name": "single-event",
-			"title": "Einzelne Veranstaltung",
+			"title": "Single Event",
 			"postTypes": ["event"]
 		}
     ]

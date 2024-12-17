@@ -39,6 +39,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const pageColorSettings = () => {
   const postType = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_2__.useSelect)(select => select("core/editor").getCurrentPostType());
+  if (window.pagenow == 'site-editor') return null;
   if (!["post", "page", "event"].includes(postType)) return null;
   const {
     meta,
@@ -69,9 +70,9 @@ const pageColorSettings = () => {
   }, [pageColors]);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_editor__WEBPACK_IMPORTED_MODULE_3__.PluginDocumentSettingPanel, {
     name: "page-color-settings",
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Color Settings", "blueprint"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Color Settings", "kids-team"),
     className: "page-color-settings"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Primary Color", "blueprint")), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ColorPalette, {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)("Primary Color", "kids-team")), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ColorPalette, {
     colors: colors,
     value: pageColors?.primary_color,
     onChange: value => {

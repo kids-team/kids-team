@@ -1664,7 +1664,6 @@ table td {
 
 @media (max-width: 600px) {
   .wp-block-navigation__responsive-container {
-    padding: 0 !important;
     height: 100%;
   }
   .wp-block-navigation__responsive-close {
@@ -1697,7 +1696,8 @@ table td {
     pointer-events: none;
     padding: 0;
     margin: 0;
-    transform: scaleY(0);
+    max-height: 0;
+    overflow-y: hidden;
     transform-origin: top;
     transition: all 300ms ease-in-out;
     margin-bottom: 0;
@@ -1735,6 +1735,7 @@ table td {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    height: 43px;
     padding-left: 1rem;
     padding-bottom: 0.6rem;
     padding-top: 0.6rem;
@@ -1742,13 +1743,20 @@ table td {
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
   }
-  .ctx-menu__item--has-children:focus-within .ctx-menu__submenu {
+  .ctx-menu__item--has-children {
+    transition: all 300ms ease-in-out;
+    overflow-y: clip;
+  }
+  .ctx-menu__item--has-children.active {
+    max-height: 900px;
+  }
+  .ctx-menu__item--has-children.active .ctx-menu__submenu {
     opacity: 1;
     pointer-events: all;
-    transform: scaleY(1);
+    max-height: 900px;
     height: auto !important;
   }
-  .ctx-menu__item--has-children:focus-within .ctx-menu__item-arrow {
+  .ctx-menu__item--has-children.active .ctx-menu__item-arrow {
     transform: rotate(0deg);
   }
   .ctx-menu__item--has-children span {
@@ -1773,6 +1781,9 @@ table td {
   .wp-block-navigation__container {
     gap: 0;
   }
+  .ctx-menu {
+    margin-bottom: -12px;
+  }
   .ctx-menu__submenu {
     position: absolute;
     background: #fff;
@@ -1785,7 +1796,8 @@ table td {
     transition: all 300ms ease-in-out;
     border-bottom-right-radius: 1rem;
     margin-bottom: 0;
-    box-shadow: 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-top: 2px solid var(--primary);
   }
   .ctx-menu__item-icon {
     display: none !important;

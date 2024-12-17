@@ -16,6 +16,8 @@ const pageColorSettings = () => {
         select("core/editor").getCurrentPostType()
     )
 
+	if(window.pagenow == 'site-editor') return null
+
     if (!["post", "page", "event"].includes(postType)) return null
     const {
         meta,
@@ -46,10 +48,10 @@ const pageColorSettings = () => {
     return (
         <PluginDocumentSettingPanel
             name="page-color-settings"
-            title={__("Color Settings", "blueprint")}
+            title={__("Color Settings", "kids-team")}
             className="page-color-settings"
         >
-            <h3>{__("Primary Color", "blueprint")}</h3>
+            <h3>{__("Primary Color", "kids-team")}</h3>
             <ColorPalette
                 colors={colors}
                 value={pageColors?.primary_color}
