@@ -157,8 +157,8 @@
     },
     "styles": {
         "color": {
-            "background": "#f4f4f4",
-            "text": "#3e3e3f"
+            "background": "var(--wp--preset--color--background)",
+            "text": "var(--wp--preset--color--text)"
         },
         "spacing": {
             "margin": {
@@ -260,9 +260,9 @@
                     },
                     "blockGap": "var(--wp--preset--spacing--50)"
                 },
-				"color": {
+                "color": {
                     "background": "var(--wp--preset--color--primary)",
-					"text": "#ffffff"
+                    "text": "#ffffff"
                 }
             },
             "ctx-blocks/grid-row": {
@@ -296,17 +296,17 @@
         {
             "name": "noheader",
             "title": "Page without header",
-            "postTypes": ["page", "post", "event"]	
+            "postTypes": ["page", "post", "event"]
         },
         {
             "name": "empty",
             "title": "Empty Page (no header, no footer)",
             "postTypes": ["page", "post", "event"]
         },
-		{
-			"name": "single-event",
-			"title": "Single Event",
-			"postTypes": ["event"]
-		}
+        {
+            "name": "single-event",
+            "title": "Single Event",
+            "postTypes": ["event"]
+        }
     ]
 }
