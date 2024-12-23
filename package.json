@@ -10,7 +10,6 @@
         "email": "thomas@kids-team.at"
     },
     "devDependencies": {
-        "@wordpress/scripts": "^27.3.0",
-        "wp-scripts": "^0.0.1-security"
+        "@wordpress/scripts": "^30.7.0"
     }
 }
