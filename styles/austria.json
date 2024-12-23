@@ -30,11 +30,11 @@
                     "slug": "lightgray",
                     "color": "#f4f4f9"
                 },
-				{
-					"name": "Medium Gray",
-					"slug": "mediumgray",
-					"color": "#c1c1c1"
-				},
+                {
+                    "name": "Medium Gray",
+                    "slug": "mediumgray",
+                    "color": "#c1c1c1"
+                },
                 {
                     "name": "Gray",
                     "slug": "gray",
@@ -94,6 +94,16 @@
                     "name": "Dark Red",
                     "slug": "darkred",
                     "color": "#f2c5c3"
+                },
+                {
+                    "name": "Text",
+                    "slug": "text",
+                    "color": "#3e3e3f"
+                },
+                {
+                    "name": "Body Background",
+                    "slug": "background",
+                    "color": "#f4f4f7"
                 }
             ]
         }
