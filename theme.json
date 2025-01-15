@@ -209,9 +209,6 @@
                     },
                     "blockGap": "var(--wp--preset--spacing--50)"
                 },
-                "color": {
-                    "background": "var(--wp--preset--color--primary)"
-                },
                 "typography": {
                     "fontWeight": "600",
                     "lineHeight": "1"
@@ -227,9 +224,6 @@
                             "color": "#3e3e3f"
                         }
                     }
-                },
-                "color": {
-                    "background": "#ffffff"
                 }
             },
             "core/navigation-link": {
