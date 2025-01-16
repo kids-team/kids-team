@@ -1,306 +1,308 @@
 {
-    "version": 3,
-    "$schema": "https://schemas.wp.org/trunk/theme.json",
-    "settings": {
-        "appearanceTools": true,
-        "useRootPaddingAwareAlignments": true,
-        "dimensions": {
-            "minHeight": true
-        },
-        "spacing": {
-            "margin": true,
-            "padding": true,
-            "units": ["rem"],
-            "blockGap": true
-        },
-        "shadow": {
-            "presets": [
-                {
-                    "name": "Small",
-                    "slug": "sm",
-                    "shadow": "0 1px 5px 0 rgba(0, 0, 0, 0.1)"
-                },
-                {
-                    "name": "Medium",
-                    "slug": "md",
-                    "shadow": "0 3px 7px 0 rgba(0, 0, 0, 0.1)"
-                },
-                {
-                    "name": "Large",
-                    "slug": "lg",
-                    "shadow": "0 25px 50px -12px rgba(0, 0, 0, 0.25);"
-                }
-            ]
-        },
-        "color": {
-            "defaultPalette": false
-        },
-        "layout": {
-            "contentSize": "calc(1440px - 2rem)",
-            "wideSize": "1440px"
-        },
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"dimensions": {
+			"minHeight": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"units": [ "rem" ],
+			"blockGap": true
+		},
+		"shadow": {
+			"presets": [
+				{
+					"name": "Small",
+					"slug": "sm",
+					"shadow": "0 1px 5px 0 rgba(0, 0, 0, 0.1)"
+				},
+				{
+					"name": "Medium",
+					"slug": "md",
+					"shadow": "0 3px 7px 0 rgba(0, 0, 0, 0.1)"
+				},
+				{
+					"name": "Large",
+					"slug": "lg",
+					"shadow": "0 25px 50px -12px rgba(0, 0, 0, 0.25);"
+				}
+			]
+		},
+		"color": {
+			"defaultPalette": false
+		},
+		"layout": {
+			"contentSize": "calc(1440px - 2rem)",
+			"wideSize": "1440px"
+		},
 
-        "typography": {
-            "fluid": true,
-            "letterSpacing": true,
-            "lineHeight": true,
-            "fontFamilies": [
-                {
-                    "fontFamily": "Exo 2",
-                    "slug": "exo-2",
-                    "name": "Exo 2",
-                    "fontFace": [
-                        {
-                            "fontFamily": "Exo 2",
-                            "fontWeight": "400",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": ["file:./assets/fonts/Exo2-Regular.woff2"]
-                        },
-                        {
-                            "fontFamily": "Exo 2",
-                            "fontWeight": "200",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": ["file:./assets/fonts/Exo2-ExtraLight.woff2"]
-                        },
-                        {
-                            "fontFamily": "Exo 2",
-                            "fontWeight": "600",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": ["file:./assets/fonts/Exo2-SemiBold.woff2"]
-                        },
+		"typography": {
+			"fluid": true,
+			"letterSpacing": true,
+			"lineHeight": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "Exo 2",
+					"slug": "exo-2",
+					"name": "Exo 2",
+					"fontFace": [
+						{
+							"fontFamily": "Exo 2",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Exo2-Regular.woff2" ]
+						},
+						{
+							"fontFamily": "Exo 2",
+							"fontWeight": "200",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/Exo2-ExtraLight.woff2"
+							]
+						},
+						{
+							"fontFamily": "Exo 2",
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Exo2-SemiBold.woff2" ]
+						},
 
-                        {
-                            "fontFamily": "Exo 2",
-                            "fontWeight": "400",
-                            "fontStyle": "italic",
-                            "fontStretch": "normal",
-                            "src": ["file:./assets/fonts/Exo2-Italic.woff2"]
-                        },
-                        {
-                            "fontFamily": "Exo 2",
-                            "fontWeight": "200",
-                            "fontStyle": "italic",
-                            "fontStretch": "normal",
-                            "src": [
-                                "file:./assets/fonts/Exo2-ExtraLightItalic.woff2"
-                            ]
-                        },
-                        {
-                            "fontFamily": "Exo 2",
-                            "fontWeight": "600",
-                            "fontStyle": "italic",
-                            "fontStretch": "normal",
-                            "src": [
-                                "file:./assets/fonts/Exo2-SemiBoldItalic.woff2"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "fontFamily": "Fuzzy Bubbles",
-                    "slug": "fuzzy-bubbles",
-                    "name": "Fuzzy Bubbles",
-                    "fontFace": [
-                        {
-                            "fontFamily": "Fuzzy Bubbles",
-                            "fontWeight": "400",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": [
-                                "file:./assets/fonts/fuzzy-bubbles-regular.woff2"
-                            ]
-                        },
-                        {
-                            "fontFamily": "Fuzzy Bubbles",
-                            "fontWeight": "bold",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": [
-                                "file:./assets/fonts/fuzzy-bubbles-bold.woff2"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "fontFamily": "Gochi Hand",
-                    "slug": "gochi-hand",
-                    "name": "Gochi Hand",
-                    "fontFace": [
-                        {
-                            "fontFamily": "Gochi Hand",
-                            "fontWeight": "400",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": [
-                                "file:./assets/fonts/gochi-hand-v14-latin-regular.woff2"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        "blocks": {
-            "core/blockquote": {
-                "border": {
-                    "style": true
-                }
-            },
-            "core/column": {
-                "spacing": {
-                    "units": ["%"]
-                }
-            }
-        }
-    },
-    "styles": {
-        "color": {
-            "background": "var(--wp--preset--color--background)",
-            "text": "var(--wp--preset--color--text)"
-        },
-        "spacing": {
-            "margin": {
-                "bottom": "60px"
-            },
-            "padding": {
-                "left": "1rem",
-                "right": "1rem",
-                "bottom": "2rem"
-            }
-        },
-        "elements": {
-            "link": {
-                "typography": {
-                    "textDecoration": "none"
-                }
-            }
-        },
-        "blocks": {
-            "core/heading": {
-                "typography": {
-                    "fontWeight": "600"
-                }
-            },
-            "core/paragraph": {
-                "typography": {
-                    "lineHeight": "1.7"
-                }
-            },
-            "core/column": {
-                "spacing": {}
-            },
-            "ctx-blocks/button": {
-                "border": {
-                    "radius": {
-                        "topLeft": "1rem",
-                        "topRight": "0",
-                        "bottomLeft": "0",
-                        "bottomRight": "1rem"
-                    }
-                },
-                "spacing": {
-                    "padding": {
-                        "top": "var(--wp--preset--spacing--30)",
-                        "bottom": "var(--wp--preset--spacing--30)",
-                        "left": "var(--wp--preset--spacing--40)",
-                        "right": "var(--wp--preset--spacing--40)"
-                    },
-                    "blockGap": "var(--wp--preset--spacing--50)"
-                },
-                "typography": {
-                    "fontWeight": "600",
-                    "lineHeight": "1"
-                }
-            },
+						{
+							"fontFamily": "Exo 2",
+							"fontWeight": "400",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Exo2-Italic.woff2" ]
+						},
+						{
+							"fontFamily": "Exo 2",
+							"fontWeight": "200",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/Exo2-ExtraLightItalic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Exo 2",
+							"fontWeight": "600",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/Exo2-SemiBoldItalic.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "Fuzzy Bubbles",
+					"slug": "fuzzy-bubbles",
+					"name": "Fuzzy Bubbles",
+					"fontFace": [
+						{
+							"fontFamily": "Fuzzy Bubbles",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/fuzzy-bubbles-regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "Fuzzy Bubbles",
+							"fontWeight": "bold",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/fuzzy-bubbles-bold.woff2"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "Gochi Hand",
+					"slug": "gochi-hand",
+					"name": "Gochi Hand",
+					"fontFace": [
+						{
+							"fontFamily": "Gochi Hand",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/gochi-hand-v14-latin-regular.woff2"
+							]
+						}
+					]
+				}
+			]
+		},
+		"blocks": {
+			"core/blockquote": {
+				"border": {
+					"style": true
+				}
+			},
+			"core/column": {
+				"spacing": {
+					"units": [ "%" ]
+				}
+			}
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#f4f4f4",
+			"text": "var(--wp--preset--color--text)"
+		},
+		"spacing": {
+			"margin": {
+				"bottom": "60px"
+			},
+			"padding": {
+				"left": "1rem",
+				"right": "1rem",
+				"bottom": "2rem"
+			}
+		},
+		"elements": {
+			"link": {
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		},
+		"blocks": {
+			"core/heading": {
+				"typography": {
+					"fontWeight": "600"
+				}
+			},
+			"core/paragraph": {
+				"typography": {
+					"lineHeight": "1.7"
+				}
+			},
+			"core/column": {
+				"spacing": {}
+			},
+			"ctx-blocks/button": {
+				"border": {
+					"radius": {
+						"topLeft": "1rem",
+						"topRight": "0",
+						"bottomLeft": "0",
+						"bottomRight": "1rem"
+					}
+				},
+				"spacing": {
+					"padding": {
+						"top": "var(--wp--preset--spacing--30)",
+						"bottom": "var(--wp--preset--spacing--30)",
+						"left": "var(--wp--preset--spacing--40)",
+						"right": "var(--wp--preset--spacing--40)"
+					},
+					"blockGap": "var(--wp--preset--spacing--50)"
+				},
+				"typography": {
+					"fontWeight": "600",
+					"lineHeight": "1"
+				}
+			},
 
-            "ctx-blocks/card": {
-                "variations": {
-                    "dotted": {
-                        "border": {
-                            "style": "dotted",
-                            "width": "4px",
-                            "color": "#3e3e3f"
-                        }
-                    }
-                }
-            },
-            "core/navigation-link": {
-                "typography": {
-                    "fontWeight": "600"
-                }
-            },
-            "core/navigation-submenu": {
-                "typography": {
-                    "fontWeight": "600"
-                }
-            },
-            "events-manager/booking": {
-                "border": {
-                    "radius": {
-                        "topLeft": ".75rem",
-                        "topRight": "0",
-                        "bottomLeft": "0",
-                        "bottomRight": ".75rem"
-                    }
-                },
-                "spacing": {
-                    "padding": {
-                        "top": "0.6rem",
-                        "bottom": "0.6rem",
-                        "left": "1rem",
-                        "right": "1rem"
-                    },
-                    "blockGap": "var(--wp--preset--spacing--50)"
-                },
-                "color": {
-                    "background": "var(--wp--preset--color--primary)",
-                    "text": "#ffffff"
-                }
-            },
-            "ctx-blocks/grid-row": {
-                "spacing": {
-                    "blockGap": "var(--wp--preset--spacing--50)"
-                }
-            },
-            "ctx-blocks/description-item": {
-                "border": {
-                    "radius": "999px"
-                }
-            }
-        },
-        "typography": {
-            "fontFamily": "\"Exo 2\", sans-serif"
-        }
-    },
-    "templateParts": [
-        {
-            "name": "header",
-            "title": "Navigation",
-            "area": "header"
-        },
-        {
-            "name": "footer",
-            "title": "Footer",
-            "area": "footer"
-        }
-    ],
-    "customTemplates": [
-        {
-            "name": "noheader",
-            "title": "Page without header",
-            "postTypes": ["page", "post", "event"]
-        },
-        {
-            "name": "empty",
-            "title": "Empty Page (no header, no footer)",
-            "postTypes": ["page", "post", "event"]
-        },
-        {
-            "name": "single-event",
-            "title": "Single Event",
-            "postTypes": ["event"]
-        }
-    ]
+			"ctx-blocks/card": {
+				"variations": {
+					"dotted": {
+						"border": {
+							"style": "dotted",
+							"width": "4px",
+							"color": "#3e3e3f"
+						}
+					}
+				}
+			},
+			"core/navigation-link": {
+				"typography": {
+					"fontWeight": "600"
+				}
+			},
+			"core/navigation-submenu": {
+				"typography": {
+					"fontWeight": "600"
+				}
+			},
+			"events-manager/booking": {
+				"border": {
+					"radius": {
+						"topLeft": ".75rem",
+						"topRight": "0",
+						"bottomLeft": "0",
+						"bottomRight": ".75rem"
+					}
+				},
+				"spacing": {
+					"padding": {
+						"top": "0.6rem",
+						"bottom": "0.6rem",
+						"left": "1rem",
+						"right": "1rem"
+					},
+					"blockGap": "var(--wp--preset--spacing--50)"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--primary)",
+					"text": "#ffffff"
+				}
+			},
+			"ctx-blocks/grid-row": {
+				"spacing": {
+					"blockGap": "var(--wp--preset--spacing--50)"
+				}
+			},
+			"ctx-blocks/description-item": {
+				"border": {
+					"radius": "999px"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "\"Exo 2\", sans-serif"
+		}
+	},
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "Navigation",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Footer",
+			"area": "footer"
+		}
+	],
+	"customTemplates": [
+		{
+			"name": "noheader",
+			"title": "Page without header",
+			"postTypes": [ "page", "post", "event" ]
+		},
+		{
+			"name": "empty",
+			"title": "Empty Page (no header, no footer)",
+			"postTypes": [ "page", "post", "event" ]
+		},
+		{
+			"name": "single-event",
+			"title": "Single Event",
+			"postTypes": [ "event" ]
+		}
+	]
 }
