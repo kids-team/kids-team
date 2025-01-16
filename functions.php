@@ -1,7 +1,5 @@
 <?php
 
-
-
 function enqueue_scripts() {
 
 	$script = require_once(__DIR__ . "/build/admin.asset.php");
@@ -9,8 +7,6 @@ function enqueue_scripts() {
 	if (!file_exists(__DIR__ . "/build/admin.asset.php")) {
 		return;
 	}
-
-
 
 	wp_enqueue_script(
 		'theme-scripts',
@@ -76,8 +72,6 @@ function kids_team_mime_types() {
 		return $mimes;
 	});
 
-		
-//add_theme_support( 'post-thumbnails' );
 }
 
 function kidsteam_load_textdomain() {
@@ -98,3 +92,4 @@ function my_theme_setup(){
 
 add_action('after_setup_theme', 'my_theme_setup');
 
+ 
