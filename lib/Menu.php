@@ -63,8 +63,10 @@ class Menu {
 	
 	
 	public static function ctx_nav( $block_content, $block, $instance ) {
-	
-		$block_content = str_replace( 'class="', 'class="ctx-menu ', $block_content );
+		$pos = strpos($block_content, 'class="');
+		if ($pos !== false) {
+		    $block_content = substr_replace($block_content, 'class="ctx-menu ', $pos, strlen('class="'));
+		}
 		return $block_content;
 	}
 	
