@@ -7,12 +7,12 @@ function menu() {
 	  menuToggles.forEach((toggle) => {
 	         toggle.addEventListener('click', function (event) {
 	            submenus.forEach((submenu) => {
-	               submenu.classList.remove('ctx-menu__item--has-children--open');
+	               submenu.classList.remove('active');
 	            });
 	
 	            const parentMenu = event.target.closest('.ctx-menu__item--has-children');
 	            if (parentMenu) {
-	               parentMenu.classList.toggle('ctx-menu__item--has-children--open');
+	               parentMenu.classList.toggle('active');
 	            }
 	         });
           });
