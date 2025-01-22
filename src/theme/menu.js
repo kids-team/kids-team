@@ -2,7 +2,7 @@ function menu() {
    document.addEventListener('DOMContentLoaded', function() {
 	  const submenus = document.querySelectorAll('.ctx-menu__item--has-children');
 	  if(!submenus) return;
-	  const menuToggle = document.querySelectorAll('.ctx-menu__item-arrow');
+	  const menuToggles = document.querySelectorAll('.ctx-menu__item-arrow');
 
 	  menuToggles.forEach((toggle) => {
 	         toggle.addEventListener('click', function (event) {
