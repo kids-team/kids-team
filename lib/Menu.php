@@ -32,7 +32,7 @@ class Menu {
 		
 		$block_content = "<li  class='ctx-menu__item ctx-menu__item--has-children'>";
 		$block_content .= "<span>";
-		$block_content .= $block['attrs']['title'] ? "<i class='ctx-menu__item-icon material-icons'>" . $block['attrs']['title'] . "</i>" : "<i class='ctx-menu__item-icon'></i>";
+		$block_content .= key_exists('title', $block['attrs']) ? "<i class='ctx-menu__item-icon material-icons'>" . $block['attrs']['title'] . "</i>" : "<i class='ctx-menu__item-icon'></i>";
 		$block_content .= "<a href='" . $block['attrs']['url'] . "'>" . $block['attrs']['label'] . "</a><button tabindex='0' class='ctx-menu__item-arrow'><i class='material-icons'>keyboard_arrow_down</i></button></span>";
 		
 		if ( ! empty( $block['innerBlocks'] ) ) {
