@@ -11,16 +11,9 @@ class Color {
 
     public $post_types = ['post', 'page', 'event'];
 
-    /**
-     * Create an instance. This is the static constructor method.
-     *
-     * @return Contexis\Core\Color
-     *
-     */
-    public static function init() {
+    public static function init() : self {
         $instance = new self;
 		add_action('rest_api_init', array($instance, 'register_meta') );
-		add_action('wp_head', [$instance, 'add_color_css']);
 		add_action('admin_head', [$instance, 'add_color_css'], 100);
         return $instance;
     }
@@ -30,8 +23,7 @@ class Color {
 	 * 
 	 * @return void
 	 */
-	function add_color_css() {
-
+	function add_color_css() : void {
 		$primary = $this->get_page_color();
 		echo "<style>body {";
 			echo "--primary:" . $primary . ";";
@@ -51,13 +43,8 @@ class Color {
 		echo "} </style>";
 	}
 
-	/**
-	 * Register page color as Meta Data
-	 * for backwards compatibility, we need to store it as an object
-	 *
-	 * @return void
-	 */
-	public function register_meta() {
+
+	public function register_meta() : void {
 		
 		foreach($this->post_types as $post_type) {
 			
@@ -78,19 +65,12 @@ class Color {
 		
     }
 
-
-	/**
-	 * Get page color from metadata or return default
-	 *
-	 * @return void
-	 * @TODO How to handle default color?
-	 */
-	public function get_page_color() {
+	public function get_page_color() : string {
         
         global $post;
 
         if(!$post) {
-            return "#fff";
+            return "#ffffff";
         }
 
         $color_meta = get_post_meta( $post->ID, 'page_colors', true );
