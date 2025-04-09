@@ -15,6 +15,7 @@ class Color {
         $instance = new self;
 		add_action('rest_api_init', array($instance, 'register_meta') );
 		add_action('admin_head', [$instance, 'add_color_css'], 100);
+		add_action('wp_head', [$instance, 'add_color_css'], 100);
         return $instance;
     }
 
