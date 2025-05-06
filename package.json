@@ -1,23 +1,23 @@
 {
-	"name": "kids-team",
-	"version": "2.0.6",
-	"description": "Theme for kids-team Website",
-	"prettier": "@wordpress/prettier-config",
-	"main": "build/index.js",
-	"scripts": {
-		"build": "wp-scripts build src/theme.js src/admin.js",
-		"start": "wp-scripts start src/theme.js src/admin.js",
-		"make-pot": "wp i18n make-pot . languages/kids-team.pot --slug=kids-team --domain=kids-team --exclude=node_modules,src",
-		"release": "wp-github-plugin style.css --tag"
-	},
-	"license": "GPL",
-	"author": {
-		"name": "kids-team Österreich",
-		"email": "thomas@kids-team.at"
-	},
-	"devDependencies": {
-		"@wordpress/prettier-config": "^4.16.0",
-		"@wordpress/scripts": "^30.9.0",
-		"wp-github-plugin": "^1.0.2"
-	}
+  "name": "kids-team",
+  "version": "2.0.7",
+  "description": "Theme for kids-team Website",
+  "prettier": "@wordpress/prettier-config",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "wp-scripts build src/theme.js src/admin.js",
+    "start": "wp-scripts start src/theme.js src/admin.js",
+    "make-pot": "wp i18n make-pot . languages/kids-team.pot --slug=kids-team --domain=kids-team --exclude=node_modules,src",
+    "release": "wp-github-plugin style.css --tag"
+  },
+  "license": "GPL",
+  "author": {
+    "name": "kids-team Österreich",
+    "email": "thomas@kids-team.at"
+  },
+  "devDependencies": {
+    "@wordpress/prettier-config": "^4.16.0",
+    "@wordpress/scripts": "^30.9.0",
+    "wp-github-plugin": "^1.0.2"
+  }
 }
