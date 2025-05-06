@@ -7,6 +7,6 @@ on:
 
 jobs:
     release:
-        uses: gollenia/github-actions/.github/workflows/wordpress-release.yml@main
+        uses: gollenia/github-actions/.github/workflows/wordpress-release.yml@master
         with:
             tag: ${{ github.ref_name }}
