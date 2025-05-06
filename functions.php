@@ -1,5 +1,9 @@
 <?php
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 function enqueue_scripts() {
 
 	$script = require_once(__DIR__ . "/build/admin.asset.php");
@@ -85,6 +89,7 @@ add_action('admin_enqueue_scripts', 'enqueue_admin_scripts');
 
 require_once(__DIR__ . "/lib/Color.php");
 require_once(__DIR__ . "/lib/Menu.php");
+require_once(__DIR__ . "/lib/Update.php");
 
 function my_theme_setup(){
     add_theme_support('post-thumbnails');
@@ -92,4 +97,3 @@ function my_theme_setup(){
 
 add_action('after_setup_theme', 'my_theme_setup');
 
- 
