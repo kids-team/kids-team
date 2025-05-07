@@ -1,111 +1,106 @@
 {
-    "version": 2,
-    "title": "Austria",
-    "description": "Blue Design",
-    "settings": {
-        "color": {
-            "palette": [
-                {
-                    "name": "Blue",
-                    "slug": "primary",
-                    "color": "#00abe5"
-                },
-                {
-                    "name": "Light Blue",
-                    "slug": "lightblue",
-                    "color": "#bce0f5"
-                },
-                {
-                    "name": "Black",
-                    "slug": "black",
-                    "color": "#000000"
-                },
-                {
-                    "name": "White",
-                    "slug": "white",
-                    "color": "#ffffff"
-                },
-                {
-                    "name": "Light Gray",
-                    "slug": "lightgray",
-                    "color": "#f4f4f9"
-                },
-                {
-                    "name": "Medium Gray",
-                    "slug": "mediumgray",
-                    "color": "#c1c1c1"
-                },
-                {
-                    "name": "Gray",
-                    "slug": "gray",
-                    "color": "#9d9fa2"
-                },
-                {
-                    "name": "Dark Gray",
-                    "slug": "darkgray",
-                    "color": "#3e3e3f"
-                },
-                {
-                    "name": "Dark Blue",
-                    "slug": "darkblue",
-                    "color": "#1c46ed"
-                },
-                {
-                    "name": "Green",
-                    "slug": "green",
-                    "color": "#88c756"
-                },
-                {
-                    "name": "Dark Green",
-                    "slug": "darkgreen",
-                    "color": "#017a47"
-                },
-                {
-                    "name": "Light Green",
-                    "slug": "lightgreen",
-                    "color": "#dceccd"
-                },
-                {
-                    "name": "Orange",
-                    "slug": "orange",
-                    "color": "#fbb900"
-                },
-                {
-                    "name": "Light Orange",
-                    "slug": "lightorange",
-                    "color": "#ffe699"
-                },
-                {
-                    "name": "Purple",
-                    "slug": "purple",
-                    "color": "#8f6daf"
-                },
-                {
-                    "name": "Dark Purple",
-                    "slug": "darkpurple",
-                    "color": "#4a2e92"
-                },
-                {
-                    "name": "Red",
-                    "slug": "red",
-                    "color": "#db4c64"
-                },
-                {
-                    "name": "Dark Red",
-                    "slug": "darkred",
-                    "color": "#f2c5c3"
-                },
-                {
-                    "name": "Text",
-                    "slug": "text",
-                    "color": "#3e3e3f"
-                },
-                {
-                    "name": "Body Background",
-                    "slug": "background",
-                    "color": "#f4f4f7"
-                }
-            ]
-        }
-    }
+	"version": 2,
+	"title": "Austria",
+	"description": "Blue Design",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"name": "Blue",
+					"slug": "primary",
+					"color": "#00abe5"
+				},
+				{
+					"name": "Light Blue",
+					"slug": "lightblue",
+					"color": "#bce0f5"
+				},
+				{
+					"name": "Black",
+					"slug": "black",
+					"color": "#000000"
+				},
+				{
+					"name": "White",
+					"slug": "white",
+					"color": "#ffffff"
+				},
+				{
+					"name": "Light Gray",
+					"slug": "lightgray",
+					"color": "#f4f4f9"
+				},
+				{
+					"name": "Medium Gray",
+					"slug": "mediumgray",
+					"color": "#c1c1c1"
+				},
+				{
+					"name": "Gray",
+					"slug": "gray",
+					"color": "#9d9fa2"
+				},
+				{
+					"name": "Dark Gray",
+					"slug": "darkgray",
+					"color": "#3e3e3f"
+				},
+				{
+					"name": "Dark Blue",
+					"slug": "darkblue",
+					"color": "#1c46ed"
+				},
+				{
+					"name": "Green",
+					"slug": "green",
+					"color": "#88c756"
+				},
+				{
+					"name": "Dark Green",
+					"slug": "darkgreen",
+					"color": "#017a47"
+				},
+				{
+					"name": "Light Green",
+					"slug": "lightgreen",
+					"color": "#dceccd"
+				},
+				{
+					"name": "Orange",
+					"slug": "orange",
+					"color": "#fbb900"
+				},
+				{
+					"name": "Light Orange",
+					"slug": "lightorange",
+					"color": "#ffe699"
+				},
+				{
+					"name": "Purple",
+					"slug": "purple",
+					"color": "#8f6daf"
+				},
+				{
+					"name": "Dark Purple",
+					"slug": "darkpurple",
+					"color": "#4a2e92"
+				},
+				{
+					"name": "Red",
+					"slug": "red",
+					"color": "#db4c64"
+				},
+				{
+					"name": "Dark Red",
+					"slug": "darkred",
+					"color": "#f2c5c3"
+				},
+				{
+					"name": "Body Background",
+					"slug": "background",
+					"color": "#f4f4f7"
+				}
+			]
+		}
+	}
 }
