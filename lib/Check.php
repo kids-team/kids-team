@@ -25,7 +25,7 @@ class Check {
 		}
 	
 		$expected = trim(file_get_contents($integrity_file));
-		$actual = hash_file('sha256', __FILE__);
+		$actual = hash_file('sha256',get_template_directory() . '/functions.php');
 	
 		if ($expected !== $actual) {
 			error_log("❌ Integrity Check Failed: Expected $expected, got $actual");
