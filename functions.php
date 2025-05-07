@@ -4,6 +4,9 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+require_once(__DIR__ . "/lib/Check.php");
+Contexis\Theme\Check::init();
+
 function enqueue_scripts() {
 
 	$script = require_once(__DIR__ . "/build/admin.asset.php");
@@ -58,6 +61,9 @@ function enqueue_admin_scripts() {
 
 }
 
+
+
+
 function kids_team_mime_types() {
 
 	$new_mimes = [
@@ -84,12 +90,14 @@ function kidsteam_load_textdomain() {
 
 add_action( 'plugin_loaded', 'kidsteam_load_textdomain', 10 );
 add_action('init', 'kids_team_mime_types');
+
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
 add_action('admin_enqueue_scripts', 'enqueue_admin_scripts');
 
 require_once(__DIR__ . "/lib/Color.php");
 require_once(__DIR__ . "/lib/Menu.php");
 require_once(__DIR__ . "/lib/Update.php");
+
 
 function my_theme_setup(){
     add_theme_support('post-thumbnails');
