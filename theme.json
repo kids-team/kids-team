@@ -84,18 +84,14 @@
 							"fontWeight": "200",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
-							"src": [
-								"file:./assets/fonts/Exo2-ExtraLightItalic.woff2"
-							]
+							"src": ["file:./assets/fonts/Exo2-ExtraLightItalic.woff2"]
 						},
 						{
 							"fontFamily": "Exo 2",
 							"fontWeight": "600",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
-							"src": [
-								"file:./assets/fonts/Exo2-SemiBoldItalic.woff2"
-							]
+							"src": ["file:./assets/fonts/Exo2-SemiBoldItalic.woff2"]
 						}
 					]
 				},
@@ -109,18 +105,14 @@
 							"fontWeight": "400",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
-							"src": [
-								"file:./assets/fonts/fuzzy-bubbles-regular.woff2"
-							]
+							"src": ["file:./assets/fonts/fuzzy-bubbles-regular.woff2"]
 						},
 						{
 							"fontFamily": "Fuzzy Bubbles",
 							"fontWeight": "bold",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
-							"src": [
-								"file:./assets/fonts/fuzzy-bubbles-bold.woff2"
-							]
+							"src": ["file:./assets/fonts/fuzzy-bubbles-bold.woff2"]
 						}
 					]
 				},
@@ -134,9 +126,7 @@
 							"fontWeight": "400",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
-							"src": [
-								"file:./assets/fonts/gochi-hand-v14-latin-regular.woff2"
-							]
+							"src": ["file:./assets/fonts/gochi-hand-v14-latin-regular.woff2"]
 						}
 					]
 				}
@@ -151,6 +141,28 @@
 			"core/column": {
 				"spacing": {
 					"units": ["%"]
+				}
+			}
+		},
+		"custom": {
+			"ctxForms": {
+				"field": {
+					"activeColor": "#0bb9e6",
+					"focusRing": "0 0 0 3px var(--primary-ultralight) !important",
+					"boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+					"radius": "0.5rem"
+				},
+				"button": {
+					"radius": "999px"
+				},
+				"accordion": {
+					"sectionRadius": "1rem",
+					"sectionBorder": "none"
+				}
+			},
+			"ctxEvents": {
+				"booking": {
+					"attendeeAccent": "var(--wp--preset--color--primary)"
 				}
 			}
 		}
