@@ -5,64 +5,65 @@
 /**
  * WordPress dependencies
  */
-import { ColorPalette } from "@wordpress/components"
-import { useDispatch, useSelect } from "@wordpress/data"
-import { PluginDocumentSettingPanel } from "@wordpress/editor"
-import { useEffect, useState } from "@wordpress/element"
-import { __ } from "@wordpress/i18n"
+import { ColorPalette } from '@wordpress/components';
+import { useDispatch, useSelect } from '@wordpress/data';
+import { PluginDocumentSettingPanel } from '@wordpress/editor';
+import { useEffect, useState } from '@wordpress/element';
+import { __ } from '@wordpress/i18n';
 
 const pageColorSettings = () => {
-    const postType = useSelect((select) =>
-        select("core/editor").getCurrentPostType()
-    )
+	const postType = useSelect((select) =>
+		select('core/editor').getCurrentPostType(),
+	);
 
-	if(window.pagenow == 'site-editor') return null
+	if (window.pagenow === 'site-editor') return null;
 
-    if (!["post", "page", "event"].includes(postType)) return null
-    const {
-        meta,
-        meta: { page_colors },
-    } = useSelect((select) => ({
-        meta: select("core/editor").getEditedPostAttribute("meta") || {},
-    }))
+	if (!['post', 'page', 'event'].includes(postType)) return null;
+	const {
+		meta,
+		meta: { page_colors },
+	} = useSelect((select) => ({
+		meta: select('core/editor').getEditedPostAttribute('meta') || {},
+	}));
 
-    const colors = useSelect("core/block-editor").getSettings().colors
+	const colors = useSelect('core/block-editor').getSettings().colors;
 
-    const { editPost } = useDispatch("core/editor")
+	const { editPost } = useDispatch('core/editor');
 
-    const [pageColors, setpageColors] = useState(page_colors)
+	const [pageColors, setPageColors] = useState(page_colors);
 
-    const setData = (key, data) => {
-        setpageColors({ ...pageColors, [key]: data })
-    }
+	const setData = (key, data) => {
+		setPageColors({ ...pageColors, [key]: data });
+	};
 
-    useEffect(() => {
-        editPost({
-            meta: {
-                ...meta,
-                page_colors: pageColors,
-            },
-        })
-    }, [pageColors])
+	useEffect(() => {
+		editPost({
+			meta: {
+				...meta,
+				page_colors: pageColors,
+			},
+		});
+	}, [pageColors]);
 
-    return (
-        <PluginDocumentSettingPanel
-            name="page-color-settings"
-            title={__("Color Settings", "kids-team")}
-            className="page-color-settings"
-        >
-            <h3>{__("Primary Color", "kids-team")}</h3>
-            <ColorPalette
-                colors={colors}
-                value={pageColors?.primary_color}
-                onChange={(value) => {
-                    setData("primary_color", value)
-                }}
-                defaultValue="#000000"
-                disableCustomColors={false}
-            />
-        </PluginDocumentSettingPanel>
-    )
-}
+	return (
+		<PluginDocumentSettingPanel
+			name="page-color-settings"
+			title={__('Color Settings', 'kids-team')}
+			className="page-color-settings"
+		>
+			<h3>{__('Primary Color', 'kids-team')}</h3>
+			<ColorPalette
+				colors={colors}
+				clearable={true}
+				value={pageColors?.primary_color}
+				onChange={(value) => {
+					setData('primary_color', value);
+				}}
+				defaultValue="#000000"
+				disableCustomColors={false}
+			/>
+		</PluginDocumentSettingPanel>
+	);
+};
 
-export default pageColorSettings
+export default pageColorSettings;
