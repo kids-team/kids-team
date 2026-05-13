@@ -2,7 +2,7 @@
 
 namespace Contexis\Theme;
 
-class Check {
+final class Check {
 
 	public static function init() {
 		if (defined('SKIP_INTEGRITY_CHECK')) {
@@ -19,7 +19,7 @@ class Check {
 		if (!file_exists($integrity_file)) {
 			
 			if (is_admin() && current_user_can('manage_options')) {
-				add_action('admin_notices', [self::class, 'missing_notice']);
+				add_action('admin_notices', [self::class, 'missingNotice']);
 			}
 			return;
 		}
@@ -33,7 +33,13 @@ class Check {
 		}
 	}
 
-	public static function missing_notice() {
+	public static function missingNotice() {
+		global $pagenow;
+
+		if ($pagenow !== 'themes.php') {
+			return;
+		}
+
 		echo '<div class="notice notice-warning"><p><strong>' . 
 			__('Warning:', 'kids-team') . 
 			'</strong> ' . 

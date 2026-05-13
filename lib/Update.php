@@ -1,10 +1,10 @@
 <?php
 namespace Contexis\Theme;
 
-class Update {
+final class Update {
 
-    private $repo_owner;
-    private $repo_name;
+    private string $repo_owner;
+    private string $repo_name;
 
 	public static function init($repo_owner = null, $repo_name = null) {
 		

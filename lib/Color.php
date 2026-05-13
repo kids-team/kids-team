@@ -7,15 +7,15 @@
 
 namespace Contexis\Core;
 
-class Color {
+final class Color {
 
-    public $post_types = ['post', 'page', 'event'];
+    public array $post_types = ['post', 'page', 'event'];
 
     public static function init() : self {
         $instance = new self;
-		add_action('rest_api_init', array($instance, 'register_meta') );
-		add_action('admin_head', [$instance, 'add_color_css'], 100);
-		add_action('wp_head', [$instance, 'add_color_css'], 100);
+		add_action('rest_api_init', array($instance, 'registerMeta') );
+		add_action('admin_head', [$instance, 'addColorCss'], 100);
+		add_action('wp_head', [$instance, 'addColorCss'], 100);
         return $instance;
     }
 
@@ -24,14 +24,15 @@ class Color {
 	 * 
 	 * @return void
 	 */
-	function add_color_css() : void {
-		$primary = $this->get_page_color();
+	function addColorCss() : void {
+		$primary = $this->getPageColor();
 		echo "<style>body {";
 			echo "--primary:" . $primary . ";";
 			echo "--white: #fff;";
 			echo "--black: #000;";
 			echo "--primary-contrast: #ffffff;";
-			echo "--primary-transparent: " . $primary . "aa;";
+			echo "--primary-transparent: " . "color-mix(in srgb, " . $primary . " 20%, transparent);";
+			echo "--primary-ultralight: " . "color-mix(in srgb, " . $primary . " 5%, transparent);";
 			echo "--gray-100: #f4f4f4;";
 			echo "--gray-200: #eaeaea;";
 			echo "--gray-300: #d1d1d1;";
@@ -45,7 +46,7 @@ class Color {
 	}
 
 
-	public function register_meta() : void {
+	public function registerMeta() : void {
 		
 		foreach($this->post_types as $post_type) {
 			
@@ -66,7 +67,7 @@ class Color {
 		
     }
 
-	public function get_page_color() : string {
+	public function getPageColor() : string {
         
         global $post;
 
