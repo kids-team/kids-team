@@ -156,8 +156,9 @@
 					"radius": "999px"
 				},
 				"accordion": {
-					"sectionRadius": "1rem",
-					"sectionBorder": "none"
+					"sectionRadius": "0rem",
+					"sectionBorder": "none",
+					"sectionShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1)"
 				}
 			},
 			"ctxEvents": {
