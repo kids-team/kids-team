@@ -105,3 +105,11 @@ function my_theme_setup(){
 
 add_action('after_setup_theme', 'my_theme_setup');
 
+
+add_action('ctx_icons_override', static function ($registry): void {
+      $base = get_stylesheet_directory() . '/assets/icons/';
+
+      $registry->overrideFromFile('date', $base . 'date.svg', 'my-theme');
+      $registry->overrideFromFile('location', $base . 'location.svg', 'my-theme');
+      $registry->overrideFromFile('directions', $base . 'directions.svg', 'my-theme');
+  });
