@@ -147,23 +147,107 @@
 		"custom": {
 			"ctxForms": {
 				"field": {
-					"activeColor": "#0bb9e6",
-					"focusRing": "0 0 0 3px var(--primary-ultralight) !important",
-					"boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
-					"radius": "0.5rem"
+					"activeColor": "var(--wp--custom--ctx--ui--field--active-color)",
+					"focusRing": "var(--wp--custom--ctx--ui--focus-ring)",
+					"boxShadow": "var(--wp--custom--ctx--ui--field--box-shadow)",
+					"radius": "var(--wp--custom--ctx--ui--field--radius)",
+					"fontSize": "var(--wp--custom--ctx--ui--font-size)"
 				},
 				"button": {
-					"radius": "999px"
+					"radius": "var(--wp--custom--ctx--ui--button--radius)",
+					"paddingX": "var(--wp--custom--ctx--ui--button--padding-x)",
+					"disabledOpacity": "var(--wp--custom--ctx--ui--button--disabled-opacity)"
 				},
 				"accordion": {
-					"sectionRadius": "0rem",
+					"sectionRadius": "var(--wp--custom--ctx--ui--accordion--radius)",
 					"sectionBorder": "none",
-					"sectionShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1)"
+					"sectionShadow": "var(--wp--custom--ctx--ui--accordion--shadow)",
+					"headerPadding": "var(--wp--custom--ctx--ui--accordion--header-padding-y) var(--wp--custom--ctx--ui--accordion--header-padding-x)",
+					"contentPadding": "var(--wp--custom--ctx--ui--accordion--content-padding)"
 				}
 			},
 			"ctxEvents": {
 				"booking": {
 					"attendeeAccent": "var(--wp--preset--color--primary)"
+				}
+			},
+			"ctx": {
+				"card": {
+					"radius": "1rem",
+					"padding": {
+						"top": "1rem",
+						"bottom": "1rem",
+						"left": "1rem",
+						"right": "1rem"
+					}
+				},
+				"ui": {
+					"color": "#000000",
+					"onColor": "#ffffff",
+					"radius": "99px",
+					"fontSize": "1rem",
+					"paddingY": "0.84rem",
+					"borderWidth": "2px",
+					"shadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+					"focusRing": "0 0 0 3px var(--primary-ultralight) !important",
+					"field": {
+						"background": "#ffffff",
+						"textColor": "var(--wp--preset--color--text)",
+						"borderColor": "rgba(0, 0, 0, 0.15)",
+						"hoverBackground": "rgba(0, 0, 0, 0.03)",
+						"activeColor": "#0bb9e6",
+						"mutedColor": "rgba(0, 0, 0, 0.6)",
+						"successColor": "#1a7f37",
+						"boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+						"radius": "0rem"
+					},
+					"button": {
+						"paddingX": "1.25rem",
+						"radius": "999px",
+						"disabledOpacity": "0.55",
+						"fontWeight": "600"
+					},
+					"accordion": {
+						"radius": "0rem",
+						"shadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+						"gap": "1rem",
+						"headerPaddingY": "1rem",
+						"headerPaddingX": "1.25rem",
+						"contentPadding": "1.25rem"
+					},
+					"dialog": {
+						"radius": "0.75rem",
+						"padding": "1.5rem",
+						"shadow": "0 1.5rem 3rem rgb(0 0 0 / 0.22)",
+						"backdrop": "rgb(0 0 0 / 0.55)",
+						"maxWidth": "42rem"
+					},
+					"stepper": {
+						"radius": "999px",
+						"padding": "3px",
+						"gap": "0.5rem",
+						"buttonSize": "1.75rem",
+						"buttonRadius": "999px",
+						"buttonBackground": "var(--wp--custom--ctx--ui--field--background)",
+						"buttonTextColor": "var(--wp--custom--ctx--ui--field--text-color)",
+						"buttonBorderColor": "var(--wp--custom--ctx--ui--field--border-color)",
+						"buttonHoverBackground": "var(--wp--custom--ctx--ui--field--hover-background)",
+						"valueMinWidth": "1.75rem",
+						"disabledOpacity": "0.55",
+						"focusRing": "var(--wp--custom--ctx--ui--focus-ring)"
+					},
+					"range": {
+						"controlHeight": "1.5rem",
+						"trackHeight": "0.375rem",
+						"trackRadius": "999px",
+						"trackBackground": "var(--wp--custom--ctx--ui--field--hover-background)",
+						"indicatorBackground": "var(--wp--custom--ctx--ui--field--active-color)",
+						"thumbSize": "1rem",
+						"thumbRadius": "999px",
+						"thumbBorder": "2px solid var(--wp--custom--ctx--ui--field--active-color)",
+						"thumbBackground": "var(--wp--custom--ctx--ui--field--background)",
+						"thumbShadow": "var(--wp--custom--ctx--ui--field--box-shadow)"
+					}
 				}
 			}
 		}
@@ -204,30 +288,6 @@
 			"core/column": {
 				"spacing": {}
 			},
-			"ctx-blocks/button": {
-				"border": {
-					"radius": {
-						"topLeft": "1rem",
-						"topRight": "0",
-						"bottomLeft": "0",
-						"bottomRight": "1rem"
-					}
-				},
-				"spacing": {
-					"padding": {
-						"top": "var(--wp--preset--spacing--30)",
-						"bottom": "var(--wp--preset--spacing--30)",
-						"left": "var(--wp--preset--spacing--40)",
-						"right": "var(--wp--preset--spacing--40)"
-					},
-					"blockGap": "var(--wp--preset--spacing--50)"
-				},
-				"typography": {
-					"fontWeight": "600",
-					"lineHeight": "1"
-				}
-			},
-
 			"ctx-blocks/card": {
 				"variations": {
 					"dotted": {
