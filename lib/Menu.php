@@ -1,9 +1,8 @@
 <?php
-/**
- * Rewrite the menu block output to match the theme's menu structure.
- */
 
-namespace Contexis\Theme;
+namespace Contexis\KidsTeam;
+
+use WP_Block;
 
 final class Menu {
 
@@ -11,7 +10,7 @@ final class Menu {
 		add_filter( 'render_block', [__CLASS__, 'renderMenu'], 10, 3 );
 	}
 
-	public static function renderMenu( $block_content, $block, $instance ) {
+	public static function renderMenu( string $block_content, array $block, WP_Block $instance ) {
 
 		switch ( $block['blockName'] ) {
 			case 'core/navigation':
@@ -28,7 +27,7 @@ final class Menu {
 		return $block_content;
 	}
 
-	public static function renderSubMenu( $block_content, $block, $instance ) {
+	public static function renderSubMenu( string $block_content, array $block, WP_Block $instance ) {
 		
 		$block_content = "<li  class='ctx-menu__item ctx-menu__item--has-children'>";
 		$block_content .= "<span>";
@@ -52,7 +51,7 @@ final class Menu {
 		return $block_content;
 	}
 	
-	public static function renderNavItem( $block_content, $block, $instance ) {
+	public static function renderNavItem( string $block_content, array $block, WP_Block $instance ) {
 			
 		$block_content = "<li class='ctx-menu__item'><span>";
 		$block_content .= key_exists('title', $block['attrs']) ? "<i class='ctx-menu__item-icon material-icons'>" . $block['attrs']['title'] . "</i>" : "<i class='ctx-menu__item-icon'></i>";
@@ -63,7 +62,7 @@ final class Menu {
 	}
 	
 	
-	public static function renderNavigation( $block_content, $block, $instance ) {
+	public static function renderNavigation( string $block_content, array $block, WP_Block $instance ) {
 		$pos = strpos($block_content, 'class="');
 		if ($pos !== false) {
 		    $block_content = substr_replace($block_content, 'class="ctx-menu ', $pos, strlen('class="'));
@@ -72,6 +71,3 @@ final class Menu {
 	}
 	
 }
-
-
-Menu::init();
