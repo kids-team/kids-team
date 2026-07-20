@@ -1,18 +1,18 @@
 <?php
 
-namespace Contexis\Theme;
+namespace Contexis\KidsTeam;
 
 final class Check {
 
-	public static function init() {
+	public static function init(): void {
 		if (defined('SKIP_INTEGRITY_CHECK')) {
 			return;
 		}
 	
-		add_action('admin_init', [self::class, 'integrity']);
+		add_action('init', [self::class, 'integrity']);
 	}
 
-	public static function integrity() {	
+	public static function integrity(): void {
 	
 		$integrity_file = get_template_directory() . '/checksum.txt';
 	
@@ -33,7 +33,7 @@ final class Check {
 		}
 	}
 
-	public static function missingNotice() {
+	public static function missingNotice(): void {
 		global $pagenow;
 
 		if ($pagenow !== 'themes.php') {
