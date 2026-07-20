@@ -1,11 +1,6 @@
 <?php
-/**
- * Color Management Class
- * 
- * @since 1.6.0
- */
 
-namespace Contexis\Core;
+namespace Contexis\KidsTeam;
 
 final class Color {
 
@@ -84,5 +79,3 @@ final class Color {
     }
 
 }
-
-Color::init();
