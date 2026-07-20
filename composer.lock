@@ -1,0 +1,53 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "96fb64d3c2066c89dfffbbf5cb394556",
+    "packages": [
+        {
+            "name": "contexis/wp-github-updater",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gollenia/wp-github-updater.git",
+                "reference": "c2a298388452e409b515e4526a41f6f9c688894c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gollenia/wp-github-updater/zipball/c2a298388452e409b515e4526a41f6f9c688894c",
+                "reference": "c2a298388452e409b515e4526a41f6f9c688894c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Contexis\\WpGitHubUpdater\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "GitHub release based WordPress plugin updater",
+            "support": {
+                "issues": "https://github.com/gollenia/wp-github-updater/issues",
+                "source": "https://github.com/gollenia/wp-github-updater/tree/v0.3.0"
+            },
+            "time": "2026-06-23T06:46:43+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}

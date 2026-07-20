@@ -1,0 +1,18 @@
+{
+	"$schema": "https://getcomposer.org/schema.json",
+	"name": "contexis/kids-team",
+	"version": "2.3.0",
+	"description": "Kids Team Theme",
+	"type": "project",
+	"homepage": "http://www.kids-team.at",
+	"readme": "readme.md",
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"Contexis\\KidsTeam\\": "lib/"
+		}
+	},
+	"require": {
+		"contexis/wp-github-updater": "^0.3.0"
+	}
+}
