@@ -50,24 +50,12 @@
 .combobox,
 .help,
 .checkbox,
-.login-username,
-.login-password {
-    position: relative;
-
-    p {
-        padding: 0 1.25rem;
-        font-size: 0.75rem;
-        margin: 0.25rem;
-    }
-}
-
 .input,
 .textarea,
 .select,
 .combobox,
-.help,
-.login-username,
-.login-password {
+.help
+ {
     label {
         margin-top: -12px;
         display: inline-block;
@@ -112,10 +100,7 @@
     }
 }
 
-.input,
-.post-password-form p,
-.login-username,
-.login-password {
+.input {
     input {
         outline: none !important;
         width: 100%;
@@ -379,91 +364,6 @@
     }
 }
 
-.checkbox,
-.login-remember {
-    align-items: center;
-
-    label {
-        background-color: transparent;
-        font-size: 1rem;
-        margin-left: 0;
-        padding: 0;
-        display: flex;
-
-        span {
-            display: block;
-        }
-    }
-
-    .error-message {
-        width: 100%;
-        margin-left: 2rem;
-    }
-
-    p {
-        padding: 0 0 0 2rem;
-        margin: 0 0.25rem;
-    }
-
-    input {
-        margin-right: 0.5rem;
-        appearance: none;
-        margin-top: 1px;
-        height: 1.5rem;
-        width: 1.5rem;
-        border: 2px solid #bbbbbb;
-        background: #ffffff;
-        border-top-left-radius: 0.4rem;
-        border-bottom-right-radius: 0.4rem;
-        transition: all 300ms ease-in-out;
-        flex-shrink: 0;
-
-        &:focus {
-            outline: none;
-        }
-
-        &:checked {
-            border-color: #00abe5;
-            box-shadow: inset 0px 0px 0px 2px #fff;
-
-            &::after {
-                transform: scale-y(100);
-                color: #00abe5;
-                animation-name: ctx-checkbox-check;
-                -webkit-animation-duration: 300ms;
-                animation-duration: 300ms;
-                -webkit-animation-timing-function: ease-in-out;
-                animation-timing-function: ease-in-out;
-                -webkit-animation-iteration-count: 1;
-                animation-iteration-count: 1;
-                content: "\2714";
-                font-size: 19px;
-                font-weight: 700;
-                margin-left: 2px;
-                margin-top: -4px;
-                position: absolute;
-                transform: scale-y(0);
-                transition: all 0.3s ease-in-out;
-            }
-        }
-
-        &[disabled] {
-            border: 2px solid #d1d1d1;
-
-            &::after {
-                color: #d1d1d1;
-            }
-        }
-    }
-
-    &.error {
-        label {
-            background-color: transparent !important;
-            color: inherit;
-        }
-    }
-}
-
 .toggle {
     label {
         gap: 1rem;
@@ -536,19 +436,6 @@
         .toggle__switch {
             background-color: #f15152;
         }
-    }
-}
-
-.submit,
-.post-password-form,
-.login-submit {
-    position: relative;
-
-    input[type="submit"] {
-        border: none;
-        background: #00abe5;
-        color: #ffffff;
-        font-size: 1rem;
     }
 }
 
@@ -749,55 +636,3 @@ select:invalid {
     height: 100%;
 }
 
-.login-info {
-    max-width: 400px;
-    padding: 2rem 1rem 2rem 1rem;
-    background: #fff;
-    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-
-    .login-notice {
-        margin-bottom: 2rem;
-    }
-    .login-username,
-    .login-password {
-        margin-bottom: 2rem;
-    }
-    label {
-        z-index: 1;
-    }
-
-    .login-submit {
-        display: flex;
-
-        justify-content: flex-end;
-    }
-}
-
-.post-password-form input[type="submit"] {
-    margin-top: 1rem;
-    width: 100%;
-}
-
-.post-password-form {
-    max-width: 400px !important;
-    padding: 2rem 1rem 2rem 1rem;
-    background: #fff;
-    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-
-    p:first-of-type {
-        margin-bottom: 2rem;
-    }
-
-    p:last-of-type {
-        display: flex;
-        flex-direction: column;
-    }
-
-    input[type="submit"] {
-        margin-top: 1rem;
-        align-self: flex-end;
-        width: auto;
-    }
-}
