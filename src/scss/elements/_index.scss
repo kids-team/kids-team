@@ -3,7 +3,7 @@ a {
     color: var(--primary);
 }
 
-ol.core-block {
+ol.wp-block-list {
     list-style-type: decimal;
     counter-reset: list 0;
     padding: space(2) 0 space(2) space(8);
@@ -26,11 +26,11 @@ ol.core-block {
     }
 }
 
-p.core-block:empty {
+p.wp-block-paragraph:empty {
     display: none;
 }
 
-p.core-block {
+p.wp-block-paragraph {
     line-height: 1.5rem;
 }
 
@@ -39,18 +39,18 @@ p {
     margin-bottom: 0.5rem;
 }
 
-ul.core-block {
+ul.wp-block-list {
     padding-left: 0px !important;
 }
 
-ul.core-block li {
+ul.wp-block-list li {
     list-style-type: none;
     margin-left: 2rem;
     align-content: center;
     padding: 0.25rem 0.5rem;
 }
 
-ul.core-block li:before {
+ul.wp-block-list li:before {
     content: "label";
     display: inline-block;
     font-family: "material-icons";
@@ -71,7 +71,7 @@ ul.core-block li:before {
     direction: ltr;
 }
 
-.dark ul.core-block li:before {
+.dark ul.wp-block-list li:before {
     color: rgba(255, 255, 255, 0.4);
 }
 
