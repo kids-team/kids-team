@@ -169,6 +169,9 @@
 			"ctxEvents": {
 				"booking": {
 					"attendeeAccent": "var(--wp--preset--color--primary)"
+				},
+				"details": {
+					"iconRadius": "999px"
 				}
 			},
 			"ctx": {
@@ -363,17 +366,17 @@
 		{
 			"name": "noheader",
 			"title": "Page without header",
-			"postTypes": ["page", "post", "event"]
+			"postTypes": ["page", "post"]
 		},
 		{
 			"name": "empty",
 			"title": "Empty Page (no header, no footer)",
-			"postTypes": ["page", "post", "event"]
+			"postTypes": ["page", "post"]
 		},
 		{
-			"name": "single-event",
+			"name": "single-ctx-event",
 			"title": "Single Event",
-			"postTypes": ["event"]
+			"postTypes": ["ctx-event"]
 		}
 	]
 }
