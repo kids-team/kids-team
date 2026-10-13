@@ -1,4 +1,6 @@
 .event-details {
+	--ctx-events-details-icon-radius: var(--wp--custom--ctx-events--details--icon-radius);
+
     &.has-dividers .event-details-item {
         border-bottom: 4px dotted #ddd !important;
     }
