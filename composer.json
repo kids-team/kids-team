@@ -13,6 +13,6 @@
 		}
 	},
 	"require": {
-		"contexis/wp-github-updater": "^0.3.0"
+		"contexis/wp-github-updater": "^0.3.6"
 	}
 }

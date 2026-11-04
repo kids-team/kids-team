@@ -12,5 +12,6 @@ Contexis\KidsTeam\Color::init();
 Contexis\KidsTeam\Menu::init();
 Contexis\KidsTeam\Theme::init();
 Contexis\KidsTeam\Icons::init();
+Contexis\KidsTeam\Update::init('kids-team', 'kids-team');
 
 ?>
