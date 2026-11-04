@@ -1,7 +1,7 @@
 {
 	"$schema": "https://getcomposer.org/schema.json",
 	"name": "contexis/kids-team",
-	"version": "2.3.0",
+	"version": "2.3.1",
 	"description": "Kids Team Theme",
 	"type": "project",
 	"homepage": "http://www.kids-team.at",
